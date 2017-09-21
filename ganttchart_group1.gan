@@ -2,13 +2,13 @@
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="Name" width="126" order="0"/>
-        <field id="tpd4" name="Begin date" width="51" order="1"/>
-        <field id="tpd5" name="End date" width="51" order="2"/>
+        <field id="tpd4" name="Begin date" width="52" order="1"/>
+        <field id="tpd5" name="End date" width="52" order="2"/>
         <field id="tpc0" name="Group Member" width="66" order="3"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="209" order="0"/>
-        <field id="1" name="Default role" width="85" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -48,14 +48,14 @@ Cameron - 2 hr]]></notes>
                 <notes><![CDATA[Hank - 3 hr
 Chase - 2 hr
 Cheyanne - 1 hr
-Camercon - 1 hr]]></notes>
+Cameron - 1 hr]]></notes>
                 <customproperty taskproperty-id="tpc0" value="Group"/>
             </task>
             <task id="4" name="Gantt Chart" color="#8cb6ce" meeting="false" start="2017-09-21" duration="4" complete="0" expand="true">
                 <notes><![CDATA[Hank - 30 min
 Chase - 30 min
 Cheyanne - 30 min
-Camercon - 30 min]]></notes>
+Cameron - 30 min]]></notes>
                 <customproperty taskproperty-id="tpc0" value="Group"/>
             </task>
         </task>
