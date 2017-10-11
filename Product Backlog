@@ -50,10 +50,11 @@
             
             -Account
                     -name
+					-bankID
                     -balance (Running Total)
                             -Getters/Setters for each
                             -deposit method
-                             -withdraw method
+                            -withdraw method
            
             -Transaction
                     -amount
