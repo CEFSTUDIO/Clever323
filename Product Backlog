@@ -50,7 +50,7 @@
             
             -Account
                     -name
-					-bankID
+		    -bankID
                     -balance (Running Total)
                             -Getters/Setters for each
                             -deposit method
