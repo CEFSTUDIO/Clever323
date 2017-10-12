@@ -60,13 +60,37 @@ Cameron - 30 min]]></notes>
             </task>
         </task>
         <task id="5" name="Sprint Charts" color="#8cb6ce" meeting="false" start="2017-10-11" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Cameron - Oct 11, 12:00 - 2:00, 3:00 - 4:00
-	- Updated Sprint 1 done by Cheyanne
-	- Added pictures of our diagrams
-	- Made Home Page document, Working on Logged in page / 		create account / forgot password pages
-	- Updates Gantt Chart
+            <notes><![CDATA[Cheyanne- Oct 11, 10:00-12:00, 6:00- 7:00
+	-Made Backlog list	
+	-Refined for Sprint 1
+	-Filled out Note Cards
+	-Updated Gantt Chart	
+
+Cameron - Oct 11, 12:00 - 2:00, 3:00 - 4:00
+	-Updated Sprint 1 done by Cheyanne
+	-Added pictures of our diagrams
+	-Made Home Page document 
+	-Working on Logged in page					-Working on create account
+	-Working on forgot password page
+	-Updated Gantt Chart
 ]]></notes>
             <customproperty taskproperty-id="tpc0" value="Cameron"/>
+        </task>
+        <task id="7" name="Scrum" color="#8cb6ce" meeting="false" start="2017-10-10" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Learned About Scrum in Class (Time spent learning)
+
+Cheyanne- 1 hour 30 minutes
+Cameron- 1 hour 30 minutes
+Hank- 1 hour 30 minutes
+Chase- 1 hour 30 minutes ]]></notes>
+        </task>
+        <task id="9" name="Scrum 2" color="#8cb6ce" meeting="false" start="2017-10-12" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Learned more about Scrum (Time spent Learning)
+
+Cheyanne- 30 minutes
+Cameron- 30 minutes
+Hank- 30 minutes
+Chase- 30 minutes]]></notes>
         </task>
     </tasks>
     <resources/>
