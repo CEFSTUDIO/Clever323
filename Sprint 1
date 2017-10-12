@@ -18,3 +18,12 @@
                 -Forgot Password
 
 =====================================================
+-Briefly cover how core classes fit into MVC architecture
+	-Classes
+		-User
+		-Account
+		-Transaction
+			-Check (inherits from transaction)
+			-Credit Card (inherits from transaction)
+		-Visualizer (Swing)
+=====================================================
