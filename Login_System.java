@@ -50,7 +50,7 @@ public class Login_System {
 	 */
 	private void initialize() {
 		frmLogIn = new JFrame();
-		frmLogIn.setTitle("Log In");
+		frmLogIn.setTitle("CleverBudget - Log In");
 		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage(Login_System.class.getResource("/javax/swing/plaf/metal/icons/Warn.gif")));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		frmLogIn.setBounds(100, 100, 600, 400);
@@ -92,7 +92,7 @@ public class Login_System {
 					//Traveling.main(null);
 					
 					//Get rid of main screen
-					
+					frmLogIn.dispose();
 				}
 				
 				else
@@ -164,5 +164,10 @@ public class Login_System {
 		JLabel lblCleverbudget = new JLabel("CleverBudget");
 		lblCleverbudget.setBounds(164, 13, 145, 16);
 		frmLogIn.getContentPane().add(lblCleverbudget);
+		
+		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
+		lblDevelopedByClever.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblDevelopedByClever.setBounds(404, 330, 166, 16);
+		frmLogIn.getContentPane().add(lblDevelopedByClever);
 	}
 }

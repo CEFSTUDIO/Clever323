@@ -114,9 +114,15 @@ Cameron - Oct 11, 12:00 - 2:00, 3:00 - 4:00
 	-Edited Lock/Key icons for use
 	-Updated Gantt again
 
-Cameron - (Date Here), (Duration here)
-	-Read research for Log In
-	-Log In (All components)
+Cameron - Oct 17, 10:00PM - 2:00AM | Oct 18, 9:00PM - 200:AM
+	-Software Name on all pages
+	-"Developed by:" on all pages
+	-Log in Screen functional	
+		-Need to get "Forget password" and "Create
+		account" buttons working
+	-Log Out button Functional
+	-Create account text forms functional, error messages
+	 appropriate
 
 Chase- (Date Here), (Duration here)
 	-Logo 1
