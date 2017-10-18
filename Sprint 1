@@ -1,21 +1,26 @@
-			Sprint 1 Backlog
+		Sprint 1 Backlog
 =====================================================
 -Program Specification        
         -Software Name Specification
         -Developed by Specification
-		-logo (Cleverbudget)
+		-logos/icons (Cleverbudget)
+		
 =====================================================
 -Figure out and display initial view
         -Log in Screen 
                 -Log Out
-                -Create Account (User- CSCI Admin, Password- CSCI323)
+                -Create Account (User- CSAdmin, Password- CSCI323)
                 -Forgot Password
+		-View Account
+		-Delete Account
         
         -Buttons
                 -Log in
                 -Log Out
                 -Create Account
                 -Forgot Password
+		-View Account
+		-Delete Account
 
 =====================================================
 -Briefly cover how core classes fit into MVC architecture
@@ -25,5 +30,6 @@
 		-Transaction
 			-Check (inherits from transaction)
 			-Credit Card (inherits from transaction)
-		-Visualizer (Swing)
+		-Visualizers (Swing)
+		
 =====================================================
