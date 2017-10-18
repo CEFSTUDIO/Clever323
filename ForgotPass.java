@@ -46,11 +46,11 @@ public class ForgotPass extends JFrame {
 	 * Create the frame.
 	 */
 	public ForgotPass() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(ForgotPass.class.getResource("/javax/swing/plaf/metal/icons/Question.gif")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Downloads\\logo.jpg (2).png"));
 		setFont(new Font("Times New Roman", Font.PLAIN, 14));
-		setTitle("Forgot Password");
+		setTitle("CleverBudget - Forgot Password");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 600, 400);
+		setBounds(150, 150, 600, 400);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -88,7 +88,7 @@ public class ForgotPass extends JFrame {
 		textField_2.setColumns(10);
 		
 		JComboBox comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"", "What was your first pet's name?", "Who was your childhood best friend?"}));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"-- Choose --", "What was your first pet's name?", "Who was your childhood best friend?"}));
 		comboBox.setBounds(275, 185, 284, 22);
 		contentPane.add(comboBox);
 		
@@ -105,13 +105,9 @@ public class ForgotPass extends JFrame {
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JLabel lblDevelopedByCameron = new JLabel("Developed by: Cameron Gomke");
-		lblDevelopedByCameron.setFont(new Font("Times New Roman", Font.PLAIN, 8));
-		lblDevelopedByCameron.setBounds(329, 324, 230, 16);
+		JLabel lblDevelopedByCameron = new JLabel("Developed by: Clever 323");
+		lblDevelopedByCameron.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblDevelopedByCameron.setBounds(393, 324, 166, 16);
 		contentPane.add(lblDevelopedByCameron);
-		
-		JButton btnBack = new JButton("Back");
-		btnBack.setBounds(380, 277, 97, 25);
-		contentPane.add(btnBack);
 	}
 }

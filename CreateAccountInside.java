@@ -11,6 +11,8 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
+import java.awt.Toolkit;
+import javax.swing.JSeparator;
 
 public class CreateAccountInside extends JFrame {
 
@@ -39,6 +41,7 @@ public class CreateAccountInside extends JFrame {
 	 * Create the frame.
 	 */
 	public CreateAccountInside() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Downloads\\logo.jpg (2).png"));
 		setTitle("CleverBudget - Create New Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -112,35 +115,12 @@ public class CreateAccountInside extends JFrame {
 				
 				else {
 					
+					ExampleHome home = new ExampleHome();
+					home.main(null);
+					
 				}
-				
-				
-				
-				//if (username.contains("CSAdmin") && password.contains("CSCI323")) {
-					//txtPassword.setText(null);
-					//txtUsername.setText(null);
-					
-					//Call a new package or something, 
-				//	ExampleHome deletethis = new ExampleHome();
-				//	ExampleHome.main(null);
-					//Traveling info = new Traveling();
-					//Traveling.main(null);
-					
-					//Get rid of main screen
-					//frmLogIn.dispose();
-			//	}
-				
-			//	else
-			//	{
-			//		JOptionPane.showMessageDialog(null, "Invalid Login Details, Please Try Again", "CleverBudget", JOptionPane.ERROR_MESSAGE);
-			//		//txtPassword.setText(null);
-					//txtUsername.setText(null);
-			//	}
-				
-				
-				
-				
-				
+			
+		
 			}
 		});
 		btnCreateAccount.setBounds(153, 186, 132, 25);
@@ -150,6 +130,13 @@ public class CreateAccountInside extends JFrame {
 		lblDevelopedByClever.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblDevelopedByClever.setBounds(254, 224, 166, 16);
 		contentPane.add(lblDevelopedByClever);
+		
+		JLabel lblex = new JLabel("(Ex: 1000.00)");
+		lblex.setBounds(279, 131, 78, 16);
+		contentPane.add(lblex);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(12, 58, 408, 2);
+		contentPane.add(separator);
 	}
-
 }
