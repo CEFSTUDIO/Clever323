@@ -165,7 +165,7 @@ public class ExampleHome extends JFrame {
 		contentPane.add(btnDisplayAccountInformation);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Cameron Gomke\\Documents\\College\\Senior First Semester\\Software Science\\Assignments\\Project\\logo.png"));
+		lblNewLabel.setIcon(new ImageIcon("src/res/logo.jpg.png"));
 		lblNewLabel.setBounds(65, 117, 270, 210);
 		contentPane.add(lblNewLabel);
 		
