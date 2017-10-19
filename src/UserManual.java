@@ -37,7 +37,7 @@ public class UserManual extends JFrame {
 	public UserManual() {
 		setTitle("CleverBudget - User Manual");
 		setFont(null);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Downloads\\logo.jpg (2).png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("src/res/logo.jpg (2).png"));
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(150, 150, 800, 600);
 		contentPane = new JPanel();
