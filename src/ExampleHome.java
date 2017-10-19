@@ -62,8 +62,8 @@ public class ExampleHome extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ExampleHome() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Downloads\\logo.jpg (2).png"));
+	public ExampleHome() {//src/res/cam.jpg
+		setIconImage(Toolkit.getDefaultToolkit().getImage("src/res/logo.jpg (2).png"));
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	
@@ -147,9 +147,9 @@ public class ExampleHome extends JFrame {
 				{
 					System.out.println("Patricia Duce");
 				}
-				else if (name.contains("Michael Cassnes"))
+				else if (name.contains("Michael Cassens"))
 				{
-					System.out.println("Michael Cassnes");
+					System.out.println("Michael Cassens");
 				}
 				else if (name.contains("Yolanda Reimer"))
 				{
