@@ -51,7 +51,7 @@ public class Login_System {
 	private void initialize() {
 		frmLogIn = new JFrame();
 		frmLogIn.setTitle("CleverBudget - Log In");
-		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Downloads\\logo.jpg (2).png"));
+		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("src/res/logo.jpg (2).png"));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		frmLogIn.setBounds(100, 100, 600, 400);
 		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
