@@ -41,7 +41,7 @@ public class CreateAccountInside extends JFrame {
 	 * Create the frame.
 	 */
 	public CreateAccountInside() { 
-		setIconImage(Toolkit.getDefaultToolkit().getImage("src/res/logo.jpg(2).png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("src/res/logo.jpg (2).png"));
 		setTitle("CleverBudget - Create New Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
