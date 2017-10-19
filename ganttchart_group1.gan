@@ -114,7 +114,7 @@ Cameron - Oct 11, 12:00 - 2:00, 3:00 - 4:00
 	-Edited Lock/Key icons for use
 	-Updated Gantt again
 
-Cameron - Oct 17, 10:00PM - 2:00AM | Oct 18, 9:00PM - 200:AM
+Cameron - Oct 16-17, 10:00PM - 2:00AM | Oct 17-18, 9:00PM - 2:00AM | Oct 18, 11:00AM - 3:00PM
 	-Software Name on all pages
 	-"Developed by:" on all pages
 	-Log in Screen functional	
@@ -123,6 +123,7 @@ Cameron - Oct 17, 10:00PM - 2:00AM | Oct 18, 9:00PM - 200:AM
 	-Log Out button Functional
 	-Create account text forms functional, error messages
 	 appropriate
+	-
 
 Chase- (Date Here), (Duration here)
 	-Logo 1
@@ -136,6 +137,15 @@ Hank- (Date Here), (Duration here)
 	-MVC Architecture
 	-Presentation]]></notes>
             <customproperty taskproperty-id="tpc0" value="Group"/>
+        </task>
+        <task id="17" name="Presentation" color="#8cb6ce" meeting="false" start="2017-10-19" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Presented MVC Arcitecture and Demo of Sprint 1's progress
+
+Hank - 10 mins
+Cheyanne - 10 mins
+Cameron - 10 mins
+Chase - 10 mins
+]]></notes>
         </task>
     </tasks>
     <resources/>
