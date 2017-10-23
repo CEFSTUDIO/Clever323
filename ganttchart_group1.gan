@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-01" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="265" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:11" id="gantt-chart">
-        <field id="tpd3" name="Name" width="167" order="0"/>
-        <field id="tpd4" name="Begin date" width="65" order="1"/>
-        <field id="tpd5" name="End date" width="64" order="2"/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Name" width="146" order="0"/>
+        <field id="tpd4" name="Begin date" width="58" order="1"/>
+        <field id="tpd5" name="End date" width="57" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -119,7 +119,7 @@ Cameron - Oct 16-17, 10:00PM - 2:00AM | Oct 17-18, 9:00PM - 2:00AM | Oct 18, 11:
 	 appropriate
 	
 
-Chase - Oct 17, 9:00PM - 0:00AM
+Chase - Oct 17, 9:00PM - 10:00AM
 	-Logo 1
 	-Logo 2
 	-MVC Architecture
@@ -130,6 +130,29 @@ Hank- (Date Here), (Duration here)
 	-Logo 2
 	-MVC Architecture
 	-Presentation]]></notes>
+        </task>
+        <task id="18" name="Presentation" color="#8cb6ce" meeting="false" start="2017-10-19" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Class Presentation of Sprint 1 Review
+Cheyanne- 10 Minutes
+Cameron- 10 Minutes
+Hank- 10 Minutes 
+Chase- 10 Minutes]]></notes>
+        </task>
+        <task id="20" name="Sprint 2" color="#8cb6ce" meeting="false" start="2017-10-24" duration="8" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM |
+	-Created Sprint 2
+	-Refined/Groomed Product Backlog
+	-Created Sprint 2 task on Gantt
+
+
+Cameron - (Date Here), (Duration here)
+	
+
+Chase - (Date Here), (Duration here)
+	
+
+Hank- (Date Here), (Duration here)
+	]]></notes>
         </task>
     </tasks>
     <resources/>
