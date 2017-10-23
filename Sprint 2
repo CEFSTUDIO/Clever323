@@ -29,7 +29,8 @@ Sprint 2 Backlog
                     -To | From | Amount
                     
 =====================================================
-             -Transaction
+-Complete the following classes     
+	    -Transaction
                     -amount
                     -date
                     -sender account
