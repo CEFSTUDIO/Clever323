@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-09-10" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-01" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:4" id="gantt-chart">
+    <view zooming-state="default:8" id="gantt-chart">
         <field id="tpd3" name="Name" width="126" order="0"/>
         <field id="tpd4" name="Begin date" width="52" order="1"/>
         <field id="tpd5" name="End date" width="52" order="2"/>
@@ -138,6 +138,22 @@ Hank- (Date Here), (Duration here)
 	-Logo 2
 	-MVC Architecture
 	-Presentation]]></notes>
+            <customproperty taskproperty-id="tpc0" value="Group"/>
+        </task>
+        <task id="17" name="Sprint 2" color="#8cb6ce" meeting="false" start="2017-10-24" duration="8" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Oct 23, 2:30-3:00PM |
+	-Created Sprint 2
+	-Groomed/Refined Product Backlog
+	-Added Sprint 2 to Gantt
+
+Cameron - (Date Here), (Duration here)
+	
+
+Chase- (Date Here), (Duration here)
+	
+
+Hank- (Date Here), (Duration here)
+	]]></notes>
             <customproperty taskproperty-id="tpc0" value="Group"/>
         </task>
     </tasks>
