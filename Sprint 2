@@ -1,0 +1,63 @@
+Sprint 2 Backlog
+=====================================================
+-Research
+        -Log in Screen 
+                -Create Account 
+                -Forgot Password
+                -Delete Account
+                
+        -Log in Design
+                -Color scheme
+                -Orientation of objects
+
+=====================================================
+-Figure out and display other views
+        -Buttons
+               -Account Overview 
+                -Add Transaction 
+                        -Deposit
+                        -Withdraw
+        
+        -Report View 
+                -Generate printable report
+        
+        -Account Overview (info) 
+                -Running Total
+                -Deposits
+                    -From | To | Amount
+                -Withdraws
+                    -To | From | Amount
+                    
+=====================================================
+-Complete the following classes     
+	    -Transaction
+                    -amount
+                    -date
+                    -sender account
+                    -receiver account
+                        -Getters/Setters for each
+           
+             -Check (Inherits from Transaction)
+                    -number
+                    -bankID
+                        -Getters/Setters for each
+           
+             -CreditCard (Inherits from Transaction)
+                    -name
+                    -type (Credit/Debit)
+                    -number
+                         -Getters/Setters for each
+                         
+=====================================================
+-Briefly cover how new core classes fit into MVC architecture
+  -Per Each Sprint Review
+	
+  -Classes
+	    -User
+		  -Account
+		  -Transaction
+			    -Check (inherits from transaction)
+			    -Credit Card (inherits from transaction)
+		-Visualizers (Swing)
+		
+=====================================================
