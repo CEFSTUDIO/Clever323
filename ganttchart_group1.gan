@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-01" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Name" width="126" order="0"/>
-        <field id="tpd4" name="Begin date" width="52" order="1"/>
-        <field id="tpd5" name="End date" width="52" order="2"/>
-        <field id="tpc0" name="Group Member" width="66" order="3"/>
+    <view zooming-state="default:11" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -36,27 +35,23 @@
             <taskproperty id="tpc0" name="Group Member" type="custom" valuetype="text"/>
         </taskproperties>
         <task id="0" name="Learn software engineering tools" color="#8cb6ce" meeting="false" start="2017-08-31" duration="19" complete="0" expand="true">
-            <customproperty taskproperty-id="tpc0" value="Group"/>
             <task id="2" name="GIT" color="#8cb6ce" meeting="false" start="2017-08-31" duration="16" complete="0" expand="true">
                 <notes><![CDATA[Hank - 2 hr
 Chase - 2 hr
 Cheyanne - 2 hr
 Cameron - 2 hr]]></notes>
-                <customproperty taskproperty-id="tpc0" value="Group"/>
             </task>
             <task id="3" name="Atom" color="#8cb6ce" meeting="false" start="2017-09-07" duration="11" complete="0" expand="true">
                 <notes><![CDATA[Hank - 3 hr
 Chase - 2 hr
 Cheyanne - 1 hr
 Cameron - 1 hr]]></notes>
-                <customproperty taskproperty-id="tpc0" value="Group"/>
             </task>
             <task id="4" name="Gantt Chart" color="#8cb6ce" meeting="false" start="2017-09-21" duration="4" complete="0" expand="true">
                 <notes><![CDATA[Hank - 30 min
 Chase - 30 min
 Cheyanne - 30 min
 Cameron - 30 min]]></notes>
-                <customproperty taskproperty-id="tpc0" value="Group"/>
             </task>
         </task>
         <task id="7" name="Scrum" color="#8cb6ce" meeting="false" start="2017-10-12" duration="4" complete="0" expand="true">
@@ -66,7 +61,6 @@ Cheyanne- 1 hour 30 minutes
 Cameron- 1 hour 30 minutes
 Hank- 1 hour 30 minutes
 Chase- 1 hour 30 minutes ]]></notes>
-            <customproperty taskproperty-id="tpc0" value="Group"/>
             <task id="16" name="Scrum 2" color="#8cb6ce" meeting="false" start="2017-10-12" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Learned more about Scrum (Time spent Learning)
 
@@ -74,7 +68,6 @@ Cheyanne- 30 minutes
 Cameron- 30 minutes
 Hank- 30 minutes
 Chase- 30 minutes]]></notes>
-                <customproperty taskproperty-id="tpc0" value="Group"/>
             </task>
             <task id="15" name="Scrum 3" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Learned more about Scrum (Time spent Learning)
@@ -83,7 +76,6 @@ Cheyanne- 30 minutes
 Cameron- 30 minutes
 Hank- 30 minutes
 Chase- 30 minutes]]></notes>
-                <customproperty taskproperty-id="tpc0" value="Group"/>
             </task>
         </task>
         <task id="5" name="Sprint Charts" color="#8cb6ce" meeting="false" start="2017-10-11" duration="1" complete="0" expand="true">
@@ -101,7 +93,6 @@ Cameron - Oct 11, 12:00 - 2:00, 3:00 - 4:00
 	-Working on forgot password page
 	-Updated Gantt Chart
 ]]></notes>
-            <customproperty taskproperty-id="tpc0" value="Group"/>
         </task>
         <task id="12" name="Sprint 1" color="#8cb6ce" meeting="false" start="2017-10-10" duration="8" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM | Oct 13, 7:00-8:00PM | Oct 17, 6:30-7:00PM | 
@@ -117,11 +108,7 @@ Oct 18, 6:00- 6:30
 	-organized repository
 	-Updated Gantt again
 
-<<<<<<< HEAD
 Cameron - Oct 16-17, 10:00PM - 2:00AM | Oct 17-18, 9:00PM - 2:00AM | Oct 18, 11:00AM - 3:00PM
-=======
-Cameron - Oct 17, 10:00PM - 2:00AM | Oct 18, 9:00PM - 2:00AM
->>>>>>> 5f19abdeefbfb70fdb39dd71a8ae0ce67cb878c8
 	-Software Name on all pages
 	-"Developed by:" on all pages
 	-Log in Screen functional	
@@ -130,7 +117,7 @@ Cameron - Oct 17, 10:00PM - 2:00AM | Oct 18, 9:00PM - 2:00AM
 	-Log Out button Functional
 	-Create account text forms functional, error messages
 	 appropriate
-	-
+	
 
 Chase - Oct 17, 9:00PM - 0:00AM
 	-Logo 1
@@ -143,34 +130,6 @@ Hank- (Date Here), (Duration here)
 	-Logo 2
 	-MVC Architecture
 	-Presentation]]></notes>
-            <customproperty taskproperty-id="tpc0" value="Group"/>
-        </task>
-<<<<<<< HEAD
-        <task id="17" name="Sprint 2" color="#8cb6ce" meeting="false" start="2017-10-24" duration="8" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Oct 23, 2:30-3:00PM |
-	-Created Sprint 2
-	-Groomed/Refined Product Backlog
-	-Added Sprint 2 to Gantt
-
-Cameron - (Date Here), (Duration here)
-	
-
-Chase- (Date Here), (Duration here)
-	
-
-Hank- (Date Here), (Duration here)
-	]]></notes>
-            <customproperty taskproperty-id="tpc0" value="Group"/>
-=======
-        <task id="17" name="Presentation" color="#8cb6ce" meeting="false" start="2017-10-19" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Presented MVC Arcitecture and Demo of Sprint 1's progress
-
-Hank - 10 mins
-Cheyanne - 10 mins
-Cameron - 10 mins
-Chase - 10 mins
-]]></notes>
->>>>>>> origin/master
         </task>
     </tasks>
     <resources/>
