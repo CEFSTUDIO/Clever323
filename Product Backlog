@@ -64,20 +64,20 @@
                     -To | From | Amount
 
 =====================================================
--MVC Architecture [x]
+-MVC Architecture []
         -organization of classes into model/view/controller
 	-completetion of classes (functional)
         
         -Classes
             
-            -User [✓]
+            -User [x]
                     -username
                     -password
                     -first name
                     -last name
                             -Getters/Setters for each
             
-            -Account [✓]
+            -Account [x]
                     -name
 		    -bankID
                     -balance (Running Total)
