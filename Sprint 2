@@ -19,7 +19,7 @@ Sprint 2 Backlog
                         -Withdraw
         
         -Report View 
-                -Generate printable report
+                -Generate printable report (if possible)
         
         -Account Overview (info) 
                 -Running Total
@@ -29,7 +29,22 @@ Sprint 2 Backlog
                     -To | From | Amount
                     
 =====================================================
--Complete the following classes     
+-Complete the following classes   
+		-User
+                    -username
+                    -password
+                    -first name
+                    -last name
+                            -Getters/Setters for each
+            
+            -Account
+                    -name
+		    -bankID
+                    -balance (Running Total)
+                            -Getters/Setters for each
+                            -deposit method
+                            -withdraw method
+           
 	    -Transaction
                     -amount
                     -date
