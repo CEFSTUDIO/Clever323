@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="265" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="316" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Name" width="146" order="0"/>
-        <field id="tpd4" name="Begin date" width="58" order="1"/>
-        <field id="tpd5" name="End date" width="57" order="2"/>
+        <field id="tpd3" name="Name" width="162" order="0"/>
+        <field id="tpd4" name="Begin date" width="74" order="1"/>
+        <field id="tpd5" name="End date" width="74" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="210" order="0"/>
-        <field id="1" name="Default role" width="86" order="1"/>
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -125,7 +125,7 @@ Chase - Oct 17, 9:00PM - 10:00AM
 	-MVC Architecture
 	-Presentation
 
-Hank- (Date Here), (Duration here)
+Hank- Oct 17, 6:30PM - 8:00PM
 	-Logo 1
 	-Logo 2
 	-MVC Architecture
