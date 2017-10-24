@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="316" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Name" width="162" order="0"/>
-        <field id="tpd4" name="Begin date" width="74" order="1"/>
-        <field id="tpd5" name="End date" width="74" order="2"/>
+        <field id="tpd3" name="Name" width="181" order="0"/>
+        <field id="tpd4" name="Begin date" width="94" order="1"/>
+        <field id="tpd5" name="End date" width="93" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="209" order="0"/>
-        <field id="1" name="Default role" width="85" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -93,8 +93,26 @@ Cameron - Oct 11, 12:00 - 2:00, 3:00 - 4:00
 	-Working on forgot password page
 	-Updated Gantt Chart
 ]]></notes>
+            <task id="30" name="Backlog" color="#8cb6ce" meeting="false" start="2017-10-11" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created product backlog and refined it for sprint 1
+October 11, 2017
+1 hour
+Cheyanne]]></notes>
+            </task>
+            <task id="33" name="Note Cards" color="#8cb6ce" meeting="false" start="2017-10-11" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created and Filled out note cards, updated Gantt Chart
+October 11, 2017
+2 hours
+Cheyanne]]></notes>
+            </task>
+            <task id="42" name="Initial View Work" color="#8cb6ce" meeting="false" start="2017-10-11" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Worked on logging in page, forgot password page, create account, and added pictures of the diagrams
+October 11, 2017
+3 hours
+Cameron ]]></notes>
+            </task>
         </task>
-        <task id="12" name="Sprint 1" color="#8cb6ce" meeting="false" start="2017-10-10" duration="8" complete="0" expand="true">
+        <task id="12" name="Sprint 1" color="#8cb6ce" meeting="false" start="2017-10-10" duration="11" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM | Oct 13, 7:00-8:00PM | Oct 17, 6:30-7:00PM | 
 Oct 18, 6:00- 6:30
 	-Assigned tasks to group members
@@ -130,6 +148,85 @@ Hank- Oct 17, 6:30PM - 8:00PM
 	-Logo 2
 	-MVC Architecture
 	-Presentation]]></notes>
+            <task id="48" name="Logo" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created logo
+October 17, 2017
+1 hour
+Chase]]></notes>
+            </task>
+            <task id="50" name="Powerpoint / MVC" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created powerpoint that explained MVC arcitecture 
+October 17, 2017
+1 1/2 hours
+Hank]]></notes>
+            </task>
+            <task id="58" name="Research" color="#8cb6ce" meeting="false" start="2017-10-10" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Researched log in screen and updated sprint 1 and product backlog
+October 10, 2017
+30 mins
+Cheyanne]]></notes>
+            </task>
+            <task id="60" name="Organized Repository" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true">
+                <notes><![CDATA[(relative pathing) organized repository
+October 13, 2017
+1 hour
+Cheyanne]]></notes>
+            </task>
+            <task id="62" name="Lock/Key Icons" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
+                <notes><![CDATA[edited lock/key icons for use
+October 17 & 18, 2017
+1 hour
+Cheyanne]]></notes>
+            </task>
+            <task id="68" name="Software Name" color="#8cb6ce" meeting="false" start="2017-10-16" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Put the software name on all existing pages of our software
+October 16, 2017
+2 hours
+Cameron]]></notes>
+            </task>
+            <task id="70" name="&quot;Developed By&quot;" color="#8cb6ce" meeting="false" start="2017-10-16" duration="1" complete="0" expand="true">
+                <notes><![CDATA["Developed by" on each page
+October 16, 2017
+2 hours
+Cameron
+]]></notes>
+            </task>
+            <task id="73" name="Log in Screen" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created a functional log in screen
+October 17, 2017
+4 hours
+Cameron]]></notes>
+            </task>
+            <task id="84" name="Log out Button" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created a loop to log out to log back in
+October 17, 2017
+3 hours
+Cameron]]></notes>
+            </task>
+            <task id="87" name="Add Account" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Made the add account button with all fields needing to be filled out for it to work (still needs to be functional)
+October 17, 2017
+2 hours
+Cameron]]></notes>
+            </task>
+            <task id="91" name="Initial View" color="#8cb6ce" meeting="false" start="2017-10-18" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created the homepage with initial view, added all buttons and basically just made the homepage
+October 18, 2017
+4 hours
+Cameron]]></notes>
+            </task>
+            <task id="96" name="Display Account Info" color="#8cb6ce" meeting="false" start="2017-10-18" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Created the button for this, not working yet
+October 18, 2017
+30 mins
+Cameron]]></notes>
+            </task>
+            <task id="98" name="Delete Account" color="#8cb6ce" meeting="false" start="2017-10-24" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Delete account button with warning, but does nothing
+October 17, 2017
+30 mins
+Cameron]]></notes>
+            </task>
         </task>
         <task id="18" name="Presentation" color="#8cb6ce" meeting="false" start="2017-10-19" duration="1" complete="0" expand="true">
             <notes><![CDATA[Class Presentation of Sprint 1 Review
@@ -139,19 +236,24 @@ Hank- 10 Minutes
 Chase- 10 Minutes]]></notes>
         </task>
         <task id="20" name="Sprint 2" color="#8cb6ce" meeting="false" start="2017-10-24" duration="8" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM |
+            <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM | Oct 24, 9:30 - 11:00 AM  |
 	-Created Sprint 2
 	-Refined/Groomed Product Backlog
 	-Created Sprint 2 task on Gantt
 
+	- Worked in class on project
 
-Cameron - (Date Here), (Duration here)
+
+Cameron - Oct 24, 9:30 - 11:00 AM 
+	- Worked in class on project
+	- Mostly Create account inside and out
 	
 
 Chase - (Date Here), (Duration here)
 	
 
-Hank- (Date Here), (Duration here)
+Hank- Oct 24, 9:30 - 11:00 AM 
+	- Worked in class on project
 	]]></notes>
         </task>
     </tasks>
