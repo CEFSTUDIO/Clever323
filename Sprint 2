@@ -30,7 +30,7 @@ Sprint 2 Backlog
                     
 =====================================================
 -Complete the following classes   
-		-User
+	    -User
                     -username
                     -password
                     -first name
@@ -38,8 +38,11 @@ Sprint 2 Backlog
                             -Getters/Setters for each
             
             -Account
-                    -name
+                    -first name
+		    -last name
 		    -bankID
+		    -email
+		    -phone number
                     -balance (Running Total)
                             -Getters/Setters for each
                             -deposit method
