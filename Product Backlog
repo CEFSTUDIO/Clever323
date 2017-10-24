@@ -78,8 +78,11 @@
                             -Getters/Setters for each
             
             -Account [x]
-                    -name
+                    -first name
+		    -last name
 		    -bankID
+		    -email
+		    -phone number
                     -balance (Running Total)
                             -Getters/Setters for each
                             -deposit method
