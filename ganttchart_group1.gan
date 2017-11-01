@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-17" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-10" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
+    <view zooming-state="default:0" id="gantt-chart">
         <field id="tpd3" name="Name" width="173" order="0"/>
         <field id="tpd4" name="Begin date" width="90" order="1"/>
         <field id="tpd5" name="End date" width="90" order="2"/>
@@ -260,7 +260,7 @@ Chase- 10 Minutes]]></notes>
             </task>
         </task>
         <task id="20" name="Sprint 2" color="#8cb6ce" meeting="false" start="2017-10-23" duration="9" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Oct 23, 2:30 - 3:00PM | Oct 24, 9:30 - 11:00 AM  | Oct 26, 9:30 - 11:00AM | Oct 31, 10:40 - 11:00AM | Oct 31, 10:00 - 10:2PM
+            <notes><![CDATA[Cheyanne- Oct 23, 2:30 - 3:00PM | Oct 24, 9:30 - 11:00AM  | Oct 26, 9:30 - 11:00AM | Oct 31, 10:40 - 11:00AM | Oct 31, 10:00 - 10:2PM | Nov 1, 3:00 - 5:00PM
 	-Created Sprint 2
 	-Refined/Groomed Product Backlog
 	-Created Sprint 2 task on Gantt
@@ -268,9 +268,10 @@ Chase- 10 Minutes]]></notes>
 	-Worked in class on project (x3)
 	-Researched Design/Functionality
 	-Researched Colors
+	-Created Design board
 
 
-Cameron - Oct 24, 9:30 - 11:00 AM 
+Cameron - Oct 24, 9:30 - 11:00AM 
 	- Worked in class on project
 	- Mostly Create account inside and out
 	
@@ -278,21 +279,27 @@ Cameron - Oct 24, 9:30 - 11:00 AM
 Chase - (Date Here), (Duration here)
 	
 
-Hank- Oct 24, 9:30 - 11:00 AM 
+Hank- Oct 24, 9:30 - 11:00AM 
 	- Worked in class on project
 	]]></notes>
             <task id="115" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-10-23" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM | Oct 31, 10:00-10:20PM
+                <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM | Oct 31, 10:00-10:20PM (50 minutes)
 	-Created Sprint 2
 	-Refined/Groomed Product Backlog
 	-Created Sprint 2 task on Gantt
 	-Refined Gantt]]></notes>
             </task>
-            <task id="111" name="Design" color="#8cb6ce" meeting="false" start="2017-10-24" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Oct 24, 9:30 - 11:00 AM  | Oct 26, 9:30 - 11:00AM | Oct 31, 10:40 - 11:00AM
+            <task id="111" name="Design Research" color="#8cb6ce" meeting="false" start="2017-10-24" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Oct 24, 9:30 - 11:00AM  | Oct 26, 9:30 - 11:00AM | Oct 31, 10:40 - 11:00AM (1 hour 20 minutes)
 	-Worked in class on project (x3)
 	-Researched Design/Functionality
 	-Researched Colors]]></notes>
+            </task>
+            <task id="116" name="Design Board" color="#8cb6ce" meeting="false" start="2017-11-01" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 1, 3:00 - 5:00PM (2 Hours)
+	-Created a Design Board
+	-Created two different designs
+		-Based on two different palettes ]]></notes>
             </task>
             <task id="113" name="Presentation" color="#8cb6ce" meeting="false" start="2017-11-02" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Class Presentation of Sprint 2 Review
