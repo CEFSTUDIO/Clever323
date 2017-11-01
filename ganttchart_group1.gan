@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-17" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Name" width="181" order="0"/>
-        <field id="tpd4" name="Begin date" width="94" order="1"/>
-        <field id="tpd5" name="End date" width="93" order="2"/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="173" order="0"/>
+        <field id="tpd4" name="Begin date" width="90" order="1"/>
+        <field id="tpd5" name="End date" width="90" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -34,7 +34,7 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
             <taskproperty id="tpc0" name="Group Member" type="custom" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Learn software engineering tools" color="#8cb6ce" meeting="false" start="2017-08-31" duration="19" complete="0" expand="true">
+        <task id="0" name="Learn Software Engineering Tools" color="#8cb6ce" meeting="false" start="2017-08-31" duration="19" complete="0" expand="true">
             <task id="2" name="GIT" color="#8cb6ce" meeting="false" start="2017-08-31" duration="16" complete="0" expand="true">
                 <notes><![CDATA[Hank - 2 hr
 Chase - 2 hr
@@ -54,7 +54,7 @@ Cheyanne - 30 min
 Cameron - 30 min]]></notes>
             </task>
         </task>
-        <task id="7" name="Scrum" color="#8cb6ce" meeting="false" start="2017-10-12" duration="4" complete="0" expand="true">
+        <task id="7" name="Scrum Learning" color="#8cb6ce" meeting="false" start="2017-10-12" duration="14" complete="0" expand="true">
             <notes><![CDATA[Learned About Scrum in Class (Time spent learning)
 
 Cheyanne- 1 hour 30 minutes
@@ -70,6 +70,30 @@ Hank- 30 minutes
 Chase- 30 minutes]]></notes>
             </task>
             <task id="15" name="Scrum 3" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Learned more about Scrum (Time spent Learning)
+
+Cheyanne- 30 minutes
+Cameron- 30 minutes
+Hank- 30 minutes
+Chase- 30 minutes]]></notes>
+            </task>
+            <task id="99" name="Scrum 4" color="#8cb6ce" meeting="false" start="2017-10-24" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Learned more about Scrum (Time spent Learning)
+
+Cheyanne- 30 minutes
+Cameron- 30 minutes
+Hank- 30 minutes
+Chase- 30 minutes]]></notes>
+            </task>
+            <task id="103" name="Scrum 5" color="#8cb6ce" meeting="false" start="2017-10-26" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Learned more about Scrum (Time spent Learning)
+
+Cheyanne- 30 minutes
+Cameron- 30 minutes
+Hank- 30 minutes
+Chase- 30 minutes]]></notes>
+            </task>
+            <task id="105" name="Scrum Presenter" color="#8cb6ce" meeting="false" start="2017-10-31" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Learned more about Scrum (Time spent Learning)
 
 Cheyanne- 30 minutes
@@ -227,21 +251,23 @@ October 17, 2017
 30 mins
 Cameron]]></notes>
             </task>
-        </task>
-        <task id="18" name="Presentation" color="#8cb6ce" meeting="false" start="2017-10-19" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Class Presentation of Sprint 1 Review
+            <task id="100" name="Presentation" color="#8cb6ce" meeting="false" start="2017-10-19" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Class Presentation of Sprint 1 Review
 Cheyanne- 10 Minutes
 Cameron- 10 Minutes
 Hank- 10 Minutes 
 Chase- 10 Minutes]]></notes>
+            </task>
         </task>
-        <task id="20" name="Sprint 2" color="#8cb6ce" meeting="false" start="2017-10-24" duration="8" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM | Oct 24, 9:30 - 11:00 AM  |
+        <task id="20" name="Sprint 2" color="#8cb6ce" meeting="false" start="2017-10-23" duration="9" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Oct 23, 2:30 - 3:00PM | Oct 24, 9:30 - 11:00 AM  | Oct 26, 9:30 - 11:00AM | Oct 31, 10:40 - 11:00AM | Oct 31, 10:00 - 10:2PM
 	-Created Sprint 2
 	-Refined/Groomed Product Backlog
 	-Created Sprint 2 task on Gantt
-
-	- Worked in class on project
+	-Refined Gantt
+	-Worked in class on project (x3)
+	-Researched Design/Functionality
+	-Researched Colors
 
 
 Cameron - Oct 24, 9:30 - 11:00 AM 
@@ -255,6 +281,26 @@ Chase - (Date Here), (Duration here)
 Hank- Oct 24, 9:30 - 11:00 AM 
 	- Worked in class on project
 	]]></notes>
+            <task id="115" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-10-23" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM | Oct 31, 10:00-10:20PM
+	-Created Sprint 2
+	-Refined/Groomed Product Backlog
+	-Created Sprint 2 task on Gantt
+	-Refined Gantt]]></notes>
+            </task>
+            <task id="111" name="Design" color="#8cb6ce" meeting="false" start="2017-10-24" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Oct 24, 9:30 - 11:00 AM  | Oct 26, 9:30 - 11:00AM | Oct 31, 10:40 - 11:00AM
+	-Worked in class on project (x3)
+	-Researched Design/Functionality
+	-Researched Colors]]></notes>
+            </task>
+            <task id="113" name="Presentation" color="#8cb6ce" meeting="false" start="2017-11-02" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Class Presentation of Sprint 2 Review
+Cheyanne- 10 Minutes
+Cameron- 10 Minutes
+Hank- 10 Minutes 
+Chase- 10 Minutes]]></notes>
+            </task>
         </task>
     </tasks>
     <resources/>
