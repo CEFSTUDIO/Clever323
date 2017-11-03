@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-10" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-02" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:0" id="gantt-chart">
         <field id="tpd3" name="Name" width="173" order="0"/>
@@ -308,6 +308,12 @@ Cameron- 10 Minutes
 Hank- 10 Minutes 
 Chase- 10 Minutes]]></notes>
             </task>
+        </task>
+        <task id="122" name="Linked J-Tables" color="#8cb6ce" meeting="false" start="2017-11-02" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Linked J-Tables for the initial view, reads in from a file
+1 hour 30 mins
+Cameron
+]]></notes>
         </task>
     </tasks>
     <resources/>

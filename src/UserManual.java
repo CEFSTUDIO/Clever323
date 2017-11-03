@@ -10,6 +10,7 @@ import java.awt.Toolkit;
 import javax.swing.JSeparator;
 import java.awt.Color;
 import javax.swing.SwingConstants;
+import javax.swing.JTextArea;
 
 public class UserManual extends JFrame {
 
@@ -37,7 +38,7 @@ public class UserManual extends JFrame {
 	public UserManual() {
 		setTitle("CleverBudget - User Manual");
 		setFont(null);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("src/res/logo.jpg (2).png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Downloads\\logo.jpg (2).png"));
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(150, 150, 800, 600);
 		contentPane = new JPanel();
@@ -58,5 +59,9 @@ public class UserManual extends JFrame {
 		JSeparator separator = new JSeparator();
 		separator.setBounds(36, 80, 701, 2);
 		contentPane.add(separator);
+		
+		JLabel lblTheFollowingThe = new JLabel("The following the ways to properly use this software:");
+		lblTheFollowingThe.setBounds(36, 95, 305, 16);
+		contentPane.add(lblTheFollowingThe);
 	}
 }

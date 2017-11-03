@@ -1,0 +1,5 @@
+Patricia Duce,625000,Prestigious Company,Patricia Duce,Check,9/2/17
+Michal Cassens,500,Local Company,Michael Cassens,Check,9/6/17
+Yolanda Reimer,250,Local Company,Yolanda Reimer,Check,9/8/17
+Patricia Duce,50,Patricia Duce,Five Guys,Credit Card,11/3/17
+

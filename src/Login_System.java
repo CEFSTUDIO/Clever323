@@ -8,6 +8,9 @@ import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import javax.swing.JSeparator;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.ImageIcon;
@@ -51,7 +54,7 @@ public class Login_System {
 	private void initialize() {
 		frmLogIn = new JFrame();
 		frmLogIn.setTitle("CleverBudget - Log In");
-		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("src/res/logo.jpg (2).png"));
+		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Git\\Clever323\\src\\res\\logo.jpg (2).png"));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		frmLogIn.setBounds(100, 100, 600, 400);
 		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -82,14 +85,29 @@ public class Login_System {
 				String username = txtUsername.getText();
 				
 				if (username.contains("CSAdmin") && password.contains("CSCI323")) {
+					
+					//Set both fields to null
 					txtPassword.setText(null);
 					txtUsername.setText(null);
+					
+					//Store information in a file
+					try {
+						PrintWriter writer = new PrintWriter("user-and-pass.txt", "UTF-8");
+						writer.println(username + "," + password);
+						writer.close();
+						
+					} catch (FileNotFoundException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					} catch (UnsupportedEncodingException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 					
 					//Call a new package or something, 
 					ExampleHome deletethis = new ExampleHome();
 					deletethis.main(null);
-					//Traveling info = new Traveling();
-					//Traveling.main(null);
+					
 					
 					//Get rid of main screen
 					frmLogIn.dispose();
