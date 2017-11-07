@@ -73,11 +73,9 @@ public class ExampleHome extends JFrame {
 	 * Create the frame.
 	 */
 	public ExampleHome() {
-<<<<<<< HEAD
+
 		setIconImage(Toolkit.getDefaultToolkit().getImage("./res/BrowserIcon.png"));
-=======
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
->>>>>>> 7ae291c6f917e97146a7a399e4a02b222a3c071b
+
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	
@@ -90,11 +88,7 @@ public class ExampleHome extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblMainIcon = new JLabel("");
-<<<<<<< HEAD
 		lblMainIcon.setIcon(new ImageIcon("./res/logo.png"));
-=======
-		lblMainIcon.setIcon(new ImageIcon("./src/res/logo.png"));
->>>>>>> 7ae291c6f917e97146a7a399e4a02b222a3c071b
 		lblMainIcon.setBounds(65, 117, 210, 210);
 		contentPane.add(lblMainIcon);
 		
@@ -192,13 +186,9 @@ public class ExampleHome extends JFrame {
 		
 		//Code for Main Overview Table
 		//Reading BigData.txt
-<<<<<<< HEAD
-		String bigDataFile = "bigData.txt";
-		String columns[] =  {"Name", "Amount", "Sender", "Receiver", "Type", "Date"};
-=======
+
 		String bigDataFile = "BigData.txt";
 		String columns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
->>>>>>> 7ae291c6f917e97146a7a399e4a02b222a3c071b
 		JTable contactTable = new JTable();
 		DefaultTableModel tableModel;
 
