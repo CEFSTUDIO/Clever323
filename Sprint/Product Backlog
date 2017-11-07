@@ -113,6 +113,10 @@
                     -Remove transaction (functionality) [x]
                     -Save information (functionality) [x]
 		    -Show Fees/Codes (functionality) [x]
+		    	-8% held fee (all) [x]
+			-4% held credit card fee [x]
+			-Benefits Calculator [x]
+				-25% or 12%
            
              -Check (Inherits from Transaction) [✓]
                     -number
