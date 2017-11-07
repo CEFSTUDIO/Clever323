@@ -42,6 +42,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JSplitPane;
 import java.awt.Component;
 import javax.swing.JSeparator;
+import javax.swing.JRadioButton;
 
 public class ExampleHome extends JFrame {
 
@@ -72,7 +73,7 @@ public class ExampleHome extends JFrame {
 	 * Create the frame.
 	 */
 	public ExampleHome() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\eclipse-workspace\\Git\\src\\res\\BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	
@@ -85,7 +86,7 @@ public class ExampleHome extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblMainIcon = new JLabel("");
-		lblMainIcon.setIcon(new ImageIcon("C:\\Users\\Cameron Gomke\\Git\\Clever323\\src\\res\\logo.png"));
+		lblMainIcon.setIcon(new ImageIcon("./src/res/logo.png"));
 		lblMainIcon.setBounds(65, 117, 210, 210);
 		contentPane.add(lblMainIcon);
 		
@@ -183,8 +184,8 @@ public class ExampleHome extends JFrame {
 		
 		//Code for Main Overview Table
 		//Reading BigData.txt
-		String bigDataFile = "C:\\Users\\Cameron Gomke\\eclipse-workspace\\Homepage\\BigData.txt";
-		String columns[] =  {"Name", "Amount", "Sender", "Receiver", "Type", "Date"};
+		String bigDataFile = "BigData.txt";
+		String columns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
 		JTable contactTable = new JTable();
 		DefaultTableModel tableModel;
 
@@ -304,7 +305,7 @@ public class ExampleHome extends JFrame {
 				addT.main(null);
 			}
 		});
-		btnAddTransaction.setBounds(55, 600, 141, 25);
+		btnAddTransaction.setBounds(1224, 524, 141, 25);
 		contentPane.add(btnAddTransaction);
 		
 		JButton btnDeleteTranscation = new JButton("Delete Transaction");
@@ -314,7 +315,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnDeleteTranscation.setBounds(55, 638, 150, 25);
+		btnDeleteTranscation.setBounds(1224, 562, 150, 25);
 		contentPane.add(btnDeleteTranscation);
 		
 		
@@ -353,6 +354,22 @@ public class ExampleHome extends JFrame {
 		});
 		btnDisplayAccountInformation.setBounds(55, 486, 205, 25);
 		contentPane.add(btnDisplayAccountInformation);
+		
+		JRadioButton rdbtnFeesPaid = new JRadioButton("Fees paid");
+		rdbtnFeesPaid.setBounds(1120, 450, 127, 25);
+		contentPane.add(rdbtnFeesPaid);
+		
+		JLabel lblTransaction = new JLabel("Transaction:");
+		lblTransaction.setBounds(1266, 490, 72, 16);
+		contentPane.add(lblTransaction);
+		
+		JButton btnFees = new JButton("Fees");
+		btnFees.setBounds(1241, 600, 97, 25);
+		contentPane.add(btnFees);
+		
+		JButton btnPrintReport = new JButton("Print Report");
+		btnPrintReport.setBounds(1237, 636, 101, 25);
+		contentPane.add(btnPrintReport);
 		
 		
 	}
