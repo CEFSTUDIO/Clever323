@@ -29,6 +29,7 @@ Sprint 3 Backlog
 =====================================================
  -Classes 
     -Account (User- csadmin, Pass- csci323) 
+    	-Forgot Password
         -Add accounts (functionality)
         -Remove accounts (functionality)
         -View/Filter account information (functionality)
