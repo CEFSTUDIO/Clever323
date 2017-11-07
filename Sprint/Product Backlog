@@ -34,6 +34,13 @@
 		-Icons [✓]
 		-Implemented [x]
 	
+	-User Manual Design
+		-Color scheme [x]
+                -Orientation of objects [x]
+		-Logos [x]
+		-Icons [x]
+		-Implemented [x]
+	
 =====================================================
 -Briefly cover how core classes fit into MVC architecture [✓]
 	-Per Each Sprint Review
