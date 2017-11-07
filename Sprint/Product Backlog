@@ -89,7 +89,7 @@
                     -last name
                             -Getters/Setters for each
             
-            -Account [✓]
+            -Account (User- csadmin, Pass- csci323) [✓]
                     -first name
 		    -last name
 		    -bankID
