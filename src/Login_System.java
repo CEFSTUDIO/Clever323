@@ -54,7 +54,7 @@ public class Login_System {
 	private void initialize() {
 		frmLogIn = new JFrame();
 		frmLogIn.setTitle("CleverBudget - Log In");
-		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Cameron Gomke\\Git\\Clever323\\src\\res\\logo.jpg (2).png"));
+		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		frmLogIn.setBounds(100, 100, 600, 400);
 		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -84,7 +84,7 @@ public class Login_System {
 				String password = txtPassword.getText();
 				String username = txtUsername.getText();
 				
-				if (username.contains("CSAdmin") && password.contains("CSCI323")) {
+				if (username.contains("csadmin") && password.contains("csci323")) {
 					
 					//Set both fields to null
 					txtPassword.setText(null);
@@ -105,8 +105,8 @@ public class Login_System {
 					}
 					
 					//Call a new package or something, 
-					ExampleHome deletethis = new ExampleHome();
-					deletethis.main(null);
+					ExampleHome home = new ExampleHome();
+					home.main(null);
 					
 					
 					//Get rid of main screen

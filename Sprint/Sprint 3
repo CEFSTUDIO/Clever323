@@ -14,7 +14,7 @@ Sprint 3 Backlog
 -Briefly cover how core classes fit into MVC architecture
 	-Per Each Sprint Review
 	
-    -Classes
+    	-Classes
 		    -User
 		    -Account
 		    -Transaction
@@ -28,7 +28,8 @@ Sprint 3 Backlog
 		
 =====================================================
  -Classes 
-    -Account 
+    -Account (User- csadmin, Pass- csci323) 
+    	-Forgot Password
         -Add accounts (functionality)
         -Remove accounts (functionality)
         -View/Filter account information (functionality)
@@ -38,5 +39,7 @@ Sprint 3 Backlog
         -Remove transaction (functionality)
         -Save information (functionality)
         -Show Fees/Codes (functionality)
+		-8% held fee (all)
+		-4% held credit card fee
                    
 =====================================================

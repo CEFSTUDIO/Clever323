@@ -34,6 +34,13 @@
 		-Icons [✓]
 		-Implemented [x]
 	
+	-User Manual Design
+		-Color scheme [x]
+                -Orientation of objects [x]
+		-Logos [x]
+		-Icons [x]
+		-Implemented [x]
+	
 =====================================================
 -Briefly cover how core classes fit into MVC architecture [✓]
 	-Per Each Sprint Review
@@ -89,7 +96,7 @@
                     -last name
                             -Getters/Setters for each
             
-            -Account [✓]
+            -Account (User- csadmin, Pass- csci323) [✓]
                     -first name
 		    -last name
 		    -bankID
@@ -113,6 +120,10 @@
                     -Remove transaction (functionality) [x]
                     -Save information (functionality) [x]
 		    -Show Fees/Codes (functionality) [x]
+		    	-8% held fee (all) [x]
+			-4% held credit card fee [x]
+			-Benefits Calculator [x]
+				-25% or 12%
            
              -Check (Inherits from Transaction) [✓]
                     -number
