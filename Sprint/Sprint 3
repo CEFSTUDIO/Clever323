@@ -1,0 +1,45 @@
+Sprint 3 Backlog
+=====================================================
+-Research (Various)
+		-Log in Design
+		    -Implement
+    
+    -Overview/Second Screen Design
+        	-Color scheme 
+                -Orientation of objects 
+		            -Logos 
+		            -Icons 
+
+=====================================================
+-Briefly cover how core classes fit into MVC architecture
+	-Per Each Sprint Review
+	
+    	-Classes
+		    -User
+		    -Account
+		    -Transaction
+			  -Check (inherits from transaction)
+			  -Credit Card (inherits from transaction)
+		    -Visualizers (Swing)
+		
+=====================================================
+-Briefly cover Sprint Progress via Presentation
+	-Per Each Sprint Review
+		
+=====================================================
+ -Classes 
+    -Account (User- csadmin, Pass- csci323) 
+    	-Forgot Password
+        -Add accounts (functionality)
+        -Remove accounts (functionality)
+        -View/Filter account information (functionality)
+    
+    -Transaction
+        -Add transaction (functionality)
+        -Remove transaction (functionality)
+        -Save information (functionality)
+        -Show Fees/Codes (functionality)
+		-8% held fee (all)
+		-4% held credit card fee
+                   
+=====================================================

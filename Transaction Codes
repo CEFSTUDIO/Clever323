@@ -1,0 +1,21 @@
+Transaction Codes
+=====================================================
+-Income Codes
+    -50109 - Other Income
+    -50287 - Credit Card Sales
+    
+-Expense Codes
+    -61123 - Contract Faculty
+    -61225 - Student
+    -62210 - Minor Equipment
+    -62241 - Office Supplies
+    -62245 - Computer Equipment < $5,000
+    -62249 - Minor Software < $100,000
+    -62255 - Promotional Aids
+    -62280 - Program Expense
+    -62282 - Ink
+    -62315 - Advertising-Newspaper Non Re
+    -62817 - Meetings & Conference Costs
+    -62852 - Bank Service Charges
+
+=====================================================

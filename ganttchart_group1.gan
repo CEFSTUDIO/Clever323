@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-02" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:0" id="gantt-chart">
+    <view zooming-state="default:5" id="gantt-chart">
         <field id="tpd3" name="Name" width="173" order="0"/>
         <field id="tpd4" name="Begin date" width="90" order="1"/>
         <field id="tpd5" name="End date" width="90" order="2"/>
@@ -136,7 +136,7 @@ October 11, 2017
 Cameron ]]></notes>
             </task>
         </task>
-        <task id="12" name="Sprint 1" color="#8cb6ce" meeting="false" start="2017-10-10" duration="11" complete="0" expand="true">
+        <task id="12" name="Sprint 1" color="#8cb6ce" meeting="false" start="2017-10-10" duration="21" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM | Oct 13, 7:00-8:00PM | Oct 17, 6:30-7:00PM | 
 Oct 18, 6:00- 6:30
 	-Assigned tasks to group members
@@ -172,6 +172,13 @@ Hank- Oct 17, 6:30PM - 8:00PM
 	-Logo 2
 	-MVC Architecture
 	-Presentation]]></notes>
+            <task id="132" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-10-10" duration="21" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM 
+	-Assigned tasks to group members
+	-Updated Gantt
+	-Compiled research for Log In
+	-Updated Sprint 1 Tasks]]></notes>
+            </task>
             <task id="48" name="Logo" color="#8cb6ce" meeting="false" start="2017-10-17" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Created logo
 October 17, 2017
@@ -265,6 +272,7 @@ Chase- 10 Minutes]]></notes>
 	-Refined/Groomed Product Backlog
 	-Created Sprint 2 task on Gantt
 	-Refined Gantt
+	-Assigned tasks
 	-Worked in class on project (x3)
 	-Researched Design/Functionality
 	-Researched Colors
@@ -272,18 +280,21 @@ Chase- 10 Minutes]]></notes>
 
 
 Cameron - Oct 24, 9:30 - 11:00AM 
-	- Worked in class on project
-	- Mostly Create account inside and out
+	-Worked in class on project
+	-Mostly Create account inside and out
 	
 
-Chase - (Date Here), (Duration here)
-	
+Chase - Oct 24, 9:30 - 11:00AM 
+	-Worked in class on project
+	-Designed log-in screen
 
 Hank- Oct 24, 9:30 - 11:00AM 
-	- Worked in class on project
+	-Worked in class on project
+	-Presentation
+	-Various Classes work
 	]]></notes>
             <task id="115" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-10-23" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM | Oct 31, 10:00-10:20PM (50 minutes)
+                <notes><![CDATA[Cheyanne- Oct 23, 2:30- 3:00PM | Oct 31, 10:00-10:20PM (50 Minutes)
 	-Created Sprint 2
 	-Refined/Groomed Product Backlog
 	-Created Sprint 2 task on Gantt
@@ -301,6 +312,12 @@ Hank- Oct 24, 9:30 - 11:00AM
 	-Created two different designs
 		-Based on two different palettes ]]></notes>
             </task>
+            <task id="123" name="Linked J-Tables" color="#8cb6ce" meeting="false" start="2017-11-02" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Linked J-Tables for the initial view, reads in from a file
+1 hour 30 mins
+Cameron
+]]></notes>
+            </task>
             <task id="113" name="Presentation" color="#8cb6ce" meeting="false" start="2017-11-02" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Class Presentation of Sprint 2 Review
 Cheyanne- 10 Minutes
@@ -309,11 +326,44 @@ Hank- 10 Minutes
 Chase- 10 Minutes]]></notes>
             </task>
         </task>
-        <task id="122" name="Linked J-Tables" color="#8cb6ce" meeting="false" start="2017-11-02" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Linked J-Tables for the initial view, reads in from a file
-1 hour 30 mins
-Cameron
+        <task id="124" name="Sprint 3" color="#8cb6ce" meeting="false" start="2017-11-06" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 6, 6:00 - 7:00PM |
+	-Created Sprint 3
+	-Refined/Groomed Product Backlog
+	-Created Sprint 3 task on Gantt
+	-Refined Gantt
+	-Assigned tasks
+	-Organized Github into Folders
+	-Added Transaction Codes to GitHub
+
+Cameron - (Date Here), (Time Here)
+	-Functionality for account
+	-Functionality for transaction
+	
+Chase - (Date Here), (Time Here)
+	-Design Second View screen
+
+Hank- (Date Here), (Time Here)
+	-Presentation
+	
+	]]></notes>
+            <task id="130" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-11-06" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 6, 6:00- 7:00PM (1 hour)
+	-Created Sprint 3
+	-Refined/Groomed Product Backlog
+	-Created Sprint 3 task on Gantt
+	-Refined Gantt
+	-Assigned Tasks]]></notes>
+            </task>
+            <task id="137" name="Transaction Codes" color="#8cb6ce" meeting="false" start="2017-11-06" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 6, 6:50 - 7:00PM (10 Minutes)
+	-Added Transaction Codes to GitHub]]></notes>
+            </task>
+            <task id="143" name="Organization" color="#8cb6ce" meeting="false" start="2017-11-06" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 6, 6:00 - 6:30PM (30 Minutes)
+	-Organized Github into Folders
 ]]></notes>
+            </task>
         </task>
     </tasks>
     <resources/>

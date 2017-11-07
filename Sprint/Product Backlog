@@ -11,7 +11,7 @@
 		
 =====================================================
 -Figure out and display initial view [✓]
--Research [✓]
+-Research [✓] [Various]
         -Log in Screen 
                 -Log Out [✓]
                 -Create Account (User- CSAdmin, Password- CSCI323) [x]
@@ -28,11 +28,19 @@
 		-Delete Account [✓]
 		
 	-Log in Design
-                -Color scheme [x]
-                -Orientation of objects [x]
+                -Color scheme [✓]
+                -Orientation of objects [✓]
 		-Logos [✓]
 		-Icons [✓]
-
+		-Implemented [x]
+	
+	-User Manual Design
+		-Color scheme [x]
+                -Orientation of objects [x]
+		-Logos [x]
+		-Icons [x]
+		-Implemented [x]
+	
 =====================================================
 -Briefly cover how core classes fit into MVC architecture [✓]
 	-Per Each Sprint Review
@@ -44,6 +52,10 @@
 			-Check (inherits from transaction)
 			-Credit Card (inherits from transaction)
 		-Visualizers (Swing)
+		
+=====================================================
+-Briefly cover Sprint Progress via Presentation [✓]
+	-Per Each Sprint Review
 		
 =====================================================
 -Figure out and display other views
@@ -62,22 +74,29 @@
                     -From | To | Amount
                 -Withdraws
                     -To | From | Amount
+	
+	-Overview/Second Screen Design
+        	-Color scheme [x]
+                -Orientation of objects [x]
+		-Logos [x]
+		-Icons [x]
+		-Implemented [x]
 
 =====================================================
--MVC Architecture []
-        -organization of classes into model/view/controller
-	-completetion of classes (functional)
+-MVC Architecture [✓]
+        -organization of classes into model/view/controller [✓]
+	-completetion of classes (functional) [x]
         
         -Classes
             
-            -User [x]
+            -User [✓]
                     -username
                     -password
                     -first name
                     -last name
                             -Getters/Setters for each
             
-            -Account [x]
+            -Account (User- csadmin, Pass- csci323) [✓]
                     -first name
 		    -last name
 		    -bankID
@@ -87,20 +106,31 @@
                             -Getters/Setters for each
                             -deposit method
                             -withdraw method
+		    -Add accounts (functionality) [x]
+        	    -Remove accounts (functionality) [x]
+		    -View/Filter account information (functionality) [x]
            
-            -Transaction [x]
+            -Transaction [✓]
                     -amount
                     -date
                     -sender account
                     -receiver account
                         -Getters/Setters for each
+		    -Add transaction (functionality) [x]
+                    -Remove transaction (functionality) [x]
+                    -Save information (functionality) [x]
+		    -Show Fees/Codes (functionality) [x]
+		    	-8% held fee (all) [x]
+			-4% held credit card fee [x]
+			-Benefits Calculator [x]
+				-25% or 12%
            
-             -Check (Inherits from Transaction) [x]
+             -Check (Inherits from Transaction) [✓]
                     -number
                     -bankID
                         -Getters/Setters for each
            
-             -CreditCard (Inherits from Transaction) [x]
+             -CreditCard (Inherits from Transaction) [✓]
                     -name
                     -type (Credit/Debit)
                     -number
