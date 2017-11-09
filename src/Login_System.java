@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -78,6 +79,9 @@ public class Login_System {
 		frmLogIn.getContentPane().add(txtPassword);
 		
 		JButton btnLogin = new JButton("Login");
+		btnLogin.setBackground(new Color(70, 137, 191));
+		btnLogin.setOpaque(true);
+		btnLogin.setBorderPainted(false);
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -169,6 +173,9 @@ public class Login_System {
 		frmLogIn.getContentPane().add(btnForgotPassword);
 		
 		JButton btnCreateNewAccount = new JButton("Create New Account");
+		btnCreateNewAccount.setBackground(new Color(70, 137, 191));
+		btnCreateNewAccount.setOpaque(true);
+		btnCreateNewAccount.setBorderPainted(false);
 		btnCreateNewAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				

@@ -1,1 +1,1 @@
-CSAdmin,CSCI323
+csadmin,csci323
