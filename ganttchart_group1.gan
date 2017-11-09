@@ -326,7 +326,7 @@ Hank- 10 Minutes
 Chase- 10 Minutes]]></notes>
             </task>
         </task>
-        <task id="124" name="Sprint 3" color="#8cb6ce" meeting="false" start="2017-11-06" duration="2" complete="0" expand="true">
+        <task id="124" name="Sprint 3" color="#8cb6ce" meeting="false" start="2017-11-06" duration="4" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Nov 6, 6:00 - 7:00PM | Nov 7, 10:00 - 11:00AM
 	-Created Sprint 3
 	-Refined/Groomed Product Backlog
@@ -365,9 +365,12 @@ Hank- (Date Here), (Time Here)
 	-Organized Github into Folders
 ]]></notes>
             </task>
-            <task id="144" name="Log In Implementation" color="#8cb6ce" meeting="false" start="2017-11-07" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Nov 7, 10:00 - 11:00AM (1 hour)
-	-Worked in Class on Log In Implementation]]></notes>
+            <task id="144" name="Log In Implementation" color="#8cb6ce" meeting="false" start="2017-11-07" duration="3" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 7, 10:00 - 11:00AM | Nov 9, 10:00 - 11:00AM (2 hour)
+	-Worked in Class on Log In Implementation
+	-Changed background color
+	-Changed button colors
+	-Created assets]]></notes>
             </task>
         </task>
     </tasks>
