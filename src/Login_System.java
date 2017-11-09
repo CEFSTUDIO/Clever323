@@ -54,6 +54,7 @@ public class Login_System {
 	 */
 	private void initialize() {
 		frmLogIn = new JFrame();
+		frmLogIn.getContentPane().setBackground(new Color(207, 210, 215));
 		frmLogIn.setTitle("CleverBudget - Log In");
 		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
@@ -81,7 +82,7 @@ public class Login_System {
 		JButton btnLogin = new JButton("Login");
 		btnLogin.setBackground(new Color(70, 137, 191));
 		btnLogin.setOpaque(true);
-		btnLogin.setBorderPainted(false);
+		btnLogin.setBorderPainted(true);
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -131,7 +132,7 @@ public class Login_System {
 		JButton btnReset = new JButton("Reset");
 		btnReset.setBackground(new Color(200, 200, 200));
 		btnReset.setOpaque(true);
-		btnReset.setBorderPainted(false);
+		btnReset.setBorderPainted(true);
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				txtUsername.setText(null);
@@ -144,7 +145,7 @@ public class Login_System {
 		JButton btnExit = new JButton("Exit");
 		btnExit.setBackground(new Color(225, 79, 79));
 		btnExit.setOpaque(true);
-		btnExit.setBorderPainted(false);
+		btnExit.setBorderPainted(true);
 		btnExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -170,7 +171,7 @@ public class Login_System {
 		JButton btnForgotPassword = new JButton("Forgot Password?");
 		btnForgotPassword.setBackground(new Color(200, 200, 200));
 		btnForgotPassword.setOpaque(true);
-		btnForgotPassword.setBorderPainted(false);
+		btnForgotPassword.setBorderPainted(true);
 		btnForgotPassword.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -184,7 +185,7 @@ public class Login_System {
 		JButton btnCreateNewAccount = new JButton("Create New Account");
 		btnCreateNewAccount.setBackground(new Color(70, 137, 191));
 		btnCreateNewAccount.setOpaque(true);
-		btnCreateNewAccount.setBorderPainted(false);
+		btnCreateNewAccount.setBorderPainted(true);
 		btnCreateNewAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -208,7 +209,7 @@ public class Login_System {
 		JButton btnUserManual = new JButton("User Manual");
 		btnUserManual.setBackground(new Color(200, 200, 200));
 		btnUserManual.setOpaque(true);
-		btnUserManual.setBorderPainted(false);
+		btnUserManual.setBorderPainted(true);
 		btnUserManual.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
