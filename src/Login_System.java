@@ -62,11 +62,11 @@ public class Login_System {
 		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmLogIn.getContentPane().setLayout(null);
 		
-		JLabel lblUsername = new JLabel("Username:");
+		JLabel lblUsername = new JLabel("Username");
 		lblUsername.setBounds(49, 95, 81, 16);
 		frmLogIn.getContentPane().add(lblUsername);
 		
-		JLabel lblPassword = new JLabel("Password:");
+		JLabel lblPassword = new JLabel("Password");
 		lblPassword.setBounds(49, 168, 81, 16);
 		frmLogIn.getContentPane().add(lblPassword);
 		
@@ -160,13 +160,14 @@ public class Login_System {
 		btnExit.setBounds(211, 305, 97, 25);
 		frmLogIn.getContentPane().add(btnExit);
 		
-		JSeparator separator = new JSeparator();
-		separator.setBounds(49, 197, 478, 2);
-		frmLogIn.getContentPane().add(separator);
+		    //commented out for now
+		//JSeparator separator = new JSeparator();
+		//separator.setBounds(49, 197, 478, 2);
+		//frmLogIn.getContentPane().add(separator);
 		
-		JSeparator separator_1 = new JSeparator();
-		separator_1.setBounds(49, 77, 478, 2);
-		frmLogIn.getContentPane().add(separator_1);
+		//JSeparator separator_1 = new JSeparator();
+		//separator_1.setBounds(49, 77, 478, 2);
+		//frmLogIn.getContentPane().add(separator_1);
 		
 		JButton btnForgotPassword = new JButton("Forgot Password?");
 		btnForgotPassword.setBackground(new Color(200, 200, 200));
