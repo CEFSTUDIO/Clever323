@@ -129,6 +129,9 @@ public class Login_System {
 		frmLogIn.getContentPane().add(btnLogin);
 		
 		JButton btnReset = new JButton("Reset");
+		btnReset.setBackground(new Color(200, 200, 200));
+		btnReset.setOpaque(true);
+		btnReset.setBorderPainted(false);
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				txtUsername.setText(null);
@@ -139,6 +142,9 @@ public class Login_System {
 		frmLogIn.getContentPane().add(btnReset);
 		
 		JButton btnExit = new JButton("Exit");
+		btnExit.setBackground(new Color(225, 79, 79));
+		btnExit.setOpaque(true);
+		btnExit.setBorderPainted(false);
 		btnExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -162,6 +168,9 @@ public class Login_System {
 		frmLogIn.getContentPane().add(separator_1);
 		
 		JButton btnForgotPassword = new JButton("Forgot Password?");
+		btnForgotPassword.setBackground(new Color(200, 200, 200));
+		btnForgotPassword.setOpaque(true);
+		btnForgotPassword.setBorderPainted(false);
 		btnForgotPassword.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -197,6 +206,9 @@ public class Login_System {
 		frmLogIn.getContentPane().add(lblDevelopedByClever);
 		
 		JButton btnUserManual = new JButton("User Manual");
+		btnUserManual.setBackground(new Color(200, 200, 200));
+		btnUserManual.setOpaque(true);
+		btnUserManual.setBorderPainted(false);
 		btnUserManual.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
