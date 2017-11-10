@@ -366,11 +366,12 @@ Hank- (Date Here), (Time Here)
 ]]></notes>
             </task>
             <task id="144" name="Log In Implementation" color="#8cb6ce" meeting="false" start="2017-11-07" duration="3" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Nov 7, 10:00 - 11:00AM | Nov 9, 10:00 - 11:00AM (2 hour)
+                <notes><![CDATA[Cheyanne- Nov 7, 10:00 - 11:00AM | Nov 9, 10:00 - 11:00AM | Nov 9, 6:00 - 7:30PM (3 hours 30 minutes)
 	-Worked in Class on Log In Implementation
 	-Changed background color
 	-Changed button colors
-	-Created assets]]></notes>
+	-Created assets
+	-Fully implemented into code]]></notes>
             </task>
         </task>
     </tasks>
