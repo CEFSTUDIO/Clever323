@@ -74,7 +74,7 @@ public class ExampleHome extends JFrame {
 	 */
 	public ExampleHome() {
 
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./res/BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./res/AppIcon.png"));
 
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

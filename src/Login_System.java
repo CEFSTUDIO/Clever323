@@ -19,6 +19,7 @@ import javax.swing.JToggleButton;
 import javax.swing.JInternalFrame;
 import javax.swing.JScrollPane;
 import java.awt.Toolkit;
+import javax.swing.SwingConstants;
 
 public class Login_System {
 
@@ -56,27 +57,35 @@ public class Login_System {
 		frmLogIn = new JFrame();
 		frmLogIn.getContentPane().setBackground(new Color(207, 210, 215));
 		frmLogIn.setTitle("CleverBudget - Log In");
-		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
+		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("./res/AppIcon.png"));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		frmLogIn.setBounds(100, 100, 600, 400);
 		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmLogIn.getContentPane().setLayout(null);
 		
 		JLabel lblUsername = new JLabel("Username");
-		lblUsername.setBounds(49, 95, 81, 16);
+		lblUsername.setVerticalAlignment(SwingConstants.BOTTOM);
+		lblUsername.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblUsername.setFont(new Font("Verdana", Font.BOLD, 18));
+		lblUsername.setBounds(123, 116, 127, 22);
 		frmLogIn.getContentPane().add(lblUsername);
 		
 		JLabel lblPassword = new JLabel("Password");
-		lblPassword.setBounds(49, 168, 81, 16);
+		lblPassword.setVerticalAlignment(SwingConstants.BOTTOM);
+		lblPassword.setFont(new Font("Verdana", Font.BOLD, 18));
+		lblPassword.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblPassword.setBounds(123, 149, 127, 22);
 		frmLogIn.getContentPane().add(lblPassword);
 		
 		txtUsername = new JTextField();
-		txtUsername.setBounds(169, 92, 195, 22);
+		txtUsername.setBackground(Color.WHITE);
+		txtUsername.setBounds(260, 120, 178, 20);
 		frmLogIn.getContentPane().add(txtUsername);
 		txtUsername.setColumns(10);
 		
 		txtPassword = new JPasswordField();
-		txtPassword.setBounds(169, 165, 195, 22);
+		txtPassword.setBackground(Color.WHITE);
+		txtPassword.setBounds(260, 151, 178, 20);
 		frmLogIn.getContentPane().add(txtPassword);
 		
 		JButton btnLogin = new JButton("Login");
@@ -126,7 +135,7 @@ public class Login_System {
 				}
 			}
 		});
-		btnLogin.setBounds(49, 229, 97, 25);
+		btnLogin.setBounds(49, 241, 97, 25);
 		frmLogIn.getContentPane().add(btnLogin);
 		
 		JButton btnReset = new JButton("Reset");
@@ -139,7 +148,7 @@ public class Login_System {
 				txtPassword.setText(null);
 			}
 		});
-		btnReset.setBounds(121, 267, 97, 25);
+		btnReset.setBounds(49, 282, 97, 25);
 		frmLogIn.getContentPane().add(btnReset);
 		
 		JButton btnExit = new JButton("Exit");
@@ -157,17 +166,8 @@ public class Login_System {
 				}
 			}
 		});
-		btnExit.setBounds(211, 305, 97, 25);
+		btnExit.setBounds(432, 282, 97, 25);
 		frmLogIn.getContentPane().add(btnExit);
-		
-		    //commented out for now
-		//JSeparator separator = new JSeparator();
-		//separator.setBounds(49, 197, 478, 2);
-		//frmLogIn.getContentPane().add(separator);
-		
-		//JSeparator separator_1 = new JSeparator();
-		//separator_1.setBounds(49, 77, 478, 2);
-		//frmLogIn.getContentPane().add(separator_1);
 		
 		JButton btnForgotPassword = new JButton("Forgot Password?");
 		btnForgotPassword.setBackground(new Color(200, 200, 200));
@@ -180,7 +180,7 @@ public class Login_System {
 				forgotFrame.main(null);
 			}
 		});
-		btnForgotPassword.setBounds(179, 229, 158, 25);
+		btnForgotPassword.setBounds(177, 241, 158, 25);
 		frmLogIn.getContentPane().add(btnForgotPassword);
 		
 		JButton btnCreateNewAccount = new JButton("Create New Account");
@@ -194,17 +194,15 @@ public class Login_System {
 				
 			}
 		});
-		btnCreateNewAccount.setBounds(364, 229, 165, 25);
+		btnCreateNewAccount.setBounds(364, 241, 165, 25);
 		frmLogIn.getContentPane().add(btnCreateNewAccount);
 		
-		JLabel lblCleverbudget = new JLabel("CleverBudget");
-		lblCleverbudget.setFont(new Font("Tahoma", Font.ITALIC, 29));
-		lblCleverbudget.setBounds(179, 29, 195, 35);
-		frmLogIn.getContentPane().add(lblCleverbudget);
-		
 		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
-		lblDevelopedByClever.setFont(new Font("Tahoma", Font.BOLD, 13));
-		lblDevelopedByClever.setBounds(404, 330, 166, 16);
+		lblDevelopedByClever.setBackground(Color.WHITE);
+		lblDevelopedByClever.setForeground(Color.BLACK);
+		lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
+		lblDevelopedByClever.setBounds(302, 339, 272, 16);
 		frmLogIn.getContentPane().add(lblDevelopedByClever);
 		
 		JButton btnUserManual = new JButton("User Manual");
@@ -219,7 +217,27 @@ public class Login_System {
 				
 			}
 		});
-		btnUserManual.setBounds(298, 267, 109, 25);
-		frmLogIn.getContentPane().add(btnUserManual);
+		btnUserManual.setBounds(226, 282, 109, 25);
+		frmLogIn.getContentPane().add(btnUserManual); 
+		
+		JLabel banner_image = new JLabel();
+		banner_image.setIcon(new ImageIcon("./res/login_bg.png"));
+		banner_image.setBounds(0, 0, 584, 218);
+		frmLogIn.getContentPane().add(banner_image);
+		
+		JLabel middle_blue = new JLabel();
+		middle_blue.setIcon(new ImageIcon("./res/blue_border.png"));
+		middle_blue.setBounds(0, 196, 584, 22);
+		frmLogIn.getContentPane().add(middle_blue);
+		
+		JLabel bottom_blue = new JLabel();
+		bottom_blue.setIcon(new ImageIcon("./res/blue_border.png"));
+		bottom_blue.setBounds(0, 339, 601, 22);
+		frmLogIn.getContentPane().add(bottom_blue);
+		
+		JLabel top_blue = new JLabel("");
+		top_blue.setIcon(new ImageIcon("./res/blue_border.png"));
+		top_blue.setBounds(0, 0, 601, 22);
+		frmLogIn.getContentPane().add(top_blue);
 	}
 }
