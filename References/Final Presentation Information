@@ -4,8 +4,8 @@ The door will close the door at 10:10 AM- you will not be able to join the final
 Final presentations should include a complete demonstration of your product.
 
 The following must be handed in during the Presentation:
-    -A hard copy of your System Document [See Below]
-    -A hard copy of the Product Backlog (Finished & Unfinished items)
+    -A hard copy of your System Document (See Below)
+    -A hard copy of the Product Backlog (Finished & Unfinished Items)
     -A hard copy of the Gantt Chart (Timeline of your progress [Not specific individual work or hours] )
 
 At the begining of class that day the group will fill out anonymous effort charts where eaach group member will indicate
@@ -30,17 +30,18 @@ System Document should include the following (but is not limited to):
         -Cheyanne Flickinger
             -Scrum Master
             -Lead Designer (Implements)
-            -Book keeper (Refine Backlog/Make Sprints/Organizer)
+            -Book keeper/Documentor (Refine Backlog/Make Sprints/Organizer)
         -Cameron Gomke 
             -Lead Coder
             -Back End Developer
             -Rough Front End Developer (Refined by Designers)
         -Hank Bullock- 
-            -Presenter
+            -Presenter/Documentor (In Charge of Other documentation)
             -Lead Diagram Maker
             -Code Cleaner (Fixing minor issues/general clean up)
         -Chase Byczynski-
             -Designer (Designs interfaces to be implemented)
             -Secondary Diagram Maker
+            -Documentor (In Charge of Other documentation)
     -Project References (If Any)
     -Git Repository Location (must be organized!)
