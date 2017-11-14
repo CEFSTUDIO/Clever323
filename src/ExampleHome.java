@@ -255,6 +255,7 @@ public class ExampleHome extends JFrame {
 		}
 		catch(IOException e){
 		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+		    e.printStackTrace();
 		}
 		
 		double totalBalance = 0;
@@ -390,6 +391,7 @@ public class ExampleHome extends JFrame {
 				{
 					System.out.println("Was not able to find the file: bigData.txt," + bigDataFile);
 					e1.printStackTrace();
+					
 				}
 				catch (IOException e2) 
 				{

@@ -52,7 +52,7 @@ public class AddTransaction extends JFrame {
 	//Create the Frame:
 	public AddTransaction() {
 		//Attributes for reading in small data:
-		String smallDataFile = "./src/smallData.txt";
+		String smallDataFile = "./smallData.txt";
 		String line;
 		BufferedReader reader;
 		String[] details = null;
@@ -219,7 +219,7 @@ public class AddTransaction extends JFrame {
 				else 
 				{
 					//Attributes:
-					String bigDataFile = "./src/bigData.txt";
+					String bigDataFile = "./bigData.txt";
 					BufferedReader reader = null;
 					//Suppress warning, it was saying that this "String line" was being unused
 					@SuppressWarnings("unused")
