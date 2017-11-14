@@ -1,17 +1,17 @@
 Final Presentations are from 10:10 AM- 12:00 PM on Thursday, December 14th, 2017. 
-<b>The door will close the door at 10:10 AM- you will not be able to join the final presentation if you are late.</b>
+The door will close the door at 10:10 AM- you will not be able to join the final presentation if you are late.
 
-Final presentations should include a complete <b>demonstration</b> of your product.
+Final presentations should include a complete demonstration of your product.
 
 The following must be handed in during the Presentation:
-    -A hard copy of your <b>System Document</b> [See Below]
-    -A hard copy of the <b>Product Backlog</b> (Finished & Unfinished items)
-    -A hard copy of the <b>Gantt Chart</b> (Timeline of your progress [Not specific individual work or hours] )
+    -A hard copy of your System Document [See Below]
+    -A hard copy of the Product Backlog (Finished & Unfinished items)
+    -A hard copy of the Gantt Chart (Timeline of your progress [Not specific individual work or hours] )
 
 At the begining of class that day the group will fill out anonymous effort charts where eaach group member will indicate
 the effort of all group members. This will be used for determining grades.
 
-<b>System Document</b> should include the following (but is not limited to):
+System Document should include the following (but is not limited to):
     -Nice cover page (Including company name, name of software, and logo)
     -Table of Contents
     -Introduction- High level description of what the system is intended for or is intended to replace.
@@ -37,10 +37,10 @@ the effort of all group members. This will be used for determining grades.
             -Rough Front End Developer (Refined by Designers)
         -Hank Bullock- 
             -Presenter
-            -Diagram Maker
+            -Lead Diagram Maker
             -Code Cleaner (Fixing minor issues/general clean up)
         -Chase Byczynski-
             -Designer (Designs interfaces to be implemented)
-            -Diagram Maker
+            -Secondary Diagram Maker
     -Project References (If Any)
     -Git Repository Location (must be organized!)
