@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-12" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Name" width="172" order="0"/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Name" width="173" order="0"/>
         <field id="tpd4" name="Begin date" width="90" order="1"/>
-        <field id="tpd5" name="End date" width="89" order="2"/>
+        <field id="tpd5" name="End date" width="90" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="209" order="0"/>
-        <field id="1" name="Default role" width="85" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -327,7 +327,7 @@ Chase- 10 Minutes]]></notes>
             </task>
         </task>
         <task id="124" name="Sprint 3" color="#8cb6ce" meeting="false" start="2017-11-06" duration="7" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Nov 6, 6:00 - 7:00PM | Nov 7, 10:00 - 11:00AM
+            <notes><![CDATA[Cheyanne- Nov 6, 6:00 - 7:00PM | Nov 7, 10:00 - 11:00AM | Nov 9, 6:00- 7:30PM
 	-Created Sprint 3
 	-Refined/Groomed Product Backlog
 	-Created Sprint 3 task on Gantt
@@ -336,6 +336,7 @@ Chase- 10 Minutes]]></notes>
 	-Organized Github into Folders
 	-Added Transaction Codes to GitHub
 	-Worked in Class on Log In Implementation
+	-Finished Log In
 
 Cameron - (Date Here), (Time Here)
 	-Functionality for account
@@ -373,12 +374,54 @@ Hank- (Nov 13), (2 hours)
 	-Created assets
 	-Fully implemented into code]]></notes>
             </task>
+            <task id="147" name="Code Clean Up" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne, Cameron, Hank- Nov 14, 9:00 - 9:30AM  (30 minutes)
+	-Cleaned Code Up
+	-Fixed Pathing Issues
+	-Removed Unused Imports]]></notes>
+            </task>
             <task id="146" name="Presentation" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Class Presentation of Sprint 3 Review
 Cheyanne- 10 Minutes
 Cameron- 10 Minutes
 Hank- 10 Minutes 
 Chase- 10 Minutes]]></notes>
+            </task>
+        </task>
+        <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | 
+	-Created Sprint 4
+	-Refined/Groomed Product Backlog
+	-Created Sprint 4 task on Gantt
+	-Refined Gantt
+	-Assigned tasks
+	-Added a Reference Folder
+	-Added Final Information to GitHub
+
+Cameron - (Date Here), (Time Here)
+	-Functionality for account
+	-Functionality for transaction
+	
+Chase - (Date Here), (Time Here)
+	-Design User Manual
+	-Create Info for User Manual
+
+Hank- (Date Here), (Time Here)
+	-Presentation
+	-Help Design User Manual
+	-Create Info for User Manual]]></notes>
+            <task id="158" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 14, 2:00- 3:00PM (1 hour)
+	-Created Sprint 4
+	-Refined/Groomed Product Backlog
+	-Created Sprint 4 task on Gantt
+	-Refined Gantt
+	-Assigned Tasks]]></notes>
+            </task>
+            <task id="160" name="Organization" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 6, 6:30- 7:00PM (30 minutes)
+	-Added a Reference Folder
+	-Added Final Information to GitHub]]></notes>
             </task>
         </task>
     </tasks>
