@@ -305,7 +305,7 @@ public class ExampleHome extends JFrame {
 		lblTotalBalance.setBounds(1112, 287, 294, 25);
 		contentPane.add(lblTotalBalance);
 		
-		//
+
 		int numOfAccs = comboBox.getItemCount()-1;
 		String first = (String) comboBox.getItemAt(0);
 		System.out.println(first);
