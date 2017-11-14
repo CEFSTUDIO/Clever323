@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Name" width="173" order="0"/>
+        <field id="tpd3" name="Name" width="172" order="0"/>
         <field id="tpd4" name="Begin date" width="90" order="1"/>
-        <field id="tpd5" name="End date" width="90" order="2"/>
+        <field id="tpd5" name="End date" width="89" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="210" order="0"/>
-        <field id="1" name="Default role" width="86" order="1"/>
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -344,9 +344,9 @@ Cameron - (Date Here), (Time Here)
 Chase - (Date Here), (Time Here)
 	-Design Second View screen
 
-Hank- (Date Here), (Time Here)
+Hank- (Nov 13), (2 hours)
 	-Presentation
-	
+	-Bug Fixes
 	]]></notes>
             <task id="130" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-11-06" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Nov 6, 6:00- 7:00PM (1 hour)
