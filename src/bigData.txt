@@ -3,3 +3,4 @@ Michal Cassens,500,Deposit,Local Company,Check,9/6/17
 Yolanda Reimer,250,Deposit,Local Company,Check,9/8/17
 Patricia Duce,50,Expense,Five Guys,Credit Card,11/3/17
 Michael Cassens,11,Deposit,dd,Credit Card,dd
+Patricia Duce,12,Expense,asdf,Credit Card,121212

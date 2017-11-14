@@ -233,7 +233,7 @@ public class CreateAccountInside extends JFrame {
 				else 
 				{
 					//Attributes:
-					String smallDataFile = "./src/smallData.txt";
+					String smallDataFile = "./smallData.txt";
 					BufferedReader r = null;
 					String line = null;
 					String[] t = null;
