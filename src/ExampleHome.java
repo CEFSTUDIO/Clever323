@@ -50,7 +50,7 @@ public class ExampleHome extends JFrame {
 	//Creating the Frame:
 	public ExampleHome() {
 		//Main JFrame Statistics
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./AppIcon.png"));
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(0, 0, 1500, 900);
@@ -61,7 +61,7 @@ public class ExampleHome extends JFrame {
 		
 		//Label - Main logo, big one
 		JLabel lblMainIcon = new JLabel("");
-		lblMainIcon.setIcon(new ImageIcon("./src/res/logo.png"));
+		lblMainIcon.setIcon(new ImageIcon("./logo.png"));
 		lblMainIcon.setBounds(65, 117, 210, 210);
 		contentPane.add(lblMainIcon);
 		
