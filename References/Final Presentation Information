@@ -1,0 +1,46 @@
+Final Presentations are from 10:10 AM- 12:00 PM on Thursday, December 14th, 2017. 
+<b>The door will close the door at 10:10 AM- you will not be able to join the final presentation if you are late.</b>
+
+Final presentations should include a complete <b>demonstration</b> of your product.
+
+The following must be handed in during the Presentation:
+    -A hard copy of your <b>System Document</b> [See Below]
+    -A hard copy of the <b>Product Backlog</b> (Finished & Unfinished items)
+    -A hard copy of the <b>Gantt Chart</b> (Timeline of your progress [Not specific individual work or hours] )
+
+At the begining of class that day the group will fill out anonymous effort charts where eaach group member will indicate
+the effort of all group members. This will be used for determining grades.
+
+<b>System Document</b> should include the following (but is not limited to):
+    -Nice cover page (Including company name, name of software, and logo)
+    -Table of Contents
+    -Introduction- High level description of what the system is intended for or is intended to replace.
+    -Purpose- High level description of how the system will meet organizational goals, objectives. 
+    -System Overview-
+        -Basic System Design (Class diagram of major objects- with inheritance)
+        -MVC Architecture Diagram
+        -Functionality
+        -Non-Functional requirements (that were implemented)
+    -Database Design (Writing to Files Description)
+    -System Security (Password System Description)
+    -System Requirements
+        -Hardware (Computer Specs/OS)
+        -Software (Java)
+    -Roles/Responsibilities of Each Group Member
+        -Cheyanne Flickinger
+            -Scrum Master
+            -Lead Designer (Implements)
+            -Book keeper (Refine Backlog/Make Sprints/Organizer)
+        -Cameron Gomke 
+            -Lead Coder
+            -Back End Developer
+            -Rough Front End Developer (Refined by Designers)
+        -Hank Bullock- 
+            -Presenter
+            -Diagram Maker
+            -Code Cleaner (Fixing minor issues/general clean up)
+        -Chase Byczynski-
+            -Designer (Designs interfaces to be implemented)
+            -Diagram Maker
+    -Project References (If Any)
+    -Git Repository Location (must be organized!)
