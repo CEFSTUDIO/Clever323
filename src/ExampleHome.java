@@ -1,5 +1,3 @@
-import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 
@@ -21,26 +19,11 @@ import javax.swing.JTable;
 import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.JTextPane;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
-
-import java.awt.List;
-import java.awt.Choice;
 import javax.swing.JTextArea;
-import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.ImageIcon;
-import javax.swing.JTextField;
-import javax.swing.JFormattedTextField;
-import javax.swing.JEditorPane;
-import javax.swing.SwingConstants;
-import javax.swing.JSplitPane;
-import java.awt.Component;
 import javax.swing.JSeparator;
 import javax.swing.JRadioButton;
 
@@ -48,14 +31,9 @@ public class ExampleHome extends JFrame {
 
 	//Private Attributes
 	private JPanel contentPane;
-	private JTable table;
-	private JTable table_1;
-	private JTable table_2;
-	private JTable tab;
 
-	/**
-	 * Launch the application.
-	 */
+
+	//Launch Application
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -69,74 +47,72 @@ public class ExampleHome extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	//Creating the Frame:
 	public ExampleHome() {
-
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./res/AppIcon.png"));
-
+		//Main JFrame Statistics
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-	
-		
-		
 		setBounds(0, 0, 1500, 900);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//Label - Main logo, big one
 		JLabel lblMainIcon = new JLabel("");
-		lblMainIcon.setIcon(new ImageIcon("./res/logo.png"));
+		lblMainIcon.setIcon(new ImageIcon("./src/res/logo.png"));
 		lblMainIcon.setBounds(65, 117, 210, 210);
 		contentPane.add(lblMainIcon);
 		
+		//Label - Welcome Text
 		JLabel lblHomepage = new JLabel("Welcome to CleverBudget!");
 		lblHomepage.setFont(new Font("Tahoma", Font.PLAIN, 31));
 		lblHomepage.setBounds(55, 31, 374, 62);
 		contentPane.add(lblHomepage);
 		
-		JButton btnLogOut = new JButton("Log Out");
-		btnLogOut.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				JFrame exitFrame = new JFrame("Exit");
-				if (JOptionPane.showConfirmDialog(exitFrame, "Are you sure you want to log out?", "Log Out", 
-				JOptionPane.YES_NO_CANCEL_OPTION) == JOptionPane.YES_NO_OPTION) {
-					Login_System LogIn = new Login_System();
-					LogIn.main(null);
-					dispose();
-				}
-			}
-		});
-		btnLogOut.setBounds(55, 676, 97, 25);
-		contentPane.add(btnLogOut);
-		
-
-		
+		//Label - Developed by:
 		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
 		lblDevelopedByClever.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblDevelopedByClever.setBounds(1304, 824, 166, 16);
 		contentPane.add(lblDevelopedByClever);
+
+		//Label - Overview, above smallData table
+		JLabel lblOverview = new JLabel("Overview:");
+		lblOverview.setBounds(1112, 106, 58, 16);
+		contentPane.add(lblOverview);
 		
-		JButton btnCreateAccount = new JButton("Add Account");
-		btnCreateAccount.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				CreateAccountInside newAcc = new CreateAccountInside();
-				newAcc.main(null);
-				
-				
-			
+		//Label - Transaction
+		JLabel lblTransaction = new JLabel("Transaction:");
+		lblTransaction.setBounds(1266, 490, 72, 16);
+		contentPane.add(lblTransaction);
+		
+		
+
+		//Button - Log out button - Fully functional - maybe make the JOptionPane appear with our logo
+		JButton btnLogOut = new JButton("Log Out");
+		btnLogOut.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e) 
+			{
+				JFrame exitFrame = new JFrame("Exit");
+				if (JOptionPane.showConfirmDialog(exitFrame, "Are you sure you want to log out?", "Log Out", 
+						JOptionPane.YES_NO_CANCEL_OPTION) == JOptionPane.YES_NO_OPTION) 
+				{
+					Login_System.main(null);
+					dispose();
+				}
 			}
 		});
-		btnCreateAccount.setBounds(55, 524, 132, 25);
-		contentPane.add(btnCreateAccount);
+		btnLogOut.setBounds(55, 650, 97, 25);
+		contentPane.add(btnLogOut);
 		
+		
+		
+				
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"-- Choose --", "Overview", "Patricia Duce", "Michael Cassens", "Yolanda Reimer"}));
-		comboBox.setBounds(55, 451, 195, 22);
+		comboBox.setBounds(55, 450, 195, 22);
 		contentPane.add(comboBox);
 		
 		
@@ -149,7 +125,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(55, 562, 132, 25);
+		btnDeleteAccount.setBounds(55, 610, 132, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -159,9 +135,7 @@ public class ExampleHome extends JFrame {
 		
     
 		
-		
-		//Jtables for each person
-		//Overview, small one
+/*		//Small Overview
 		Object smallOverviewData[][] = new Object[][]{{"Patricia Duce", "624950.00", "10/18/17"},
 					{"Michael Cassens", "500.00", "10/17/17"},
 					{"Yolanda Reimer", "250.00", "10/6/17"},};
@@ -177,74 +151,158 @@ public class ExampleHome extends JFrame {
 		table_1.getColumnModel().getColumn(1).setPreferredWidth(150);
 		table_1.getColumnModel().getColumn(2).setPreferredWidth(120);
 		table_1.setBounds(467, 200, 594, 375);
-		JScrollPane scrollPane = new JScrollPane(table_1);
-		scrollPane.setLocation(1144, 137);
-		scrollPane.setSize(310, 119);
+		JScrollPane scrollPane1 = new JScrollPane(table_1);
+		scrollPane1.setLocation(1144, 137);
+		scrollPane1.setSize(310, 119);
+		scrollPane1.getViewport().setBackground(Color.WHITE);
+		contentPane.add(scrollPane1);*/
+		
+		
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Code for Main Overview Tables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		//Big Table Overview
+		String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
+		JTable bigTable = new JTable();
+		DefaultTableModel tableModelB;
+
+		//Table with 4 columns - Big Overview
+		tableModelB = new DefaultTableModel(0,6);
+		tableModelB.setColumnIdentifiers(bigColumns);
+		bigTable.setModel(tableModelB);
+		 
+		//Attributes for reading in big data:
+		String bigDataFile = "./src/bigData.txt";
+		String line;
+		BufferedReader reader;
+
+		//Reading in the file, adding the data within to bigTable
+		try{       
+		    reader = new BufferedReader(new FileReader(bigDataFile));
+		       
+		    while((line = reader.readLine()) != null){
+		       tableModelB.addRow(line.split(",")); 
+		    }
+		    reader.close();
+		 }
+		   
+		//Catching Errors
+		catch(FileNotFoundException e1){
+		    JOptionPane.showMessageDialog(null, "File not Found.");
+		}
+		catch(IOException e){
+		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+		}
+		
+		//Big table Statistics
+		bigTable.setEnabled(false);
+		bigTable.setColumnSelectionAllowed(true);			
+		bigTable.setRowHeight(25);
+		bigTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		bigTable.setBorder(null);
+		bigTable.getColumnModel().getColumn(0).setPreferredWidth(150);
+		bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
+		bigTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+		bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
+		bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
+		bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
+		bigTable.setBounds(467, 200, 594, 375);
+		JScrollPane scrollPane = new JScrollPane(bigTable);
+		scrollPane.setLocation(400, 185);
+		scrollPane.setSize(700, 600);
 		scrollPane.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane);
 		
 		
-		//Code for Main Overview Table
-		//Reading BigData.txt
+		//Small Table Overview
+		String smallColumns[] =  {"Name:", "Balance:", "Last Transaction:"};
+		JTable smallTable = new JTable();
+		DefaultTableModel tableModelS;
 
-		String bigDataFile = "BigData.txt";
-		String columns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
-		JTable contactTable = new JTable();
-		DefaultTableModel tableModel;
-
-		// table with 4 columns
-		tableModel = new DefaultTableModel(0,6);
-		tableModel.setColumnIdentifiers(columns);
-		contactTable.setModel(tableModel);
+		//Table with 4 columns - Small Overview
+		tableModelS = new DefaultTableModel(0,3);
+		tableModelS.setColumnIdentifiers(smallColumns);
+		smallTable.setModel(tableModelS);
 		 
-		String line;
-		   BufferedReader reader;
-		   String[] tokens = null;
+		//Attributes for reading in big data:
+		String[] details = null;
+		Transaction newT;
+		ArrayList<Transaction> bigData = new ArrayList<Transaction>();
 
-		   try
-		   {       
-		       reader = new BufferedReader(new FileReader(bigDataFile));
 
-		       while((line = reader.readLine()) != null)
-		       {
-		        	
-		        	
-		          tableModel.addRow(line.split(",")); 
-		          tokens = line.split(",");
-		           
-		       }
-		       reader.close();
+		//Reading in the file, adding the data within to bigTable
+		try{       
+		    reader = new BufferedReader(new FileReader(bigDataFile));
+		       
+		    while((line = reader.readLine()) != null){
+		       details = line.split(",");
+		       newT = new Transaction();
+		       newT.setName(details[0]);
+		       newT.setAmount(Double.parseDouble(details[1]));
+		       newT.setDepositOrWithdraw(details[2]);
+		       newT.setToOrFrom(details[3]);
+		       newT.setType(details[4]);
+		       newT.setDate(details[5]);
+		       bigData.add(newT);
+		       
+		       tableModelS.addRow(line.split(",")); 
 		    }
-		   catch(IOException e)
-		   {
-		       JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
-		   }
-
-		   for(int i = 0; i < tokens.length; i++) {
-			   //System.out.println(tokens[i]);
-		   }
+		    reader.close();
+		 }
+		   
+		//Catching Errors
+		catch(FileNotFoundException e1){
+		    JOptionPane.showMessageDialog(null, "File not Found.");
+		}
+		catch(IOException e){
+		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+		}
 		
-		   contactTable.setEnabled(false);
-		   contactTable.setColumnSelectionAllowed(true);			
-		   contactTable.setRowHeight(25);
-		   contactTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		   contactTable.setBorder(null);
-		   contactTable.getColumnModel().getColumn(0).setPreferredWidth(150);
-		   contactTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-		   contactTable.getColumnModel().getColumn(2).setPreferredWidth(200);
-		   contactTable.getColumnModel().getColumn(3).setPreferredWidth(200);
-		   contactTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-		   contactTable.getColumnModel().getColumn(5).setPreferredWidth(75);
-		   contactTable.setBounds(467, 200, 594, 375);
-		   JScrollPane scrollPane1 = new JScrollPane(contactTable);
-		   scrollPane1.setLocation(400, 185);
-		   scrollPane1.setSize(700, 600);
-		   scrollPane1.getViewport().setBackground(Color.WHITE);
-		   contentPane.add(scrollPane1);
+		double totalBalance = 0;
+		for(int i = 0; i < bigData.size(); i++) 
+		{
+			if(bigData.get(i).getDepositOrWithdraw().equalsIgnoreCase("Expense")){
+				totalBalance -= bigData.get(i).getAmount();
+			}
+			else {
+				totalBalance += bigData.get(i).getAmount();
+			}
+			
+			System.out.println(bigData.get(i).toString());
+			System.out.println(totalBalance);
+		}
+		//Small table Statistics
+		smallTable.setEnabled(false);
+		smallTable.setColumnSelectionAllowed(true);			
+		smallTable.setRowHeight(25);
+		smallTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		smallTable.setBorder(null);
+		smallTable.getColumnModel().getColumn(0).setPreferredWidth(150);
+		smallTable.getColumnModel().getColumn(1).setPreferredWidth(75);
+		smallTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+		smallTable.setBounds(800, 200, 594, 375);
+		JScrollPane scrollPane1 = new JScrollPane(smallTable);
+		scrollPane1.setLocation(1112, 137);
+		scrollPane1.setSize(346, 137);
+		scrollPane1.getViewport().setBackground(Color.WHITE);
+		contentPane.add(scrollPane1);		
 		
 		
-
-
+		//Button - Add Account - link to jTable
+		JButton btnAddAccount = new JButton("Add Account");
+		btnAddAccount.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e) 
+			{
+				CreateAccountInside.main(null);
+			}
+		});
+		btnAddAccount.setBounds(55, 570, 132, 25);
+		contentPane.add(btnAddAccount);
+		
+		//Label - Total Balance 
+		JLabel lblTotalBalance = new JLabel("Total Balance: " + totalBalance);
+		lblTotalBalance.setBounds(1112, 287, 294, 25);
+		contentPane.add(lblTotalBalance);
+		
 		//
 		int numOfAccs = comboBox.getItemCount()-1;
 		String first = (String) comboBox.getItemAt(0);
@@ -265,7 +323,7 @@ public class ExampleHome extends JFrame {
 		
 		
 		//Getting the Total Balance from the Small Overview Table to show
-		TableModel tm = contactTable.getModel();
+		TableModel tm = bigTable.getModel();
 		int total = 0;
 		
 		for (int i = 0; i < tm.getRowCount(); i++) 
@@ -288,25 +346,64 @@ public class ExampleHome extends JFrame {
 		}
 		System.out.println(total);
 		
-		String totalBalance = (String) smallOverviewData[0][1];
-		//double total = Double.parseDouble(totalBalance);
-		JLabel lblTotalBalance = new JLabel("Total Balance: " + total);
-		lblTotalBalance.setBounds(1144, 269, 294, 25);
-		contentPane.add(lblTotalBalance);
-		
-		JLabel lblOverview = new JLabel("Overview:");
-		lblOverview.setBounds(1144, 108, 58, 16);
-		contentPane.add(lblOverview);
 		
 		
 		
+		
+
+		//Button - Add Transaction
 		JButton btnAddTransaction = new JButton("Add Transaction");
-		btnAddTransaction.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		btnAddTransaction.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e) 
+			{
 				
-				AddTransaction addT = new AddTransaction();
-				addT.main(null);
+				//Calling AddTransaction panel
+				AddTransaction.main(null);
+				
+				//Adding the row to the table??
+				//Attributes:
+				String bigDataFile = "./src/bigData.txt";
+				BufferedReader reader = null;
+				
+				String line;
+				String details[] = null;
+				
+				//Reading in the file, parsing the file:
+				try 
+				{
+					reader = new BufferedReader( new FileReader(bigDataFile) );
+					while ((line = reader.readLine()) != null) 
+					{
+						details = line.split(",");
+						String name = details[0];
+						String amount = details[1];
+						String transaction = details[2];
+						String toFrom = details[3];
+						String type = details[4];
+						String date = details[5];
+					}
+				} 
+				//Catching Errors:
+				catch (FileNotFoundException e1) 
+				{
+					System.out.println("Was not able to find the file: bigData.txt," + bigDataFile);
+					e1.printStackTrace();
+				}
+				catch (IOException e2) 
+				{
+					System.out.println("IOE Exception");
+					e2.printStackTrace();
+				}
+				
+				
+				
+				tableModelB.addRow(details);
+				
+				
+				
 			}
+			
 		});
 		btnAddTransaction.setBounds(1224, 524, 141, 25);
 		contentPane.add(btnAddTransaction);
@@ -331,40 +428,20 @@ public class ExampleHome extends JFrame {
 				
 				
 				
-				TableModel tm = contactTable.getModel();
-				for (int i = 0; i < tm.getRowCount(); i++) 
-				{
-				  for (int j = 0; j < tm.getColumnCount(); j++) 
-				  {
-				    Object o = tm.getValueAt(i, j);
-				    if (o instanceof Integer) 
-				    {
-				      System.out.println((Integer)o);
-				    } 
-				    else if (o instanceof String) 
-				    {
-				      System.out.println((String)o);
-				    }
-				  }
-				}
 				
 				
-				//if (contactTable)
 				
-				//Grab the name from the jtable, and compare it to the name i just grabbed from combo box
 				
 			}
 		});
-		btnDisplayAccountInformation.setBounds(55, 486, 205, 25);
+		btnDisplayAccountInformation.setBounds(55, 530, 205, 25);
 		contentPane.add(btnDisplayAccountInformation);
 		
 		JRadioButton rdbtnFeesPaid = new JRadioButton("Fees paid");
 		rdbtnFeesPaid.setBounds(1120, 450, 127, 25);
 		contentPane.add(rdbtnFeesPaid);
 		
-		JLabel lblTransaction = new JLabel("Transaction:");
-		lblTransaction.setBounds(1266, 490, 72, 16);
-		contentPane.add(lblTransaction);
+		
 		
 		JButton btnFees = new JButton("Fees");
 		btnFees.setBounds(1241, 600, 97, 25);
@@ -373,6 +450,10 @@ public class ExampleHome extends JFrame {
 		JButton btnPrintReport = new JButton("Print Report");
 		btnPrintReport.setBounds(1237, 636, 101, 25);
 		contentPane.add(btnPrintReport);
+		
+		JButton btnFilter = new JButton("Filter");
+		btnFilter.setBounds(55, 490, 97, 25);
+		contentPane.add(btnFilter);
 		
 		
 	}

@@ -1,0 +1,3 @@
+Patricia,Duce,0,New Account,406-480-1111,pa@mso.umt.edu
+Michael,Cassens,0,New Account,406-480-1112.ma@mso.umt.edu
+Yolanda,Reimer,0,New Account,406-480-1113,yr@mso.umt.edu
