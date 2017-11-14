@@ -170,7 +170,7 @@ public class ExampleHome extends JFrame {
 		bigTable.setModel(tableModelB);
 		 
 		//Attributes for reading in big data:
-		String bigDataFile = "./src/bigData.txt";
+		String bigDataFile = "./bigData.txt";
 		String line;
 		BufferedReader reader;
 
@@ -251,6 +251,7 @@ public class ExampleHome extends JFrame {
 		//Catching Errors
 		catch(FileNotFoundException e1){
 		    JOptionPane.showMessageDialog(null, "File not Found.");
+		    e1.printStackTrace();
 		}
 		catch(IOException e){
 		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
@@ -363,7 +364,7 @@ public class ExampleHome extends JFrame {
 				
 				//Adding the row to the table??
 				//Attributes:
-				String bigDataFile = "./src/bigData.txt";
+				String bigDataFile = "./bigData.txt";
 				BufferedReader reader = null;
 				
 				String line;
