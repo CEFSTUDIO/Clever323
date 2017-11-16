@@ -145,7 +145,7 @@ public class Login_System {
 				txtPassword.setText(null);
 			}
 		});
-		btnReset.setBounds(49, 282, 97, 25);
+		btnReset.setBounds(49, 292, 97, 25);
 		frmLogIn.getContentPane().add(btnReset);
 		
 		JButton btnExit = new JButton("Exit");
@@ -163,7 +163,7 @@ public class Login_System {
 				}
 			}
 		});
-		btnExit.setBounds(432, 282, 97, 25);
+		btnExit.setBounds(432, 292, 97, 25);
 		frmLogIn.getContentPane().add(btnExit);
 		
 		JButton btnForgotPassword = new JButton("Forgot Password?");
@@ -214,12 +214,12 @@ public class Login_System {
 				
 			}
 		});
-		btnUserManual.setBounds(226, 282, 109, 25);
+		btnUserManual.setBounds(226, 292, 109, 25);
 		frmLogIn.getContentPane().add(btnUserManual); 
 		
 		JLabel banner_image = new JLabel();
-		banner_image.setIcon(new ImageIcon("./login_bg.png"));
-		banner_image.setBounds(0, 0, 594, 218);
+		banner_image.setIcon(new ImageIcon("./res/login_bg.png"));
+		banner_image.setBounds(-6, 0, 611, 218);
 		frmLogIn.getContentPane().add(banner_image);
 		
 		JLabel middle_blue = new JLabel();
