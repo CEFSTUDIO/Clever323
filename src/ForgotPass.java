@@ -121,29 +121,31 @@ public class ForgotPass extends JFrame {
 		textField_3.setColumns(10);
 		
 		JLabel lblDevelopedByCameron = new JLabel("Developed by: Clever 323");
+		lblDevelopedByCameron.setVerticalAlignment(SwingConstants.BOTTOM);
 		lblDevelopedByCameron.setHorizontalAlignment(SwingConstants.TRAILING);
 		lblDevelopedByCameron.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
-		lblDevelopedByCameron.setBounds(280, 337, 294, 24);
+		lblDevelopedByCameron.setBounds(397, 342, 187, 19);
 		contentPane.add(lblDevelopedByCameron);
+		
+		JLabel forgot_pass_topbar = new JLabel();
+		forgot_pass_topbar.setIcon(new ImageIcon("./blue_border.png"));
+		forgot_pass_topbar.setBounds(0, 0, 620, 24);
+		contentPane.add(forgot_pass_topbar);
 		
 		JLabel forgot_pass_middlebar = new JLabel();
 		forgot_pass_middlebar.setIcon(new ImageIcon("./blue_border.png"));
-		forgot_pass_middlebar.setBounds(0, 167, 606, 24);
+		forgot_pass_middlebar.setBounds(0, 167, 605, 24);
 		contentPane.add(forgot_pass_middlebar);
 		
 		JLabel forgot_pass_bottombar = new JLabel();
 		forgot_pass_bottombar.setIcon(new ImageIcon("./blue_border.png"));
-		forgot_pass_bottombar.setBounds(0, 337, 584, 24);
+		forgot_pass_bottombar.setBounds(0, 342, 605, 32);
 		contentPane.add(forgot_pass_bottombar);
 		
-		JLabel forgot_pass_topbar = new JLabel();
-		forgot_pass_topbar.setIcon(new ImageIcon("./blue_border.png"));
-		forgot_pass_topbar.setBounds(0, 0, 606, 24);
-		contentPane.add(forgot_pass_topbar);
-		
 		JLabel forgot_bg = new JLabel();
+		//Must be ./res/pass_bg.png otherwise it loads improperly
 		forgot_bg.setIcon(new ImageIcon("./res/pass_bg.png"));
-		forgot_bg.setBounds(0, 0, 584, 182);
+		forgot_bg.setBounds(-11, 0, 639, 182);
 		contentPane.add(forgot_bg);
 	}
 }
