@@ -7,7 +7,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
-import javax.swing.JSeparator;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -15,10 +14,7 @@ import java.io.UnsupportedEncodingException;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.ImageIcon;
-import javax.swing.JToggleButton;
 import javax.swing.SwingConstants;
-import javax.swing.JInternalFrame;
-import javax.swing.JScrollPane;
 import java.awt.Toolkit;
 
 public class Login_System {
