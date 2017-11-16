@@ -486,7 +486,7 @@ public class ExampleHome extends JFrame {
 		contentPane.add(btnFilter);
 		
 		JLabel background_image = new JLabel();
-		background_image.setIcon(new ImageIcon("./layout_bg.png"));
+		background_image.setIcon(new ImageIcon("./res/layout_bg.png"));
 		background_image.setBounds(0, 0, 1406, 733);
 		contentPane.add(background_image);
 		
