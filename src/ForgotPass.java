@@ -65,22 +65,22 @@ public class ForgotPass extends JFrame {
 		
 		JLabel lblUsername = new JLabel("Username");
 		lblUsername.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblUsername.setBounds(96, 35, 103, 24);
+		lblUsername.setBounds(105, 22, 94, 24);
 		contentPane.add(lblUsername);
 		
 		textField = new JTextField();
-		textField.setBounds(209, 39, 284, 22);
+		textField.setBounds(209, 26, 284, 22);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblFirstName = new JLabel("First Name");
 		lblFirstName.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblFirstName.setBounds(96, 87, 103, 16);
+		lblFirstName.setBounds(107, 77, 94, 16);
 		contentPane.add(lblFirstName);
 		
 		JLabel lblLastName = new JLabel("Last Name");
 		lblLastName.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblLastName.setBounds(96, 133, 103, 23);
+		lblLastName.setBounds(105, 130, 94, 23);
 		contentPane.add(lblLastName);
 		
 		JLabel lblYourSecurityQuestion = new JLabel("Security Question");
@@ -89,12 +89,12 @@ public class ForgotPass extends JFrame {
 		contentPane.add(lblYourSecurityQuestion);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(209, 87, 284, 22);
+		textField_1.setBounds(209, 77, 284, 22);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(209, 136, 284, 22);
+		textField_2.setBounds(209, 133, 284, 22);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
