@@ -67,8 +67,8 @@ public class ExampleHome extends JFrame {
 		
 		//Label - Welcome Text
 		JLabel lblHomepage = new JLabel("Welcome to CleverBudget!");
-		lblHomepage.setFont(new Font("Tahoma", Font.PLAIN, 31));
-		lblHomepage.setBounds(55, 31, 374, 62);
+		lblHomepage.setFont(new Font("Verdana", Font.BOLD, 31));
+		lblHomepage.setBounds(55, 31, 555, 62);
 		contentPane.add(lblHomepage);
 		
 		//Label - Developed by:
@@ -79,12 +79,14 @@ public class ExampleHome extends JFrame {
 
 		//Label - Overview, above smallData table
 		JLabel lblOverview = new JLabel("Overview:");
-		lblOverview.setBounds(1112, 106, 58, 16);
+		lblOverview.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblOverview.setBounds(1112, 185, 116, 16);
 		contentPane.add(lblOverview);
 		
 		//Label - Transaction
 		JLabel lblTransaction = new JLabel("Transaction:");
-		lblTransaction.setBounds(1266, 490, 72, 16);
+		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblTransaction.setBounds(1112, 427, 116, 16);
 		contentPane.add(lblTransaction);
 		
 		
@@ -107,7 +109,7 @@ public class ExampleHome extends JFrame {
 				}
 			}
 		});
-		btnLogOut.setBounds(55, 650, 97, 25);
+		btnLogOut.setBounds(55, 628, 195, 25);
 		contentPane.add(btnLogOut);
 		
 		
@@ -115,7 +117,7 @@ public class ExampleHome extends JFrame {
 				
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"-- Choose --", "Overview", "Patricia Duce", "Michael Cassens", "Yolanda Reimer"}));
-		comboBox.setBounds(55, 450, 195, 22);
+		comboBox.setBounds(55, 425, 195, 22);
 		contentPane.add(comboBox);
 		
 		
@@ -131,7 +133,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(55, 610, 132, 25);
+		btnDeleteAccount.setBounds(55, 591, 195, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -212,8 +214,8 @@ public class ExampleHome extends JFrame {
 		bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
 		bigTable.setBounds(467, 200, 594, 375);
 		JScrollPane scrollPane = new JScrollPane(bigTable);
-		scrollPane.setLocation(400, 185);
-		scrollPane.setSize(700, 600);
+		scrollPane.setLocation(383, 190);
+		scrollPane.setSize(700, 463);
 		scrollPane.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane);
 		
@@ -288,8 +290,8 @@ public class ExampleHome extends JFrame {
 		smallTable.getColumnModel().getColumn(2).setPreferredWidth(200);
 		smallTable.setBounds(800, 200, 594, 375);
 		JScrollPane scrollPane1 = new JScrollPane(smallTable);
-		scrollPane1.setLocation(1112, 137);
-		scrollPane1.setSize(346, 137);
+		scrollPane1.setLocation(1112, 212);
+		scrollPane1.setSize(232, 137);
 		scrollPane1.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane1);		
 		
@@ -306,12 +308,13 @@ public class ExampleHome extends JFrame {
 				CreateAccountInside.main(null);
 			}
 		});
-		btnAddAccount.setBounds(55, 570, 132, 25);
+		btnAddAccount.setBounds(55, 555, 195, 25);
 		contentPane.add(btnAddAccount);
 		
 		//Label - Total Balance 
 		JLabel lblTotalBalance = new JLabel("Total Balance: " + totalBalance);
-		lblTotalBalance.setBounds(1112, 287, 294, 25);
+		lblTotalBalance.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblTotalBalance.setBounds(1112, 371, 232, 25);
 		contentPane.add(lblTotalBalance);
 		
 
@@ -321,11 +324,11 @@ public class ExampleHome extends JFrame {
 		
 		JTextArea txtrUserGuide = new JTextArea();
 		txtrUserGuide.setEditable(false);
-		Color defColor = this.getBackground();
-		txtrUserGuide.setBackground(defColor);
+		txtrUserGuide.setOpaque(false);
+		txtrUserGuide.setBackground(new Color (0, 0, 0, 100));
 		txtrUserGuide.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		txtrUserGuide.setText("This program allows a user to keep track of the \r\nDepartments funds and spendings via \r\nteachers through the use of dynamic yet simple \r\nimplementationof Java");
-		txtrUserGuide.setBounds(55, 347, 280, 75);
+		txtrUserGuide.setText("This Program allows a User to keep track of the \r\nDepartment's funds and spendings via professors\r\n through the use of dynamic yet simple \r\nimplementation of Java!");
+		txtrUserGuide.setBounds(55, 339, 290, 75);
 		contentPane.add(txtrUserGuide);
 		
 		JSeparator separator = new JSeparator();
@@ -420,7 +423,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnAddTransaction.setBounds(1224, 524, 141, 25);
+		btnAddTransaction.setBounds(1112, 458, 150, 25);
 		contentPane.add(btnAddTransaction);
 		
 		JButton btnDeleteTransaction = new JButton("Delete Transaction");
@@ -433,7 +436,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnDeleteTransaction.setBounds(1224, 562, 150, 25);
+		btnDeleteTransaction.setBounds(1112, 494, 150, 25);
 		contentPane.add(btnDeleteTransaction);
 		
 		
@@ -455,11 +458,13 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnDisplayAccountInformation.setBounds(55, 530, 205, 25);
+		btnDisplayAccountInformation.setBounds(55, 519, 195, 25);
 		contentPane.add(btnDisplayAccountInformation);
 		
 		JRadioButton rdbtnFeesPaid = new JRadioButton("Fees Paid");
-		rdbtnFeesPaid.setBounds(1120, 450, 127, 25);
+		rdbtnFeesPaid.setOpaque(false);
+		rdbtnFeesPaid.setBackground(new Color (0, 0, 0, 100));
+		rdbtnFeesPaid.setBounds(1112, 628, 127, 25);
 		contentPane.add(rdbtnFeesPaid);
 		
 		
@@ -468,21 +473,21 @@ public class ExampleHome extends JFrame {
 		btnFees.setBackground(new Color(200, 200, 200));
         btnFees.setOpaque(true);
         btnFees.setBorderPainted(true);
-		btnFees.setBounds(1241, 600, 97, 25);
+		btnFees.setBounds(1112, 596, 150, 25);
 		contentPane.add(btnFees);
 		
 		JButton btnPrintReport = new JButton("Print Report");
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
-		btnPrintReport.setBounds(1237, 636, 101, 25);
+		btnPrintReport.setBounds(1112, 530, 150, 25);
 		contentPane.add(btnPrintReport);
 		
 		JButton btnFilter = new JButton("Filter");
 		btnFilter.setBackground(new Color(200, 200, 200));
         btnFilter.setOpaque(true);
         btnFilter.setBorderPainted(true);
-		btnFilter.setBounds(55, 490, 97, 25);
+		btnFilter.setBounds(55, 458, 195, 25);
 		contentPane.add(btnFilter);
 		
 		JLabel background_image = new JLabel();

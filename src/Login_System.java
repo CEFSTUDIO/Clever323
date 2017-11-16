@@ -218,6 +218,7 @@ public class Login_System {
 		frmLogIn.getContentPane().add(btnUserManual); 
 		
 		JLabel banner_image = new JLabel();
+		//Must be ./res/login_bg.png otherwise it loads improperly
 		banner_image.setIcon(new ImageIcon("./res/login_bg.png"));
 		banner_image.setBounds(-6, 0, 611, 218);
 		frmLogIn.getContentPane().add(banner_image);
