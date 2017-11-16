@@ -388,8 +388,8 @@ Hank- 10 Minutes
 Chase- 10 Minutes]]></notes>
             </task>
         </task>
-        <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | 
+        <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-14" duration="3" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | Nov 16, 10:00 - 11:00AM
 	-Created Sprint 4
 	-Refined/Groomed Product Backlog
 	-Created Sprint 4 task on Gantt
@@ -397,6 +397,7 @@ Chase- 10 Minutes]]></notes>
 	-Assigned tasks
 	-Added a Reference Folder
 	-Added Final Information to GitHub
+	-Worked in class on Design
 
 Cameron - (Date Here), (Time Here)
 	-Functionality for account
@@ -419,9 +420,18 @@ Hank- (Date Here), (Time Here)
 	-Assigned Tasks]]></notes>
             </task>
             <task id="160" name="Organization" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Nov 6, 6:30- 7:00PM (30 minutes)
+                <notes><![CDATA[Cheyanne- Nov 14, 6:30- 7:00PM (30 minutes)
 	-Added a Reference Folder
 	-Added Final Information to GitHub]]></notes>
+            </task>
+            <task id="161" name="Overview Design" color="#8cb6ce" meeting="false" start="2017-11-16" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 16, 10:00- 11:00AM (1 hour)
+	-Worked on Design in Class
+	]]></notes>
+            </task>
+            <task id="162" name="Other Views Design" color="#8cb6ce" meeting="false" start="2017-11-16" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 16, 10:00- 11:00AM (1 hour)
+	-Worked on Design in Class]]></notes>
             </task>
         </task>
     </tasks>
