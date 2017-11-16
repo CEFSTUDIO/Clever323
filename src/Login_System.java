@@ -55,6 +55,7 @@ public class Login_System {
 		frmLogIn.setTitle("CleverBudget - Log In");
 		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("./AppIcon.png"));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		frmLogIn.setResizable(false);
 		frmLogIn.setBounds(100, 100, 600, 400);
 		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmLogIn.getContentPane().setLayout(null);
@@ -198,7 +199,7 @@ public class Login_System {
 		lblDevelopedByClever.setForeground(Color.BLACK);
 		lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
 		lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
-		lblDevelopedByClever.setBounds(302, 339, 272, 16);
+		lblDevelopedByClever.setBounds(312, 349, 272, 16);
 		frmLogIn.getContentPane().add(lblDevelopedByClever);
 		
 		JButton btnUserManual = new JButton("User Manual");
@@ -218,22 +219,22 @@ public class Login_System {
 		
 		JLabel banner_image = new JLabel();
 		banner_image.setIcon(new ImageIcon("./login_bg.png"));
-		banner_image.setBounds(0, 0, 584, 218);
+		banner_image.setBounds(0, 0, 594, 218);
 		frmLogIn.getContentPane().add(banner_image);
 		
 		JLabel middle_blue = new JLabel();
 		middle_blue.setIcon(new ImageIcon("./blue_border.png"));
-		middle_blue.setBounds(0, 196, 584, 22);
+		middle_blue.setBounds(0, 196, 594, 22);
 		frmLogIn.getContentPane().add(middle_blue);
 		
 		JLabel bottom_blue = new JLabel();
 		bottom_blue.setIcon(new ImageIcon("./blue_border.png"));
-		bottom_blue.setBounds(0, 339, 601, 22);
+		bottom_blue.setBounds(0, 349, 594, 22);
 		frmLogIn.getContentPane().add(bottom_blue);
 		
 		JLabel top_blue = new JLabel("");
 		top_blue.setIcon(new ImageIcon("./blue_border.png"));
-		top_blue.setBounds(0, 0, 601, 22);
+		top_blue.setBounds(0, 0, 594, 22);
 		frmLogIn.getContentPane().add(top_blue);
 	}
 }
