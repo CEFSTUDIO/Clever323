@@ -46,7 +46,7 @@ public class ForgotPass extends JFrame {
 	 * Create the frame.
 	 */
 	public ForgotPass() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./logo.jpg (2).png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./BrowserIcon.png"));
 		setFont(new Font("Times New Roman", Font.PLAIN, 14));
 		setTitle("CleverBudget - Forgot Password");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

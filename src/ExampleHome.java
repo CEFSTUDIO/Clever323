@@ -91,6 +91,9 @@ public class ExampleHome extends JFrame {
 
 		//Button - Log out button - Fully functional - maybe make the JOptionPane appear with our logo
 		JButton btnLogOut = new JButton("Log Out");
+		btnLogOut.setBackground(new Color(225, 79, 79));
+        btnLogOut.setOpaque(true);
+        btnLogOut.setBorderPainted(true);
 		btnLogOut.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -117,6 +120,9 @@ public class ExampleHome extends JFrame {
 		
 		
 		JButton btnDeleteAccount = new JButton("Delete Account");
+		btnDeleteAccount.setBackground(new Color(200, 200, 200));
+        btnDeleteAccount.setOpaque(true);
+        btnDeleteAccount.setBorderPainted(true);
 		btnDeleteAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -290,6 +296,9 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Add Account - link to jTable
 		JButton btnAddAccount = new JButton("Add Account");
+		btnAddAccount.setBackground(new Color(200, 200, 200));
+        btnAddAccount.setOpaque(true);
+        btnAddAccount.setBorderPainted(true);
 		btnAddAccount.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -355,6 +364,9 @@ public class ExampleHome extends JFrame {
 
 		//Button - Add Transaction
 		JButton btnAddTransaction = new JButton("Add Transaction");
+		btnAddTransaction.setBackground(new Color(200, 200, 200));
+        btnAddTransaction.setOpaque(true);
+        btnAddTransaction.setBorderPainted(true);
 		btnAddTransaction.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -411,18 +423,24 @@ public class ExampleHome extends JFrame {
 		btnAddTransaction.setBounds(1224, 524, 141, 25);
 		contentPane.add(btnAddTransaction);
 		
-		JButton btnDeleteTranscation = new JButton("Delete Transaction");
-		btnDeleteTranscation.addActionListener(new ActionListener() {
+		JButton btnDeleteTransaction = new JButton("Delete Transaction");
+		btnDeleteTransaction.setBackground(new Color(200, 200, 200));
+        btnDeleteTransaction.setOpaque(true);
+        btnDeleteTransaction.setBorderPainted(true);
+		btnDeleteTransaction.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showConfirmDialog(null, "Are you sure you want to Delete this Transaction?", "CleverBudget - Delete Confirm", JOptionPane.YES_NO_CANCEL_OPTION);
 				
 			}
 		});
-		btnDeleteTranscation.setBounds(1224, 562, 150, 25);
-		contentPane.add(btnDeleteTranscation);
+		btnDeleteTransaction.setBounds(1224, 562, 150, 25);
+		contentPane.add(btnDeleteTransaction);
 		
 		
 		JButton btnDisplayAccountInformation = new JButton("Display Account Information");
+		btnDisplayAccountInformation.setBackground(new Color(200, 200, 200));
+        btnDisplayAccountInformation.setOpaque(true);
+        btnDisplayAccountInformation.setBorderPainted(true);
 		btnDisplayAccountInformation.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -440,21 +458,30 @@ public class ExampleHome extends JFrame {
 		btnDisplayAccountInformation.setBounds(55, 530, 205, 25);
 		contentPane.add(btnDisplayAccountInformation);
 		
-		JRadioButton rdbtnFeesPaid = new JRadioButton("Fees paid");
+		JRadioButton rdbtnFeesPaid = new JRadioButton("Fees Paid");
 		rdbtnFeesPaid.setBounds(1120, 450, 127, 25);
 		contentPane.add(rdbtnFeesPaid);
 		
 		
 		
 		JButton btnFees = new JButton("Fees");
+		btnFees.setBackground(new Color(200, 200, 200));
+        btnFees.setOpaque(true);
+        btnFees.setBorderPainted(true);
 		btnFees.setBounds(1241, 600, 97, 25);
 		contentPane.add(btnFees);
 		
 		JButton btnPrintReport = new JButton("Print Report");
+		btnPrintReport.setBackground(new Color(200, 200, 200));
+        btnPrintReport.setOpaque(true);
+        btnPrintReport.setBorderPainted(true);
 		btnPrintReport.setBounds(1237, 636, 101, 25);
 		contentPane.add(btnPrintReport);
 		
 		JButton btnFilter = new JButton("Filter");
+		btnFilter.setBackground(new Color(200, 200, 200));
+        btnFilter.setOpaque(true);
+        btnFilter.setBorderPainted(true);
 		btnFilter.setBounds(55, 490, 97, 25);
 		contentPane.add(btnFilter);
 		
