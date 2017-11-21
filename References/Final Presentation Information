@@ -8,7 +8,7 @@ The following must be handed in during the Presentation:
     -A hard copy of the Product Backlog (Finished & Unfinished Items)
     -A hard copy of the Gantt Chart (Timeline of your progress [Not specific individual work or hours] )
 
-At the begining of class that day the group will fill out anonymous effort charts where eaach group member will indicate
+At the begining of class that day the group will fill out anonymous effort charts where each group member will indicate
 the effort of all group members. This will be used for determining grades.
 
 System Document should include the following (but is not limited to):
@@ -45,3 +45,75 @@ System Document should include the following (but is not limited to):
             -Documentor (In Charge of Other documentation)
     -Project References (If Any)
     -Git Repository Location (must be organized!)
+            -Must include an executable jar file
+    -Wear a Christmas sweater
+    
+Functionality that must be implemented and tested- 70%
+    -Administrative login (csadmin, csci323)
+    -Logout
+    -Logo for Software
+    -Developed By at the bottom 
+    -Accounts
+        -Balance, Name, Description, Phone, Email
+        -Create Account
+            -Must fill all fields
+            -Shouldn't be able to create 2 accounts with same name
+        -Modify Account
+        -Delete Account
+            -Warning: You are about to delete account
+            -Should not delete linked transactions!
+        -View Account
+    -Transactions
+        -Credit Card
+            -Date, description, code, amount
+            -4% fee
+            -8% university fee
+            -Must fill all fields
+        -Check
+            -Date, description, code, amount
+            -8% university fee
+            -Must fill all fields
+        -Expense
+            -Date, description, code, amount
+            -Must fill all fields
+        -Delete Transaction
+            -Warning: You are about to delete transactions
+    -Views
+        -All transactions
+        -Transactions for specific accounts
+    -Every screen should have software name at top
+    -Every screen should have developed by at the bottom
+
+Additional functionality that must be implemented and tested- 80%
+    -Entire Account Balance
+        -View
+            -Overall balance
+            -Balance for each account
+            -8% held
+            -4% held
+    -Benefits calculator
+    -Users Guide
+    -Dropdown list for codes
+    -Information is loaded on startup and saved during execution or shutdown
+    -Won't accept invalid data in fields
+    
+User Experience- 90%
+    -User friendly
+    -Feels good
+    -Efficient
+    -Good work flow
+    -Organized
+    
+Extra Features
+    -Use a database
+    -User login (in addition to admin login)
+    -Forget password
+    -Program sits 1 minute or longer- automatically logs out
+    -Ability to add more codes
+    -Additional view (filter by type of transaction)
+    -Generatess reports (to be printed or emailed)
+    -Database sits on a server to be shared by multiple users
+    -Give administrator ability to reconcile fees
+    -Show breakdown when paying worker
+    -Put's today's date in by default
+    -Anything else you think would be beneficial!
