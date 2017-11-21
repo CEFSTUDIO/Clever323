@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-10-13" view-index="0" gantt-divider-location="484" resource-divider-location="300" version="2.8.5" locale="en_GB">
     <description/>
+<<<<<<< HEAD
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Name" width="173" order="0"/>
         <field id="tpd4" name="Begin date" width="90" order="1"/>
         <field id="tpd5" name="End date" width="90" order="2"/>
+=======
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="210" order="0"/>
+        <field id="tpd4" name="Begin date" width="128" order="1"/>
+        <field id="tpd5" name="End date" width="127" order="2"/>
+>>>>>>> 9a8a8d39fa08810783a8b0122362ef328dc0e23d
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -326,8 +333,13 @@ Hank- 10 Minutes
 Chase- 10 Minutes]]></notes>
             </task>
         </task>
+<<<<<<< HEAD
         <task id="124" name="Sprint 3" color="#8cb6ce" meeting="false" start="2017-10-13" duration="23" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Nov 6, 6:00 - 7:00PM | Nov 7, 10:00 - 11:00AM
+=======
+        <task id="124" name="Sprint 3" color="#8cb6ce" meeting="false" start="2017-11-06" duration="7" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 6, 6:00 - 7:00PM | Nov 7, 10:00 - 11:00AM | Nov 9, 6:00- 7:30PM
+>>>>>>> 9a8a8d39fa08810783a8b0122362ef328dc0e23d
 	-Created Sprint 3
 	-Refined/Groomed Product Backlog
 	-Created Sprint 3 task on Gantt
@@ -336,6 +348,7 @@ Chase- 10 Minutes]]></notes>
 	-Organized Github into Folders
 	-Added Transaction Codes to GitHub
 	-Worked in Class on Log In Implementation
+	-Finished Log In
 
 Cameron - (Date Here), (Time Here)
 	-Functionality for account
@@ -373,6 +386,12 @@ Hank- (Nov 13), (2 hours)
 	-Created assets
 	-Fully implemented into code]]></notes>
             </task>
+            <task id="147" name="Code Clean Up" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne, Cameron, Hank- Nov 14, 9:00 - 9:30AM  (30 minutes)
+	-Cleaned Code Up
+	-Fixed Pathing Issues
+	-Removed Unused Imports]]></notes>
+            </task>
             <task id="146" name="Presentation" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Class Presentation of Sprint 3 Review
 Cheyanne- 10 Minutes
@@ -386,6 +405,64 @@ Chase- 10 Minutes]]></notes>
 cameron]]></notes>
             </task>
         </task>
+        <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-14" duration="3" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM 
+	-Created Sprint 4
+	-Refined/Groomed Product Backlog
+	-Created Sprint 4 task on Gantt
+	-Refined Gantt
+	-Assigned tasks
+	-Added a Reference Folder
+	-Added Final Information to GitHub
+	-Worked in class on Design
+	-Refined Overview Design
+	-Worked on Forgot Password Design
+	-Worked on User Manual Design
+
+Cameron - (Date Here), (Time Here)
+	-Functionality for account
+	-Functionality for transaction
+	
+Chase - (Date Here), (Time Here)
+	-Design User Manual
+	-Create Info for User Manual
+
+Hank- (Date Here), (Time Here)
+	-Presentation
+	-Help Design User Manual
+	-Create Info for User Manual]]></notes>
+            <task id="158" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 14, 2:00- 3:00PM (1 hour)
+	-Created Sprint 4
+	-Refined/Groomed Product Backlog
+	-Created Sprint 4 task on Gantt
+	-Refined Gantt
+	-Assigned Tasks
+
+
+---------
+TESTING
+---------]]></notes>
+            </task>
+            <task id="160" name="Organization" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 14, 6:30- 7:00PM (30 minutes)
+	-Added a Reference Folder
+	-Added Final Information to GitHub]]></notes>
+            </task>
+            <task id="161" name="Overview Design" color="#8cb6ce" meeting="false" start="2017-11-16" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM (3 hours)
+	-Worked on Design in Class
+	-Worked on Design Refining
+	]]></notes>
+            </task>
+            <task id="162" name="Other Views Design" color="#8cb6ce" meeting="false" start="2017-11-16" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM (3 hours)
+	-Worked on Design in Class
+	-Worked on Forgot Password Design
+	-Worked on User Manual Design]]></notes>
+            </task>
+        </task>
+        <task id="163" name="test task yo" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
