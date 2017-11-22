@@ -394,8 +394,8 @@ Chase- 10 Minutes]]></notes>
             </task>
         </task>
         <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-14" duration="3" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM 
-	-Created Sprint 4
+            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM| Nov 21, 10:00 - 11:00AM
+ 	-Created Sprint 4
 	-Refined/Groomed Product Backlog
 	-Created Sprint 4 task on Gantt
 	-Refined Gantt
@@ -426,11 +426,7 @@ Hank- (Date Here), (Time Here)
 	-Created Sprint 4 task on Gantt
 	-Refined Gantt
 	-Assigned Tasks
-
-
----------
-TESTING
----------]]></notes>
+]]></notes>
             </task>
             <task id="160" name="Organization" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Nov 14, 6:30- 7:00PM (30 minutes)
@@ -438,16 +434,18 @@ TESTING
 	-Added Final Information to GitHub]]></notes>
             </task>
             <task id="161" name="Overview Design" color="#8cb6ce" meeting="false" start="2017-11-16" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM (3 hours)
+                <notes><![CDATA[Cheyanne- Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM | Nov 21, 10:00-11:00 AM (4 hours)
 	-Worked on Design in Class
 	-Worked on Design Refining
+	-Work on Design in Class
 	]]></notes>
             </task>
             <task id="162" name="Other Views Design" color="#8cb6ce" meeting="false" start="2017-11-16" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM (3 hours)
+                <notes><![CDATA[Cheyanne- Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM | Nov 21, 10:00-11:00 AM (4 hours)
 	-Worked on Design in Class
 	-Worked on Forgot Password Design
-	-Worked on User Manual Design]]></notes>
+	-Worked on User Manual Design
+	-Work on Design in Class]]></notes>
             </task>
         </task>
     </tasks>
