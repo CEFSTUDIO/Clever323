@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -476,11 +478,24 @@ public class ExampleHome extends JFrame {
 		btnFees.setBounds(1112, 596, 150, 25);
 		contentPane.add(btnFees);
 		
+		
 		JButton btnPrintReport = new JButton("Print Report");
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
 		btnPrintReport.setBounds(1112, 530, 150, 25);
+		btnPrintReport.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    if (! bigTable.print()) {
+                        System.err.println("User cancelled printing");
+                    }
+                } catch (java.awt.print.PrinterException f) {
+                    System.err.format("Cannot print %s%n", f.getMessage());
+                }
+                
+            }
+        });
 		contentPane.add(btnPrintReport);
 		
 		JButton btnFilter = new JButton("Filter");
