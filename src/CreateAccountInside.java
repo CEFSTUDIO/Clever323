@@ -1,3 +1,8 @@
+// Author: Cameron Gomke
+// File Name: Create Account Inside
+// Purpose: CleverBudget
+// Date Created: 10/30/2017
+// Last Updated: 11/27/2017
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -14,16 +19,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
-import java.awt.List;
 import java.awt.Toolkit;
 import javax.swing.JSeparator;
 
+@SuppressWarnings("serial")
 public class CreateAccountInside extends JFrame {
 
 	//Attributes:
@@ -52,7 +54,7 @@ public class CreateAccountInside extends JFrame {
 	//Create the Frame
 	public CreateAccountInside() {
 		//Frame Statistics
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./BrowserIcon.png"));
 		setTitle("CleverBudget - Create New Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 375);
@@ -248,7 +250,8 @@ public class CreateAccountInside extends JFrame {
 						{
 							t = line.split(",");
 							newAccount = new Account();
-							newAccount.setName(t[0] + " " + t[1]);
+							newAccount.setFirstName(t[0]);
+							newAccount.setLastName(t[1]);
 							accs.add(newAccount);
 						}
 					} 

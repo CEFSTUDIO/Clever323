@@ -2,7 +2,7 @@
 //File Name: Transaction (Class)
 //Purpose: CleverBudget
 //Date Created: 10/30/2017
-//Last Updated: 11/13/2017
+//Last Updated: 11/27/2017
 public class Transaction {
 
 	//Attributes:
