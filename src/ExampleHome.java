@@ -33,6 +33,8 @@ public class ExampleHome extends JFrame {
 
 	//Private Attributes
 	private JPanel contentPane;
+	private String[] fname, lname, accountType, phoneNumber, email;
+	private double[] balance;
 
 
 	//Launch Application
@@ -268,6 +270,63 @@ public class ExampleHome extends JFrame {
 		    e.printStackTrace();
 		}
 		
+		//reading in smallData
+		    String csvFile = "./smallData.txt";
+	        String line2 = "";
+	        String line3 = "";
+	        int lineCount = 0;
+	        String cvsSplitBy = ",";
+	        
+	        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))){
+	            while((line3 = br.readLine()) != null) {
+                    lineCount++;
+                }
+                
+                System.out.println("LINECOUNT:" + lineCount);
+	        }catch (IOException e) {
+                e.printStackTrace();
+            }
+	        
+	        fname = new String[lineCount];
+            lname = new String[lineCount];
+            accountType = new String[lineCount];
+            phoneNumber = new String[lineCount];
+            email = new String[lineCount];
+            
+            balance = new double[lineCount];
+            
+
+	        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+	            
+	     
+	           // private String[] fname, lname, accountType, phoneNumber, email;
+	           // private double[] balance;
+	            
+	            int i = 0;
+
+	            while ((line2 = br.readLine()) != null) {
+
+	                // use comma as separator
+	                String[] items = line2.split(cvsSplitBy);
+	                
+	                System.out.println("--------------------SMALL DATA TEST ---------------------");
+	                System.out.println(items[0] + items[1]+items[2]+items[3]+items[4]+items[5]);
+	                
+	                fname[i] = items[0];
+	                lname[i] = items[1];
+	                balance[i] = Double.parseDouble(items[2]);
+	                accountType[i] = items[3];
+	                phoneNumber[i] = items[4];
+	                email[i] = items[5];
+	                i++;
+	                
+
+	            }
+
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+		
 		double totalBalance = 0;
 		for(int i = 0; i < bigData.size(); i++) 
 		{
@@ -450,7 +509,17 @@ public class ExampleHome extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				String compareName = (String) comboBox.getSelectedItem();
-				System.out.println(compareName);
+				
+				
+				for(int i = 0; i < fname.length; i++) {
+				    if(compareName.equals(fname[i] + " " + lname[i])) {
+				        String infoMessage = "Name: " + fname[i] + " " + lname[i] + "\nAccount Type: " + accountType[i] 
+				                + "\nAccount Balance: " + balance[i] + "\nPhone Number: " + phoneNumber[i] + "\nEmail: " + email[i];
+				        
+				        JOptionPane.showMessageDialog(null, infoMessage, "Account Information", JOptionPane.INFORMATION_MESSAGE);
+				    }
+				}
+				
 				
 				
 				
