@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-01" view-index="0" gantt-divider-location="296" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Name" width="122" order="0"/>
+        <field id="tpd3" name="Name" width="123" order="0"/>
         <field id="tpd4" name="Begin date" width="77" order="1"/>
-        <field id="tpd5" name="End date" width="76" order="2"/>
+        <field id="tpd5" name="End date" width="77" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="209" order="0"/>
-        <field id="1" name="Default role" width="85" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -430,6 +430,12 @@ Hank- (Monday), (3 Hours)
 	-Refined Gantt
 	-Assigned Tasks
 ]]></notes>
+            </task>
+            <task id="172" name="Back End" color="#8cb6ce" meeting="false" start="2017-11-27" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cameron 
+Making everything linked up and look nice
+11/27/2017 
+4 hours]]></notes>
             </task>
             <task id="160" name="Organization" color="#8cb6ce" meeting="false" start="2017-11-14" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Nov 14, 6:30- 7:00PM (30 minutes)
