@@ -289,13 +289,13 @@ public class ExampleHome extends JFrame {
 		//Label - Transaction
 		JLabel lblTransaction = new JLabel("Transaction:");
 		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblTransaction.setBounds(1137, 413, 91, 16);
+		lblTransaction.setBounds(1137, 420, 91, 16);
 		contentPane.add(lblTransaction);
 		
 		//Label - Account
 		JLabel lblAccount = new JLabel("Account:");
 		lblAccount.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblAccount.setBounds(1349, 413, 56, 16);
+		lblAccount.setBounds(1356, 420, 56, 16);
 		contentPane.add(lblAccount);
 		
 		//Label - All Transactions
@@ -381,7 +381,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(1317, 490, 141, 25);
+		btnDeleteAccount.setBounds(1317, 485, 141, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -535,7 +535,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnAddAccount.setBounds(1317, 458, 141, 25);
+		btnAddAccount.setBounds(1317, 445, 141, 25);
 		contentPane.add(btnAddAccount);
 				
 		
@@ -554,10 +554,11 @@ public class ExampleHome extends JFrame {
 				//Calling AddTransaction panel
 				AddTransaction.main(null);
 				
+				
 			}
 			
 		});
-		btnAddTransaction.setBounds(1112, 458, 150, 25);
+		btnAddTransaction.setBounds(1112, 445, 150, 25);
 		contentPane.add(btnAddTransaction);
 		
 		
@@ -572,7 +573,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnDeleteTransaction.setBounds(1112, 494, 150, 25);
+		btnDeleteTransaction.setBounds(1112, 485, 150, 25);
 		contentPane.add(btnDeleteTransaction);
 		
 		
@@ -581,7 +582,7 @@ public class ExampleHome extends JFrame {
 		btnFees.setBackground(new Color(200, 200, 200));
         btnFees.setOpaque(true);
         btnFees.setBorderPainted(true);
-		btnFees.setBounds(55, 567, 150, 25);
+		btnFees.setBounds(55, 570, 195, 25);
 		contentPane.add(btnFees);
 		
 		
@@ -589,7 +590,7 @@ public class ExampleHome extends JFrame {
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
-		btnPrintReport.setBounds(49, 529, 150, 25);
+		btnPrintReport.setBounds(55, 530, 195, 25);
 		btnPrintReport.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -702,7 +703,7 @@ public class ExampleHome extends JFrame {
 
 			}
 		});
-		btnRefresh.setBounds(55, 648, 195, 25);
+		btnRefresh.setBounds(55, 650, 195, 25);
 		btnRefresh.setBackground(Color.green);
 		btnRefresh.setOpaque(true);
 		btnRefresh.setBorderPainted(true);

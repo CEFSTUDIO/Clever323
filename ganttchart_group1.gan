@@ -393,7 +393,7 @@ Hank- 10 Minutes
 Chase- 10 Minutes]]></notes>
             </task>
         </task>
-        <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-14" duration="11" complete="0" expand="true">
+        <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-01" duration="20" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM| Nov 21, 10:00 - 11:00AM | Nov 24, 11:00PM - 12:30 AM | Nov 27, 1:40 - 2:20PM (7 hours 10 minutes)
  	-Created Sprint 4
 	-Refined/Groomed Product Backlog
@@ -429,6 +429,14 @@ Hank- (Monday), (3 Hours)
 	-Created Sprint 4 task on Gantt
 	-Refined Gantt
 	-Assigned Tasks
+]]></notes>
+            </task>
+            <task id="174" name="Add Account / Add Transaction / Refresh" color="#8cb6ce" meeting="false" start="2017-11-01" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cameron Gomke
+11/28/2017
+5 hours
+1:00 - 6:00
+Made buttons correctly work and somewhat made a refresh button
 ]]></notes>
             </task>
             <task id="172" name="Back End" color="#8cb6ce" meeting="false" start="2017-11-27" duration="1" complete="0" expand="true">
