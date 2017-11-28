@@ -53,7 +53,7 @@ public class Login_System {
 		frmLogIn = new JFrame();
 		frmLogIn.getContentPane().setBackground(new Color(207, 210, 215));
 		frmLogIn.setTitle("CleverBudget - Log In");
-		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("./AppIcon.png"));
+		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("AppIcon.png")));
 		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		frmLogIn.setResizable(false);
 		frmLogIn.setBounds(100, 100, 600, 400);
@@ -218,23 +218,23 @@ public class Login_System {
 		frmLogIn.getContentPane().add(btnUserManual); 
 		
 		JLabel banner_image = new JLabel();
-		//Must be ./res/login_bg.png otherwise it loads improperly
-		banner_image.setIcon(new ImageIcon("./res/login_bg.png"));
+		//Must be res/filename otherwise it loads improperly when imported as a JAR file
+		banner_image.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/login_bg.png")));
 		banner_image.setBounds(-6, 0, 611, 218);
 		frmLogIn.getContentPane().add(banner_image);
 		
 		JLabel middle_blue = new JLabel();
-		middle_blue.setIcon(new ImageIcon("./blue_border.png"));
+		middle_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		middle_blue.setBounds(0, 196, 594, 22);
 		frmLogIn.getContentPane().add(middle_blue);
 		
 		JLabel bottom_blue = new JLabel();
-		bottom_blue.setIcon(new ImageIcon("./blue_border.png"));
+		bottom_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		bottom_blue.setBounds(0, 349, 594, 22);
 		frmLogIn.getContentPane().add(bottom_blue);
 		
-		JLabel top_blue = new JLabel("");
-		top_blue.setIcon(new ImageIcon("./blue_border.png"));
+		JLabel top_blue = new JLabel();
+		top_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		top_blue.setBounds(0, 0, 594, 22);
 		frmLogIn.getContentPane().add(top_blue);
 	}

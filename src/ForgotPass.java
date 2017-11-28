@@ -53,7 +53,7 @@ public class ForgotPass extends JFrame {
 	 * Create the frame.
 	 */
 	public ForgotPass() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("res/BrowserIcon.png")));
 		setFont(new Font("Times New Roman", Font.PLAIN, 14));
 		setTitle("CleverBudget - Forgot Password");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -128,23 +128,21 @@ public class ForgotPass extends JFrame {
 		contentPane.add(lblDevelopedByCameron);
 		
 		JLabel forgot_pass_topbar = new JLabel();
-		forgot_pass_topbar.setIcon(new ImageIcon("./blue_border.png"));
-		forgot_pass_topbar.setBounds(0, 0, 620, 24);
+		forgot_pass_topbar.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		contentPane.add(forgot_pass_topbar);
 		
 		JLabel forgot_pass_middlebar = new JLabel();
-		forgot_pass_middlebar.setIcon(new ImageIcon("./blue_border.png"));
+		forgot_pass_middlebar.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		forgot_pass_middlebar.setBounds(0, 167, 605, 24);
 		contentPane.add(forgot_pass_middlebar);
 		
 		JLabel forgot_pass_bottombar = new JLabel();
-		forgot_pass_bottombar.setIcon(new ImageIcon("./blue_border.png"));
+		forgot_pass_bottombar.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		forgot_pass_bottombar.setBounds(0, 342, 605, 32);
 		contentPane.add(forgot_pass_bottombar);
 		
 		JLabel forgot_bg = new JLabel();
-		//Must be ./res/pass_bg.png otherwise it loads improperly
-		forgot_bg.setIcon(new ImageIcon("./res/pass_bg.png"));
+		forgot_bg.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/pass_bg.png")));
 		forgot_bg.setBounds(-11, 0, 639, 182);
 		contentPane.add(forgot_bg);
 	}

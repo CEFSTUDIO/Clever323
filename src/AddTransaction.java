@@ -21,6 +21,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
@@ -52,7 +53,7 @@ public class AddTransaction extends JFrame {
 	//Create the Frame:
 	public AddTransaction() {
 		//Attributes for reading in small data:
-		String smallDataFile = "./smallData.txt";
+		String smallDataFile = "smallData.txt";
 		String line;
 		BufferedReader reader;
 		String[] details = null;
@@ -61,7 +62,7 @@ public class AddTransaction extends JFrame {
 
 		//Reading in the file, used for Name Combo Box
 		try{       
-		    reader = new BufferedReader(new FileReader(smallDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	//Splitting the line, and adding the first and last name to transaction (names)
 		    	details = line.split(",");
@@ -82,7 +83,7 @@ public class AddTransaction extends JFrame {
 		
 		//Add Transaction Statistics
 		setTitle("Cleverbudget - Add Transaction");
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/res/BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("res/BrowserIcon.png")));
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 473, 356);
 		contentPane = new JPanel();
@@ -219,7 +220,7 @@ public class AddTransaction extends JFrame {
 				else 
 				{
 					//Attributes:
-					String bigDataFile = "./bigData.txt";
+					String bigDataFile = "bigData.txt";
 					BufferedReader reader = null;
 					//Suppress warning, it was saying that this "String line" was being unused
 					@SuppressWarnings("unused")
@@ -230,7 +231,7 @@ public class AddTransaction extends JFrame {
 					//Reading in the file, parsing the file:
 					try 
 					{
-						reader = new BufferedReader( new FileReader(bigDataFile) );
+						reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 						while ((line = reader.readLine()) != null) 
 						{
 							newTran = new Transaction();

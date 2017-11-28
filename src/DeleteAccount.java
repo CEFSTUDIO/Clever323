@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import javax.swing.JComboBox;
@@ -37,8 +38,8 @@ public class DeleteAccount extends JFrame {
 	
 	//Create The Frame:
 	public DeleteAccount() {
-		String smallDataFile = "./smallData.txt";
-		String bigDataFile = "./bigData.txt";
+		String smallDataFile = "smallData.txt";
+		String bigDataFile = "bigData.txt";
 		String line;
 		BufferedReader reader;
 		String[] details = null;
@@ -50,7 +51,7 @@ public class DeleteAccount extends JFrame {
 
 		//Reading in Big Data
 		try{       
-		    reader = new BufferedReader(new FileReader(bigDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -78,7 +79,7 @@ public class DeleteAccount extends JFrame {
 		
 		//Reading in Small Data
 		try{       
-		    reader = new BufferedReader(new FileReader(smallDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)

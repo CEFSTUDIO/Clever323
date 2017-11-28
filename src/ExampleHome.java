@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import javax.swing.JTable;
@@ -49,8 +50,8 @@ public class ExampleHome extends JFrame {
 	public ExampleHome() {
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Reading in Both bigData and smallData ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Attributes for reading in small data:
-		String smallDataFile = "./smallData.txt";
-		String bigDataFile = "./bigData.txt";
+		String smallDataFile = "smallData.txt";
+		String bigDataFile = "bigData.txt";
 		String line;
 		BufferedReader reader;
 		String[] details = null;
@@ -62,7 +63,7 @@ public class ExampleHome extends JFrame {
 
 		//Reading in Big Data
 		try{       
-		    reader = new BufferedReader(new FileReader(bigDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -90,7 +91,7 @@ public class ExampleHome extends JFrame {
 		
 		//Reading in Small Data
 		try{       
-		    reader = new BufferedReader(new FileReader(smallDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -121,7 +122,7 @@ public class ExampleHome extends JFrame {
 				
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Frame and Graphical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Main JFrame Statistics
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./AppIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("res/AppIcon.png")));
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(0, 0, 1500, 900);
@@ -149,7 +150,7 @@ public class ExampleHome extends JFrame {
 
 		//Reading in the file, adding the data within to bigTable
 		try{       
-		    reader = new BufferedReader(new FileReader(bigDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 		       
 		    while((line = reader.readLine()) != null){
 		       tableModelB.addRow(line.split(",")); 
@@ -201,7 +202,7 @@ public class ExampleHome extends JFrame {
 
 		//Reading in the file, adding the data within to bigTable
 		try{       
-		    reader = new BufferedReader(new FileReader(bigDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 		       
 		    while((line = reader.readLine()) != null){
 		       details = line.split(",");
@@ -257,8 +258,8 @@ public class ExampleHome extends JFrame {
 				
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Frame and Graphical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Label - Main logo, big one
-		JLabel lblMainIcon = new JLabel("");
-		lblMainIcon.setIcon(new ImageIcon("./logo.png"));
+		JLabel lblMainIcon = new JLabel();
+		lblMainIcon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/logo.png")));
 		lblMainIcon.setBounds(65, 117, 210, 210);
 		contentPane.add(lblMainIcon);
 		
@@ -403,7 +404,7 @@ public class ExampleHome extends JFrame {
         int lineCount = 0;
         String cvsSplitBy = ",";
         
-        try (BufferedReader br = new BufferedReader(new FileReader(smallDataFile))){
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)))){
             while((line3 = br.readLine()) != null) {
                 lineCount++;
             }
@@ -422,7 +423,7 @@ public class ExampleHome extends JFrame {
         balance = new double[lineCount];
         
 
-        try (BufferedReader br = new BufferedReader(new FileReader(smallDataFile))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)))) {
             int i = 0;
             while ((line2 = br.readLine()) != null) {
 
@@ -458,7 +459,7 @@ public class ExampleHome extends JFrame {
 		System.out.println(first);
 		
 		try{       
-		    reader = new BufferedReader(new FileReader(smallDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -595,7 +596,7 @@ public class ExampleHome extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
                     if (! bigTable.print()) {
-                        System.err.println("User cancelled printing");
+                        System.err.println("User Cancelled Printing");
                     }
                 } catch (java.awt.print.PrinterException f) {
                     System.err.format("Cannot print %s%n", f.getMessage());
@@ -631,7 +632,7 @@ public class ExampleHome extends JFrame {
 				String line;
 				BufferedReader reader;
 				try{       
-				    reader = new BufferedReader(new FileReader(bigDataFile));
+				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 				       
 				    while((line = reader.readLine()) != null){
 				       tableModelB.addRow(line.split(",")); 
@@ -671,7 +672,7 @@ public class ExampleHome extends JFrame {
 				Account newAccount;
 				ArrayList<Account> smallDataList = new ArrayList<Account>();
 				try{       
-				    reader = new BufferedReader(new FileReader(smallDataFile));
+				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 				    while((line = reader.readLine()) != null){
 				    	
 				    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -711,7 +712,7 @@ public class ExampleHome extends JFrame {
 		
 		//Label - Background Image - Add last, otherwise it will cover everything
 		JLabel background_image = new JLabel();
-		background_image.setIcon(new ImageIcon("./res/layout_bg.png"));
+		background_image.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/layout_bg.png")));
 		background_image.setBounds(0, 0, 1500, 900);
 		contentPane.add(background_image);
 		

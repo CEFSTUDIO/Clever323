@@ -18,6 +18,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
@@ -48,13 +49,13 @@ public class CreateAccountInside extends JFrame {
 					e.printStackTrace();
 				}
 			}
-		});
+		}); 
 	}
 
 	//Create the Frame
 	public CreateAccountInside() {
 		//Frame Statistics
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("BrowserIcon.png")));
 		setTitle("CleverBudget - Create New Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 375);
@@ -235,7 +236,7 @@ public class CreateAccountInside extends JFrame {
 				else 
 				{
 					//Attributes:
-					String smallDataFile = "./smallData.txt";
+					String smallDataFile = "smallData.txt";
 					BufferedReader r = null;
 					String line = null;
 					String[] t = null;
@@ -245,7 +246,7 @@ public class CreateAccountInside extends JFrame {
 					//Reading in the file, parsing the file:
 					try 
 					{
-						r = new BufferedReader( new FileReader(smallDataFile) );
+						r = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 						while ((line = r.readLine()) != null) 
 						{
 							t = line.split(",");
