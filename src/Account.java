@@ -66,7 +66,7 @@ public class Account {
 	@Override
 	public String toString() {
 		return "First Name: " + firstName + ", Last Name: " + lastName + ", Starting Balance: " + startingBalance
-				+ ", Account Description: " + description + ", Phone Number: " + phoneNumber + ", email: " + email + "\n";
+				+ ", Account Description: " + description + ", Phone Number: " + phoneNumber + ", email: " + email;
 	}
 
 	
