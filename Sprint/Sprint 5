@@ -1,0 +1,54 @@
+Sprint 5 Backlog
+=====================================================
+-Research (Various)
+
+-Refine All Design (Tweaks/Changes)
+
+-System Document Work
+  -Any remaining pages
+  
+-Product Back Log Hard Copy
+-Gantt Chart Hard Copy
+    
+-User Manual 
+  -Design
+  -Info
+	
+=====================================================
+-Briefly cover how core classes fit into MVC architecture
+	-Per Each Sprint Review
+	
+    	-Classes
+		      -User
+		      -Account
+		      -Transaction
+			    -Check (inherits from transaction)
+			    -Credit Card (inherits from transaction)
+		      -Visualizers (Swing)
+		
+=====================================================
+-Briefly cover Sprint Progress via Presentation
+	-Per Each Sprint Review
+		
+=====================================================
+ -Classes (Further Work)
+    -Account (User- csadmin, Pass- csci323) 
+        -Remove accounts (functionality) 
+            -[Note- Only remove empty accounts, retire ones with transactions]
+        -View/Filter account information (functionality)
+        -Forgot Passsword Implementation (functionality) [x]
+    
+    -Transaction
+        -Remove transaction (functionality)
+        -Show Fees/Codes (functionality)
+		        -8% held fee (all)
+		        -4% held credit card fee
+                   
+=====================================================
+-Unit Testing
+
+-Executable Jar File
+  -Work on getting it in own folder
+  -Further pathing work
+
+=====================================================
