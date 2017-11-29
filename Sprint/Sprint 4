@@ -23,6 +23,9 @@ Sprint 4 Backlog
 	-Icons
 	-Implement
 	
+-Report View 
+       -Generate printable report (if possible)
+       
 =====================================================
 -Briefly cover how core classes fit into MVC architecture
 	-Per Each Sprint Review
