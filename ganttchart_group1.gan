@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-01" view-index="0" gantt-divider-location="296" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-02" view-index="0" gantt-divider-location="296" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Name" width="123" order="0"/>
@@ -173,7 +173,7 @@ Hank- Oct 17, 6:30PM - 8:00PM
 	-MVC Architecture
 	-Presentation]]></notes>
             <task id="132" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-10-10" duration="21" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM 
+                <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM (30 minutes)
 	-Assigned tasks to group members
 	-Updated Gantt
 	-Compiled research for Log In
@@ -494,6 +494,29 @@ Cheyanne- 10 Minutes
 Cameron- 10 Minutes
 Hank- 10 Minutes 
 ]]></notes>
+            </task>
+        </task>
+        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | (Total Hours)
+ 	-Created Sprint 5
+	-Refined/Groomed Product Backlog
+	-Created Sprint 5 task on Gantt
+	-Refined Gantt
+
+Cameron - (Total Hours)
+	
+	
+Chase - (Total Hours)
+	
+
+Hank- (Total Hours)
+	]]></notes>
+            <task id="180" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-11-29" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM (30 Minutes)
+ 	-Created Sprint 5
+	-Refined/Groomed Product Backlog
+	-Created Sprint 5 task on Gantt
+	-Refined Gantt]]></notes>
             </task>
         </task>
     </tasks>
