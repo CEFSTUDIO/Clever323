@@ -14,7 +14,7 @@
 -Research [✓] [Various]
         -Log in Screen 
                 -Log Out [✓]
-                -Create Account (User- CSAdmin, Password- CSCI323) [✓]
+                -Create Account (User- csadmin, Password- csci323) [✓]
                 -Forgot Password [x]
 		-View Account [✓]
 		-Delete Account [x]
