@@ -12,7 +12,7 @@
 =====================================================
 -Figure out and display initial view [✓]
 -Research [✓] [Various]
-        -Log in Screen 
+        -Login Screen 
                 -Log Out [✓]
                 -Create Account (User- csadmin, Password- csci323) [✓]
                 -Forgot Password [x]
@@ -20,14 +20,14 @@
 		-Delete Account [x]
         
         -Buttons
-                -Log in [✓]
+                -Login [✓]
                 -Log Out [✓]
                 -Create Account [✓]
                 -Forgot Password [✓]
 		-View Account [✓]
 		-Delete Account [✓]
 		
-	-Log in Design
+	-Login Design
                 -Color scheme [✓]
                 -Orientation of objects [✓]
 		-Logos [✓]
