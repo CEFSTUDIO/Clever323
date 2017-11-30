@@ -496,12 +496,13 @@ Hank- 10 Minutes
 ]]></notes>
             </task>
         </task>
-        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | (Total Hours)
+        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | Nov 30, 9:30-10:30AM (Total Hours)
  	-Created Sprint 5
 	-Refined/Groomed Product Backlog
 	-Created Sprint 5 task on Gantt
-	-Refined Gantt
+	-Refined Gantt	
+	-Worked in Class (On System Document)
 
 Cameron - (Total Hours)
 	
@@ -517,6 +518,10 @@ Hank- (Total Hours)
 	-Refined/Groomed Product Backlog
 	-Created Sprint 5 task on Gantt
 	-Refined Gantt]]></notes>
+            </task>
+            <task id="182" name="System Document" color="#8cb6ce" meeting="false" start="2017-11-30" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 30, 9:30-10:30AM (Total Hours)
+	-Worked in Class (On System Document)]]></notes>
             </task>
         </task>
     </tasks>
