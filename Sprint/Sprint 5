@@ -37,11 +37,13 @@ Sprint 5 Backlog
         -Remove accounts (functionality) 
             -[Note- Only remove empty accounts, retire ones with transactions]
         -View/Filter account information (functionality)
-        -Forgot Passsword Implementation (functionality) [x]
+	-Modify Account(functionality)
+        -Forgot Passsword Implementation (functionality) 
     
     -Transaction
 	-Date Autofiller/Date Picker (functionality) 
         -Remove transaction (functionality)
+	-Filter table information (functionality)
         -Show Fees/Codes (functionality)
 		        -8% held fee (all)
 		        -4% held credit card fee
