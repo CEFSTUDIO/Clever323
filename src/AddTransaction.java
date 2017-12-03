@@ -23,9 +23,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
+import java.awt.Font;
+import javax.swing.SwingConstants;
 
 @SuppressWarnings("serial")
 public class AddTransaction extends JFrame {
@@ -42,6 +48,8 @@ public class AddTransaction extends JFrame {
 			public void run() {
 				try {
 					AddTransaction frame = new AddTransaction();
+					frame.getContentPane().setBackground(new Color(207, 210, 215));
+                    frame.setResizable(false);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -97,38 +105,51 @@ public class AddTransaction extends JFrame {
 		contentPane.add(separator);
 		
 		//Label - Overall Title
-		JLabel lblAddANew = new JLabel("Add A New Transaction:");
-		lblAddANew.setBounds(158, 13, 139, 16);
+		JLabel lblAddANew = new JLabel("Add A New Transaction\r\n");
+		lblAddANew.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblAddANew.setBounds(150, 11, 215, 22);
 		contentPane.add(lblAddANew);
 		
 		//Label - Name
-		JLabel lblName = new JLabel("Name:");
-		lblName.setBounds(30, 70, 56, 16);
+		JLabel lblName = new JLabel("Name");
+		lblName.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblName.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblName.setBounds(30, 70, 140, 19);
 		contentPane.add(lblName);
 		
 		//Label - Amount
-		JLabel lblAmount = new JLabel("Amount:");
-		lblAmount.setBounds(30, 100, 56, 16);
+		JLabel lblAmount = new JLabel("Amount");
+		lblAmount.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblAmount.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblAmount.setBounds(30, 100, 140, 16);
 		contentPane.add(lblAmount);
 		
 		//Label - Transaction
-		JLabel lblTransaction = new JLabel("Transaction:");
-		lblTransaction.setBounds(30, 130, 72, 16);
+		JLabel lblTransaction = new JLabel("Transaction");
+		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblTransaction.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblTransaction.setBounds(30, 130, 140, 16);
 		contentPane.add(lblTransaction);
 		
 		//Label - To/From
-		JLabel lblToFrom = new JLabel("To/From:");
-		lblToFrom.setBounds(30, 160, 56, 16);
+		JLabel lblToFrom = new JLabel("To/From");
+		lblToFrom.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblToFrom.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblToFrom.setBounds(30, 160, 140, 16);
 		contentPane.add(lblToFrom);
 		
 		//Label - Payment Type
-		JLabel lblType = new JLabel("Payment Type:");
-		lblType.setBounds(30, 190, 94, 16);
+		JLabel lblType = new JLabel("Payment Type");
+		lblType.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblType.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblType.setBounds(30, 190, 140, 19);
 		contentPane.add(lblType);
 		
 		//Label - Date
-		JLabel lblDate = new JLabel("Date:");
-		lblDate.setBounds(30, 220, 56, 16);
+		JLabel lblDate = new JLabel("Date");
+		lblDate.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblDate.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblDate.setBounds(30, 220, 140, 16);
 		contentPane.add(lblDate);
 		
 		//Combo Box - Name Box
@@ -173,12 +194,20 @@ public class AddTransaction extends JFrame {
 		
 		//Text Field - Date
 		textDate = new JTextField();
+		textDate.setFont(new Font("Verdana", Font.BOLD, 11));
+		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
+		Date date = new Date();
+		textDate.setText(dateFormat.format(date));
 		textDate.setBounds(180, 220, 164, 22);
 		contentPane.add(textDate);
 		textDate.setColumns(10);
 		
 		//Button - Add Transaction (The Magic)
 		JButton btnNewButton = new JButton("Add Transaction");
+		btnNewButton.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnNewButton.setBackground(new Color(70, 137, 191));
+		btnNewButton.setOpaque(true);
+        btnNewButton.setBorderPainted(true);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -275,7 +304,7 @@ public class AddTransaction extends JFrame {
 				}//End of else, start of the reading/writing, no errors	
 			}
 		});
-		btnNewButton.setBounds(158, 260, 139, 25);
+		btnNewButton.setBounds(180, 262, 164, 25);
 		contentPane.add(btnNewButton);
 		
 

@@ -180,8 +180,8 @@ public class ExampleHome extends JFrame {
 		bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
 		bigTable.setBounds(467, 200, 594, 375);
 		JScrollPane scrollPane = new JScrollPane(bigTable);
-		scrollPane.setLocation(400, 185);
-		scrollPane.setSize(700, 600);
+		scrollPane.setLocation(365, 185);
+		scrollPane.setSize(719, 516);
 		scrollPane.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane);
 		
@@ -251,8 +251,8 @@ public class ExampleHome extends JFrame {
 		smallTable.getColumnModel().getColumn(2).setPreferredWidth(200);
 		smallTable.setBounds(800, 200, 594, 375);
 		JScrollPane scrollPane1 = new JScrollPane(smallTable);
-		scrollPane1.setLocation(1112, 185);
-		scrollPane1.setSize(346, 137);
+		scrollPane1.setLocation(1094, 185);
+		scrollPane1.setSize(250, 137);
 		scrollPane1.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane1);
 				
@@ -274,12 +274,6 @@ public class ExampleHome extends JFrame {
 		lblDevelopedByClever.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblDevelopedByClever.setBounds(1304, 824, 166, 16);
 		contentPane.add(lblDevelopedByClever);
-
-		//Label - Overview, above smallData table
-		JLabel lblOverview = new JLabel("Overview:");
-		lblOverview.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblOverview.setBounds(1112, 185, 116, 16);
-		contentPane.add(lblOverview);
 		
 		//Label - Total Balance 
 		JLabel lblTotalBalance = new JLabel("Total Balance: " + totalBalance);
@@ -288,27 +282,27 @@ public class ExampleHome extends JFrame {
 		contentPane.add(lblTotalBalance);
 		
 		//Label - Transaction
-		JLabel lblTransaction = new JLabel("Transaction:");
-		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblTransaction.setBounds(1137, 420, 91, 16);
+		JLabel lblTransaction = new JLabel("Transaction");
+		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblTransaction.setBounds(1155, 375, 136, 16);
 		contentPane.add(lblTransaction);
 		
 		//Label - Account
-		JLabel lblAccount = new JLabel("Account:");
-		lblAccount.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblAccount.setBounds(1356, 420, 56, 16);
+		JLabel lblAccount = new JLabel("Account");
+		lblAccount.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblAccount.setBounds(1164, 513, 86, 16);
 		contentPane.add(lblAccount);
 		
 		//Label - All Transactions
-		JLabel lblAllTransactions = new JLabel("All Transactions:");
+		JLabel lblAllTransactions = new JLabel("All Transactions");
 		lblAllTransactions.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblAllTransactions.setBounds(626, 117, 437, 57);
+		lblAllTransactions.setBounds(626, 128, 437, 57);
 		contentPane.add(lblAllTransactions);
 		
 		//Label - Account Balances
-		JLabel lblAccountBalances = new JLabel("Account Balances:");
+		JLabel lblAccountBalances = new JLabel("Account Balances");
 		lblAccountBalances.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblAccountBalances.setBounds(1147, 140, 291, 32);
+		lblAccountBalances.setBounds(1129, 140, 309, 32);
 		contentPane.add(lblAccountBalances);
 		
 		//Text Area - Small User Guide
@@ -341,6 +335,7 @@ public class ExampleHome extends JFrame {
 		
 		//Combo Box - Choose Combo Box
 		JComboBox comboBoxChooseBox = new JComboBox();
+		comboBoxChooseBox.setFont(new Font("Verdana", Font.BOLD, 11));
 		comboBoxChooseBox.addItem("-- Overview --");
 		for (int i = 0; i < smallDataList.size(); i++) {
 			comboBoxChooseBox.addItem(smallDataList.get(i).getFirstName() + " " + smallDataList.get(i).getLastName());
@@ -350,6 +345,7 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Log out button - Fully functional - maybe make the JOptionPane appear with our logo
 		JButton btnLogOut = new JButton("Log Out");
+		btnLogOut.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnLogOut.setBackground(new Color(225, 79, 79));
         btnLogOut.setOpaque(true);
         btnLogOut.setBorderPainted(true);
@@ -366,11 +362,12 @@ public class ExampleHome extends JFrame {
 				}
 			}
 		});
-		btnLogOut.setBounds(55, 610, 195, 25);
+		btnLogOut.setBounds(55, 642, 195, 25);
 		contentPane.add(btnLogOut);
 		
 		//Button - Delete Account - NOT FUNCTIONAL
 		JButton btnDeleteAccount = new JButton("Delete Account");
+		btnDeleteAccount.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnDeleteAccount.setBackground(new Color(200, 200, 200));
         btnDeleteAccount.setOpaque(true);
         btnDeleteAccount.setBorderPainted(true);
@@ -382,7 +379,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(1317, 485, 141, 25);
+		btnDeleteAccount.setBounds(1129, 576, 166, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -486,7 +483,8 @@ public class ExampleHome extends JFrame {
 		}
 		
 		
-		JButton btnDisplayAccountInformation = new JButton("Display Account Information");
+		JButton btnDisplayAccountInformation = new JButton("Display Account Info");
+		btnDisplayAccountInformation.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnDisplayAccountInformation.setBackground(new Color(200, 200, 200));
         btnDisplayAccountInformation.setOpaque(true);
         btnDisplayAccountInformation.setBorderPainted(true);
@@ -523,6 +521,7 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Add Account - link to jTable
 		JButton btnAddAccount = new JButton("Add Account");
+		btnAddAccount.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnAddAccount.setBackground(new Color(200, 200, 200));
         btnAddAccount.setOpaque(true);
         btnAddAccount.setBorderPainted(true);
@@ -536,7 +535,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnAddAccount.setBounds(1317, 445, 141, 25);
+		btnAddAccount.setBounds(1129, 540, 166, 25);
 		contentPane.add(btnAddAccount);
 				
 		
@@ -544,6 +543,7 @@ public class ExampleHome extends JFrame {
 
 		//Button - Add Transaction
 		JButton btnAddTransaction = new JButton("Add Transaction");
+		btnAddTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnAddTransaction.setBackground(new Color(200, 200, 200));
         btnAddTransaction.setOpaque(true);
         btnAddTransaction.setBorderPainted(true);
@@ -559,12 +559,13 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnAddTransaction.setBounds(1112, 445, 150, 25);
+		btnAddTransaction.setBounds(1129, 409, 166, 25);
 		contentPane.add(btnAddTransaction);
 		
 		
 		
 		JButton btnDeleteTransaction = new JButton("Delete Transaction");
+		btnDeleteTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnDeleteTransaction.setBackground(new Color(200, 200, 200));
         btnDeleteTransaction.setOpaque(true);
         btnDeleteTransaction.setBorderPainted(true);
@@ -574,12 +575,13 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnDeleteTransaction.setBounds(1112, 485, 150, 25);
+		btnDeleteTransaction.setBounds(1129, 445, 166, 25);
 		contentPane.add(btnDeleteTransaction);
 		
 		
 		
 		JButton btnFees = new JButton("Fees");
+		btnFees.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnFees.setBackground(new Color(200, 200, 200));
         btnFees.setOpaque(true);
         btnFees.setBorderPainted(true);
@@ -588,6 +590,7 @@ public class ExampleHome extends JFrame {
 		
 		
 		JButton btnPrintReport = new JButton("Print Report");
+		btnPrintReport.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
@@ -607,6 +610,7 @@ public class ExampleHome extends JFrame {
 		contentPane.add(btnPrintReport);
 		
 		JButton btnFilter = new JButton("Filter");
+		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnFilter.setBackground(new Color(200, 200, 200));
         btnFilter.setOpaque(true);
         btnFilter.setBorderPainted(true);
@@ -615,6 +619,10 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Refreshes Main Table - Functional - Can make it refresh smaller tables too
 		JButton btnRefresh = new JButton("Refresh");
+		btnRefresh.setFont(new Font("Verdana", Font.BOLD, 11));
+	    btnRefresh.setBackground(new Color(70, 137, 191));
+	    btnRefresh.setOpaque(true);
+	    btnRefresh.setBorderPainted(true);
 		btnRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -655,16 +663,16 @@ public class ExampleHome extends JFrame {
 				bigTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
 				bigTable.setBorder(null);
 				bigTable.getColumnModel().getColumn(0).setPreferredWidth(150);
-				bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-				bigTable.getColumnModel().getColumn(2).setPreferredWidth(200);
-				bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
-				bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-				bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
-				bigTable.setBounds(467, 200, 594, 375);
-				JScrollPane scrollPane = new JScrollPane(bigTable);
-				scrollPane.setLocation(400, 185);
-				scrollPane.setSize(700, 600);
-				scrollPane.getViewport().setBackground(Color.WHITE);
+		        bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
+		        bigTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+		        bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
+		        bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
+		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
+		        bigTable.setBounds(467, 200, 594, 375);
+		        JScrollPane scrollPane = new JScrollPane(bigTable);
+		        scrollPane.setLocation(365, 185);
+		        scrollPane.setSize(719, 516);
+		        scrollPane.getViewport().setBackground(Color.WHITE);
 				contentPane.add(scrollPane);
 				
 				//Adding Name to the Combo Box
@@ -704,10 +712,7 @@ public class ExampleHome extends JFrame {
 
 			}
 		});
-		btnRefresh.setBounds(55, 650, 195, 25);
-		btnRefresh.setBackground(Color.green);
-		btnRefresh.setOpaque(true);
-		btnRefresh.setBorderPainted(true);
+		btnRefresh.setBounds(55, 606, 195, 25);
 		contentPane.add(btnRefresh);
 		
 		//Label - Background Image - Add last, otherwise it will cover everything
