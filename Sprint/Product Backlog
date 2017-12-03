@@ -65,9 +65,10 @@
                 -Add Transaction [✓]
                         -Deposit
                         -Withdraw
+		-Delete Transaction [✓]
         
         -Report View [✓]
-                -Generate printable report [✓]
+                -Generate Printable Report [✓]
         
         -Account Overview (info) [✓]
                 -Running Total
