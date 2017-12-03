@@ -18,12 +18,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import java.awt.Toolkit;
 import javax.swing.JSeparator;
+import javax.swing.SwingConstants;
 
 @SuppressWarnings("serial")
 public class CreateAccountInside extends JFrame {
@@ -48,13 +50,13 @@ public class CreateAccountInside extends JFrame {
 					e.printStackTrace();
 				}
 			}
-		});
+		}); 
 	}
 
 	//Create the Frame
 	public CreateAccountInside() {
 		//Frame Statistics
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./BrowserIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("BrowserIcon.png")));
 		setTitle("CleverBudget - Create New Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 375);
@@ -70,93 +72,109 @@ public class CreateAccountInside extends JFrame {
 		
 		//Label - Use label at top
 		JLabel lblUseCreateA = new JLabel("Use: Create a new account for the table\r\n");
-		lblUseCreateA.setBounds(12, 13, 229, 16);
+		lblUseCreateA.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblUseCreateA.setBounds(12, 13, 379, 16);
 		contentPane.add(lblUseCreateA);
 		
 		//Label - fill out label at top
-		JLabel lblPleaseFillOut = new JLabel("Please fill out the following fields completely:");
-		lblPleaseFillOut.setBounds(12, 29, 257, 16);
+		JLabel lblPleaseFillOut = new JLabel("Please Fill Out the Following Fields Completely:");
+		lblPleaseFillOut.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblPleaseFillOut.setBounds(12, 40, 379, 16);
 		contentPane.add(lblPleaseFillOut);
 		
 		//Label - First Name
-		JLabel lblFirstName = new JLabel("First Name:");
-		lblFirstName.setBounds(12, 73, 67, 16);
+		JLabel lblFirstName = new JLabel("First Name");
+		lblFirstName.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblFirstName.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblFirstName.setBounds(35, 77, 89, 16);
 		contentPane.add(lblFirstName);
 		
 		//Label - Last Name
-		JLabel lblLastName = new JLabel("Last Name:");
-		lblLastName.setBounds(12, 102, 65, 16);
+		JLabel lblLastName = new JLabel("Last Name");
+		lblLastName.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblLastName.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblLastName.setBounds(35, 104, 89, 16);
 		contentPane.add(lblLastName);
 		
 		//Label - Account Balance
-		JLabel lblAccountBalance = new JLabel("Account Balance:");
-		lblAccountBalance.setBounds(12, 131, 110, 16);
+		JLabel lblAccountBalance = new JLabel("Account Balance");
+		lblAccountBalance.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblAccountBalance.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblAccountBalance.setBounds(-29, 135, 153, 16);
 		contentPane.add(lblAccountBalance);
 		
 		//Label - Account Balance Example
 		JLabel lblExampleBalance = new JLabel("(Ex: 1000.00)");
-		lblExampleBalance.setBounds(279, 131, 78, 16);
+		lblExampleBalance.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblExampleBalance.setBounds(300, 131, 112, 16);
 		contentPane.add(lblExampleBalance);
 		
 		//Label - Description
-		JLabel lblDescription = new JLabel("Description:");
-		lblDescription.setBounds(12, 160, 68, 16);
+		JLabel lblDescription = new JLabel("Description");
+		lblDescription.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblDescription.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblDescription.setBounds(35, 182, 89, 16);
 		contentPane.add(lblDescription);
 		
 		//Label - Phone Number
-		JLabel lblPhoneNumber = new JLabel("Phone Number:");
-		lblPhoneNumber.setBounds(12, 189, 89, 16);
+		JLabel lblPhoneNumber = new JLabel("Phone Number");
+		lblPhoneNumber.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblPhoneNumber.setBounds(35, 209, 114, 16);
 		contentPane.add(lblPhoneNumber);
 		
 		//Label - Phone Number Example
 		JLabel lblExamplePhoneNum = new JLabel("(Ex: 406-111-3324)");
-		lblExamplePhoneNum.setBounds(279, 189, 112, 16);
+		lblExamplePhoneNum.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblExamplePhoneNum.setBounds(293, 209, 141, 16);
 		contentPane.add(lblExamplePhoneNum);
 		
 		//Label - Email
-		JLabel lblEmail = new JLabel("Email:");
-		lblEmail.setBounds(12, 218, 56, 16);
+		JLabel lblEmail = new JLabel("Email");
+		lblEmail.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblEmail.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblEmail.setBounds(35, 242, 89, 16);
 		contentPane.add(lblEmail);
 		
 		//Label - Developed by:
 		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
-		lblDevelopedByClever.setFont(new Font("Tahoma", Font.BOLD, 13));
-		lblDevelopedByClever.setBounds(254, 298, 166, 16);
+		lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
+		lblDevelopedByClever.setBounds(215, 320, 209, 16);
 		contentPane.add(lblDevelopedByClever);
 		
 		//Text Field - First Name
 		txtFirst = new JTextField();
-		txtFirst.setBounds(153, 70, 116, 22);
+		txtFirst.setBounds(137, 71, 153, 22);
 		contentPane.add(txtFirst);
 		txtFirst.setColumns(10);
 		
 		//Text Field - Last Name
 		txtLast = new JTextField();
-		txtLast.setBounds(153, 99, 116, 22);
+		txtLast.setBounds(137, 100, 153, 22);
 		contentPane.add(txtLast);
 		txtLast.setColumns(10);
 		
 		//Text Field - Balance
 		txtBalance = new JTextField();
-		txtBalance.setBounds(153, 128, 116, 22);
+		txtBalance.setBounds(137, 129, 153, 22);
 		contentPane.add(txtBalance);
 		txtBalance.setColumns(10);
 	
 		//Text Field - Description
 		txtDesc = new JTextField();
-		txtDesc.setBounds(153, 157, 116, 22);
+		txtDesc.setBounds(137, 176, 153, 22);
 		contentPane.add(txtDesc);
 		txtDesc.setColumns(10);
 		
 		//Text Field - Phone Number
 		txtPhoneNum = new JTextField();
-		txtPhoneNum.setBounds(153, 186, 116, 22);
+		txtPhoneNum.setBounds(137, 207, 153, 22);
 		contentPane.add(txtPhoneNum);
 		txtPhoneNum.setColumns(10);
 		
 		//Text Field - Email
 		txtEmail = new JTextField();
-		txtEmail.setBounds(153, 215, 116, 22);
+		txtEmail.setBounds(137, 240, 153, 22);
 		contentPane.add(txtEmail);
 		txtEmail.setColumns(10);
 		
@@ -235,7 +253,7 @@ public class CreateAccountInside extends JFrame {
 				else 
 				{
 					//Attributes:
-					String smallDataFile = "./smallData.txt";
+					String smallDataFile = "smallData.txt";
 					BufferedReader r = null;
 					String line = null;
 					String[] t = null;
@@ -245,7 +263,7 @@ public class CreateAccountInside extends JFrame {
 					//Reading in the file, parsing the file:
 					try 
 					{
-						r = new BufferedReader( new FileReader(smallDataFile) );
+						r = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 						while ((line = r.readLine()) != null) 
 						{
 							t = line.split(",");
@@ -306,7 +324,7 @@ public class CreateAccountInside extends JFrame {
 				} // End of else, button pressed and all is good
 			}
 		});
-		btnCreateAccount.setBounds(153, 260, 132, 25);
+		btnCreateAccount.setBounds(137, 273, 153, 25);
 		contentPane.add(btnCreateAccount);
 	}
 }

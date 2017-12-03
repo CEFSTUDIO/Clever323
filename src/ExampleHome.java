@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import javax.swing.JTable;
@@ -49,8 +50,8 @@ public class ExampleHome extends JFrame {
 	public ExampleHome() {
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Reading in Both bigData and smallData ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Attributes for reading in small data:
-		String smallDataFile = "./smallData.txt";
-		String bigDataFile = "./bigData.txt";
+		String smallDataFile = "smallData.txt";
+		String bigDataFile = "bigData.txt";
 		String line;
 		BufferedReader reader;
 		String[] details = null;
@@ -62,7 +63,7 @@ public class ExampleHome extends JFrame {
 
 		//Reading in Big Data
 		try{       
-		    reader = new BufferedReader(new FileReader(bigDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -90,7 +91,7 @@ public class ExampleHome extends JFrame {
 		
 		//Reading in Small Data
 		try{       
-		    reader = new BufferedReader(new FileReader(smallDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -121,7 +122,7 @@ public class ExampleHome extends JFrame {
 				
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Frame and Graphical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Main JFrame Statistics
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./AppIcon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("res/AppIcon.png")));
 		setTitle("CleverBudget - Homepage");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(0, 0, 1500, 900);
@@ -149,7 +150,7 @@ public class ExampleHome extends JFrame {
 
 		//Reading in the file, adding the data within to bigTable
 		try{       
-		    reader = new BufferedReader(new FileReader(bigDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 		       
 		    while((line = reader.readLine()) != null){
 		       tableModelB.addRow(line.split(",")); 
@@ -179,8 +180,8 @@ public class ExampleHome extends JFrame {
 		bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
 		bigTable.setBounds(467, 200, 594, 375);
 		JScrollPane scrollPane = new JScrollPane(bigTable);
-		scrollPane.setLocation(400, 185);
-		scrollPane.setSize(700, 600);
+		scrollPane.setLocation(365, 185);
+		scrollPane.setSize(719, 516);
 		scrollPane.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane);
 		
@@ -201,7 +202,7 @@ public class ExampleHome extends JFrame {
 
 		//Reading in the file, adding the data within to bigTable
 		try{       
-		    reader = new BufferedReader(new FileReader(bigDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 		       
 		    while((line = reader.readLine()) != null){
 		       details = line.split(",");
@@ -250,15 +251,15 @@ public class ExampleHome extends JFrame {
 		smallTable.getColumnModel().getColumn(2).setPreferredWidth(200);
 		smallTable.setBounds(800, 200, 594, 375);
 		JScrollPane scrollPane1 = new JScrollPane(smallTable);
-		scrollPane1.setLocation(1112, 185);
-		scrollPane1.setSize(346, 137);
+		scrollPane1.setLocation(1094, 185);
+		scrollPane1.setSize(250, 137);
 		scrollPane1.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane1);
 				
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Frame and Graphical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Label - Main logo, big one
-		JLabel lblMainIcon = new JLabel("");
-		lblMainIcon.setIcon(new ImageIcon("./logo.png"));
+		JLabel lblMainIcon = new JLabel();
+		lblMainIcon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/logo.png")));
 		lblMainIcon.setBounds(65, 117, 210, 210);
 		contentPane.add(lblMainIcon);
 		
@@ -273,12 +274,6 @@ public class ExampleHome extends JFrame {
 		lblDevelopedByClever.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblDevelopedByClever.setBounds(1304, 824, 166, 16);
 		contentPane.add(lblDevelopedByClever);
-
-		//Label - Overview, above smallData table
-		JLabel lblOverview = new JLabel("Overview:");
-		lblOverview.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblOverview.setBounds(1112, 185, 116, 16);
-		contentPane.add(lblOverview);
 		
 		//Label - Total Balance 
 		JLabel lblTotalBalance = new JLabel("Total Balance: " + totalBalance);
@@ -287,27 +282,27 @@ public class ExampleHome extends JFrame {
 		contentPane.add(lblTotalBalance);
 		
 		//Label - Transaction
-		JLabel lblTransaction = new JLabel("Transaction:");
-		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblTransaction.setBounds(1137, 420, 91, 16);
+		JLabel lblTransaction = new JLabel("Transaction");
+		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblTransaction.setBounds(1155, 375, 136, 16);
 		contentPane.add(lblTransaction);
 		
 		//Label - Account
-		JLabel lblAccount = new JLabel("Account:");
-		lblAccount.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblAccount.setBounds(1356, 420, 56, 16);
+		JLabel lblAccount = new JLabel("Account");
+		lblAccount.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblAccount.setBounds(1164, 513, 86, 16);
 		contentPane.add(lblAccount);
 		
 		//Label - All Transactions
-		JLabel lblAllTransactions = new JLabel("All Transactions:");
+		JLabel lblAllTransactions = new JLabel("All Transactions");
 		lblAllTransactions.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblAllTransactions.setBounds(626, 117, 437, 57);
+		lblAllTransactions.setBounds(626, 128, 437, 57);
 		contentPane.add(lblAllTransactions);
 		
 		//Label - Account Balances
-		JLabel lblAccountBalances = new JLabel("Account Balances:");
+		JLabel lblAccountBalances = new JLabel("Account Balances");
 		lblAccountBalances.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblAccountBalances.setBounds(1147, 140, 291, 32);
+		lblAccountBalances.setBounds(1129, 140, 309, 32);
 		contentPane.add(lblAccountBalances);
 		
 		//Text Area - Small User Guide
@@ -340,6 +335,7 @@ public class ExampleHome extends JFrame {
 		
 		//Combo Box - Choose Combo Box
 		JComboBox comboBoxChooseBox = new JComboBox();
+		comboBoxChooseBox.setFont(new Font("Verdana", Font.BOLD, 11));
 		comboBoxChooseBox.addItem("-- Overview --");
 		for (int i = 0; i < smallDataList.size(); i++) {
 			comboBoxChooseBox.addItem(smallDataList.get(i).getFirstName() + " " + smallDataList.get(i).getLastName());
@@ -349,6 +345,7 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Log out button - Fully functional - maybe make the JOptionPane appear with our logo
 		JButton btnLogOut = new JButton("Log Out");
+		btnLogOut.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnLogOut.setBackground(new Color(225, 79, 79));
         btnLogOut.setOpaque(true);
         btnLogOut.setBorderPainted(true);
@@ -365,11 +362,12 @@ public class ExampleHome extends JFrame {
 				}
 			}
 		});
-		btnLogOut.setBounds(55, 610, 195, 25);
+		btnLogOut.setBounds(55, 642, 195, 25);
 		contentPane.add(btnLogOut);
 		
 		//Button - Delete Account - NOT FUNCTIONAL
 		JButton btnDeleteAccount = new JButton("Delete Account");
+		btnDeleteAccount.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnDeleteAccount.setBackground(new Color(200, 200, 200));
         btnDeleteAccount.setOpaque(true);
         btnDeleteAccount.setBorderPainted(true);
@@ -381,7 +379,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(1317, 485, 141, 25);
+		btnDeleteAccount.setBounds(1129, 576, 166, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -403,7 +401,7 @@ public class ExampleHome extends JFrame {
         int lineCount = 0;
         String cvsSplitBy = ",";
         
-        try (BufferedReader br = new BufferedReader(new FileReader(smallDataFile))){
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)))){
             while((line3 = br.readLine()) != null) {
                 lineCount++;
             }
@@ -422,7 +420,7 @@ public class ExampleHome extends JFrame {
         balance = new double[lineCount];
         
 
-        try (BufferedReader br = new BufferedReader(new FileReader(smallDataFile))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)))) {
             int i = 0;
             while ((line2 = br.readLine()) != null) {
 
@@ -458,7 +456,7 @@ public class ExampleHome extends JFrame {
 		System.out.println(first);
 		
 		try{       
-		    reader = new BufferedReader(new FileReader(smallDataFile));
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 		    while((line = reader.readLine()) != null){
 		    	
 		    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -485,7 +483,8 @@ public class ExampleHome extends JFrame {
 		}
 		
 		
-		JButton btnDisplayAccountInformation = new JButton("Display Account Information");
+		JButton btnDisplayAccountInformation = new JButton("Display Account Info");
+		btnDisplayAccountInformation.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnDisplayAccountInformation.setBackground(new Color(200, 200, 200));
         btnDisplayAccountInformation.setOpaque(true);
         btnDisplayAccountInformation.setBorderPainted(true);
@@ -522,6 +521,7 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Add Account - link to jTable
 		JButton btnAddAccount = new JButton("Add Account");
+		btnAddAccount.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnAddAccount.setBackground(new Color(200, 200, 200));
         btnAddAccount.setOpaque(true);
         btnAddAccount.setBorderPainted(true);
@@ -535,7 +535,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnAddAccount.setBounds(1317, 445, 141, 25);
+		btnAddAccount.setBounds(1129, 540, 166, 25);
 		contentPane.add(btnAddAccount);
 				
 		
@@ -543,6 +543,7 @@ public class ExampleHome extends JFrame {
 
 		//Button - Add Transaction
 		JButton btnAddTransaction = new JButton("Add Transaction");
+		btnAddTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnAddTransaction.setBackground(new Color(200, 200, 200));
         btnAddTransaction.setOpaque(true);
         btnAddTransaction.setBorderPainted(true);
@@ -558,12 +559,13 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnAddTransaction.setBounds(1112, 445, 150, 25);
+		btnAddTransaction.setBounds(1129, 409, 166, 25);
 		contentPane.add(btnAddTransaction);
 		
 		
 		
 		JButton btnDeleteTransaction = new JButton("Delete Transaction");
+		btnDeleteTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnDeleteTransaction.setBackground(new Color(200, 200, 200));
         btnDeleteTransaction.setOpaque(true);
         btnDeleteTransaction.setBorderPainted(true);
@@ -573,12 +575,13 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnDeleteTransaction.setBounds(1112, 485, 150, 25);
+		btnDeleteTransaction.setBounds(1129, 445, 166, 25);
 		contentPane.add(btnDeleteTransaction);
 		
 		
 		
 		JButton btnFees = new JButton("Fees");
+		btnFees.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnFees.setBackground(new Color(200, 200, 200));
         btnFees.setOpaque(true);
         btnFees.setBorderPainted(true);
@@ -587,6 +590,7 @@ public class ExampleHome extends JFrame {
 		
 		
 		JButton btnPrintReport = new JButton("Print Report");
+		btnPrintReport.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
@@ -595,7 +599,7 @@ public class ExampleHome extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
                     if (! bigTable.print()) {
-                        System.err.println("User cancelled printing");
+                        System.err.println("User Cancelled Printing");
                     }
                 } catch (java.awt.print.PrinterException f) {
                     System.err.format("Cannot print %s%n", f.getMessage());
@@ -606,6 +610,7 @@ public class ExampleHome extends JFrame {
 		contentPane.add(btnPrintReport);
 		
 		JButton btnFilter = new JButton("Filter");
+		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnFilter.setBackground(new Color(200, 200, 200));
         btnFilter.setOpaque(true);
         btnFilter.setBorderPainted(true);
@@ -614,6 +619,10 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Refreshes Main Table - Functional - Can make it refresh smaller tables too
 		JButton btnRefresh = new JButton("Refresh");
+		btnRefresh.setFont(new Font("Verdana", Font.BOLD, 11));
+	    btnRefresh.setBackground(new Color(70, 137, 191));
+	    btnRefresh.setOpaque(true);
+	    btnRefresh.setBorderPainted(true);
 		btnRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -631,7 +640,7 @@ public class ExampleHome extends JFrame {
 				String line;
 				BufferedReader reader;
 				try{       
-				    reader = new BufferedReader(new FileReader(bigDataFile));
+				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 				       
 				    while((line = reader.readLine()) != null){
 				       tableModelB.addRow(line.split(",")); 
@@ -654,16 +663,16 @@ public class ExampleHome extends JFrame {
 				bigTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
 				bigTable.setBorder(null);
 				bigTable.getColumnModel().getColumn(0).setPreferredWidth(150);
-				bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-				bigTable.getColumnModel().getColumn(2).setPreferredWidth(200);
-				bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
-				bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-				bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
-				bigTable.setBounds(467, 200, 594, 375);
-				JScrollPane scrollPane = new JScrollPane(bigTable);
-				scrollPane.setLocation(400, 185);
-				scrollPane.setSize(700, 600);
-				scrollPane.getViewport().setBackground(Color.WHITE);
+		        bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
+		        bigTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+		        bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
+		        bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
+		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
+		        bigTable.setBounds(467, 200, 594, 375);
+		        JScrollPane scrollPane = new JScrollPane(bigTable);
+		        scrollPane.setLocation(365, 185);
+		        scrollPane.setSize(719, 516);
+		        scrollPane.getViewport().setBackground(Color.WHITE);
 				contentPane.add(scrollPane);
 				
 				//Adding Name to the Combo Box
@@ -671,7 +680,7 @@ public class ExampleHome extends JFrame {
 				Account newAccount;
 				ArrayList<Account> smallDataList = new ArrayList<Account>();
 				try{       
-				    reader = new BufferedReader(new FileReader(smallDataFile));
+				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
 				    while((line = reader.readLine()) != null){
 				    	
 				    	//Splitting the line, and adding the first and last name to transaction (names)
@@ -703,15 +712,12 @@ public class ExampleHome extends JFrame {
 
 			}
 		});
-		btnRefresh.setBounds(55, 650, 195, 25);
-		btnRefresh.setBackground(Color.green);
-		btnRefresh.setOpaque(true);
-		btnRefresh.setBorderPainted(true);
+		btnRefresh.setBounds(55, 606, 195, 25);
 		contentPane.add(btnRefresh);
 		
 		//Label - Background Image - Add last, otherwise it will cover everything
 		JLabel background_image = new JLabel();
-		background_image.setIcon(new ImageIcon("./res/layout_bg.png"));
+		background_image.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/layout_bg.png")));
 		background_image.setBounds(0, 0, 1500, 900);
 		contentPane.add(background_image);
 		

@@ -1,59 +1,56 @@
-Sprint 4 Backlog
+Sprint 5 Backlog
 =====================================================
 -Research (Various)
-    -Log in Design
-	-Refine (Tweaks/Changes)
+
+-Refine All Design (Tweaks/Changes)
 
 -System Document Work
+  -Any remaining pages
+  
+-Product Back Log Hard Copy
+-Gantt Chart Hard Copy
+-Usability Forms (x3) 
     
-    -Overview/Second Screen Design
-        -Implement
-    
-    -User Manual Design
-	-Color scheme 
-        -Orientation of objects 
-	-Logos
-	-Icons
-        -Info
+-User Manual 
+  -Design
+  -Info
 	
-  -Other Screens Designs (Make everything match Log In/Overview)
-        -Color scheme
-        -Orientation of objects 
-	-Logos
-	-Icons
-	-Implement
-	
--Report View 
-       -Generate printable report (if possible)
-       
 =====================================================
 -Briefly cover how core classes fit into MVC architecture
 	-Per Each Sprint Review
 	
     	-Classes
-		-User
-		-Account
-		-Transaction
-			-Check (inherits from transaction)
-			-Credit Card (inherits from transaction)
-		-Visualizers (Swing)
+		      -User
+		      -Account
+		      -Transaction
+			    -Check (inherits from transaction)
+			    -Credit Card (inherits from transaction)
+		      -Visualizers (Swing)
 		
 =====================================================
 -Briefly cover Sprint Progress via Presentation
 	-Per Each Sprint Review
 		
 =====================================================
- -Classes 
+ -Classes (Further Work)
     -Account (User- csadmin, Pass- csci323) 
-    	-Forgot Password
         -Remove accounts (functionality) 
             -[Note- Only remove empty accounts, retire ones with transactions]
         -View/Filter account information (functionality)
+        -Forgot Passsword Implementation (functionality) [x]
     
     -Transaction
+	-Date Autofiller/Date Picker (functionality) 
         -Remove transaction (functionality)
         -Show Fees/Codes (functionality)
 		        -8% held fee (all)
 		        -4% held credit card fee
                    
+=====================================================
+-Unit Testing
+
+-Executable Jar File
+  -Work on getting it in own folder
+  -Further pathing work
+
 =====================================================

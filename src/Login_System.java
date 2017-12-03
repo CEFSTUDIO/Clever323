@@ -49,6 +49,7 @@ public class Login_System {
 
 	//Initialize Frame Contents:
 	private void initialize() {
+<<<<<<< HEAD
 		//Main JFrame Statistics
 		contentPane = new JFrame();
 		contentPane.getContentPane().setBackground(new Color(207, 210, 215));
@@ -59,6 +60,17 @@ public class Login_System {
 		contentPane.setBounds(100, 100, 600, 400);
 		contentPane.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane.getContentPane().setLayout(null);
+=======
+		frmLogIn = new JFrame();
+		frmLogIn.getContentPane().setBackground(new Color(207, 210, 215));
+		frmLogIn.setTitle("CleverBudget - Log In");
+		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("AppIcon.png")));
+		frmLogIn.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		frmLogIn.setResizable(false);
+		frmLogIn.setBounds(100, 100, 600, 400);
+		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmLogIn.getContentPane().setLayout(null);
+>>>>>>> dcc12f969274b2412a4654fc4bfb139d37d02fe9
 		
 		//Label - Username
 		JLabel lblUsername = new JLabel("Username");
@@ -247,6 +259,52 @@ public class Login_System {
 		btnCreateNewAccount.setBounds(364, 241, 165, 25);
 		contentPane.getContentPane().add(btnCreateNewAccount);
 		
+<<<<<<< HEAD
 		
+=======
+		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
+		lblDevelopedByClever.setBackground(Color.WHITE);
+		lblDevelopedByClever.setForeground(Color.BLACK);
+		lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
+		lblDevelopedByClever.setBounds(312, 349, 272, 16);
+		frmLogIn.getContentPane().add(lblDevelopedByClever);
+		
+		JButton btnUserManual = new JButton("User Manual");
+		btnUserManual.setBackground(new Color(200, 200, 200));
+		btnUserManual.setOpaque(true);
+		btnUserManual.setBorderPainted(true);
+		btnUserManual.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				UserManual manual = new UserManual();
+				manual.main(null);
+				
+			}
+		});
+		btnUserManual.setBounds(226, 292, 109, 25);
+		frmLogIn.getContentPane().add(btnUserManual); 
+		
+		JLabel banner_image = new JLabel();
+		//Must be res/filename otherwise it loads improperly when imported as a JAR file
+		banner_image.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/login_bg.png")));
+		banner_image.setBounds(-6, 0, 611, 218);
+		frmLogIn.getContentPane().add(banner_image);
+		
+		JLabel middle_blue = new JLabel();
+		middle_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
+		middle_blue.setBounds(0, 196, 594, 22);
+		frmLogIn.getContentPane().add(middle_blue);
+		
+		JLabel bottom_blue = new JLabel();
+		bottom_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
+		bottom_blue.setBounds(0, 349, 594, 22);
+		frmLogIn.getContentPane().add(bottom_blue);
+		
+		JLabel top_blue = new JLabel();
+		top_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
+		top_blue.setBounds(0, 0, 594, 22);
+		frmLogIn.getContentPane().add(top_blue);
+>>>>>>> dcc12f969274b2412a4654fc4bfb139d37d02fe9
 	}
 }

@@ -6,28 +6,28 @@
 
 =====================================================
 -Program Specification [✓]       
-        -Software Name Specification (Clever Budget) [✓]
+        -Software Name Specification (CleverBudget) [✓]
         -Developed by Specification (Clever 323) [✓]
 		
 =====================================================
 -Figure out and display initial view [✓]
 -Research [✓] [Various]
-        -Log in Screen 
+        -Login Screen 
                 -Log Out [✓]
-                -Create Account (User- CSAdmin, Password- CSCI323) [✓]
+                -Create Account (User- csadmin, Password- csci323) [✓]
                 -Forgot Password [x]
 		-View Account [✓]
 		-Delete Account [x]
         
         -Buttons
-                -Log in [✓]
+                -Login [✓]
                 -Log Out [✓]
                 -Create Account [✓]
                 -Forgot Password [✓]
 		-View Account [✓]
 		-Delete Account [✓]
 		
-	-Log in Design
+	-Login Design
                 -Color scheme [✓]
                 -Orientation of objects [✓]
 		-Logos [✓]
@@ -67,7 +67,7 @@
                         -Withdraw
         
         -Report View [✓]
-                -Generate printable report [x]
+                -Generate printable report [✓]
         
         -Account Overview (info) [✓]
                 -Running Total
@@ -81,13 +81,13 @@
                 -Orientation of objects [✓]
 		-Logos [✓]
 		-Icons [✓]
-		-Implemented [x]
+		-Implemented [✓]
 	
 	-Other Screens Designs (Make everything match Log In/Overview)
         	-Color scheme [✓]
                 -Orientation of objects [x]
-		-Logos [x]
-		-Icons [x]
+		-Logos [✓]
+		-Icons [✓]
 		-Implemented [x]
 
 =====================================================
@@ -117,6 +117,7 @@
 		    -Add accounts (functionality) [✓]
         	    -Remove accounts (functionality) [x]
 		    -View/Filter account information (functionality) [x]
+		    -Forgot Passsword Implementation (functionality) [x]
            
             -Transaction [✓]
                     -amount
@@ -127,6 +128,7 @@
 		    -Add transaction (functionality) [✓]
                     -Remove transaction (functionality) [x]
                     -Save information (functionality) [✓]
+		    -Date Autofiller/Date Picker (functionality) [x]
 		    -Show Fees/Codes (functionality) [x]
 		    	-8% held fee (all) [x]
 			-4% held credit card fee [x]
@@ -150,11 +152,17 @@
 		-All match design [x]
 
 =====================================================
+-Unit Testing [x]
+
+-Executable Jar File [x]
+
 -Hard Copy Documentation
 	
+	-Usability Forms (x3) [x]
+	
 	-System Documentation
-		-Cover Page [x]
-		-Table of Contents [x]
+		-Cover Page [✓]
+		-Table of Contents [✓]
 		-Introduction [x]
 		-Purpose [x]
 		-System Overview
@@ -166,9 +174,9 @@
 		-System Requirements
 			-Hardware (OS, Computer Specs) [x]
 			-Software (Java) [x]
-		-Roles & Responsibilities of Members [x]
+		-Roles & Responsibilities of Members [✓]
 		-Project References (If Any) [x]
-		-Git Repository Location [x]
+		-Git Repository Location [✓]
 		
 	-Product Backlog 
 		-Shows finished items [✓]

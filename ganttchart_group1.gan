@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-01" view-index="0" gantt-divider-location="296" resource-divider-location="300" version="2.8.5" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Group 1 Gantt Chart" company="Group 1" webLink="http://" view-date="2017-11-25" view-index="0" gantt-divider-location="296" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
+    <view zooming-state="default:3" id="gantt-chart">
         <field id="tpd3" name="Name" width="123" order="0"/>
         <field id="tpd4" name="Begin date" width="77" order="1"/>
         <field id="tpd5" name="End date" width="77" order="2"/>
@@ -173,7 +173,7 @@ Hank- Oct 17, 6:30PM - 8:00PM
 	-MVC Architecture
 	-Presentation]]></notes>
             <task id="132" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-10-10" duration="21" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM 
+                <notes><![CDATA[Cheyanne- Oct 10, 12:00-12:30PM (30 minutes)
 	-Assigned tasks to group members
 	-Updated Gantt
 	-Compiled research for Log In
@@ -390,11 +390,11 @@ cameron]]></notes>
 Cheyanne- 10 Minutes
 Cameron- 10 Minutes
 Hank- 10 Minutes 
-Chase- 10 Minutes]]></notes>
+]]></notes>
             </task>
         </task>
         <task id="152" name="Sprint 4" color="#8cb6ce" meeting="false" start="2017-11-01" duration="20" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM| Nov 21, 10:00 - 11:00AM | Nov 24, 11:00PM - 12:30 AM | Nov 27, 1:40 - 2:20PM (7 hours 10 minutes)
+            <notes><![CDATA[Cheyanne- Nov 14, 2:00 - 3:00PM | Nov 16, 10:00 - 11:00AM | Nov 16, 12:00 - 2:00PM | Nov 21, 10:00 - 11:00AM | Nov 24, 11:00PM - 12:30 AM | Nov 27, 1:40 - 2:20PM | Nov 28, 12:00 - 4:00PM (11 hours 10 minutes)
  	-Created Sprint 4
 	-Refined/Groomed Product Backlog
 	-Created Sprint 4 task on Gantt
@@ -408,13 +408,15 @@ Chase- 10 Minutes]]></notes>
 	-Worked on User Manual Design
 	-Worked on System Document
 	-Worked on Usability Form
-	-Print Report Functional
+	-Print Report Functional	
+	-Added functional Jar file
 
-Cameron - (Date Here), (Time Here)
+Cameron - Nov 27 (4 Hours)
 	-Functionality for account
 	-Functionality for transaction
+	-Back End
 	
-Chase - (Date Here), (Time Here)
+Chase - (???)
 	-Design User Manual
 	-Create Info for User Manual
 
@@ -482,12 +484,54 @@ Making everything linked up and look nice
 	-Print Report functional
 	]]></notes>
             </task>
+            <task id="175" name="Jar File" color="#8cb6ce" meeting="false" start="2017-11-28" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 28, 12:00 - 4:00PM (4 hours)
+	-Functional Jar File]]></notes>
+            </task>
             <task id="170" name="Presentation" color="#8cb6ce" meeting="false" start="2017-11-28" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Class Presentation of Sprint 4 Review
 Cheyanne- 10 Minutes
 Cameron- 10 Minutes
 Hank- 10 Minutes 
-Chase- 10 Minutes]]></notes>
+]]></notes>
+            </task>
+        </task>
+        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="3" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | Nov 30, 9:30-10:30AM (Total Hours)
+ 	-Created Sprint 5
+	-Refined/Groomed Product Backlog
+	-Created Sprint 5 task on Gantt
+	-Refined Gantt	
+	-Worked in Class (On System Document)
+
+Cameron - (Total Hours)
+	
+	
+Chase - (Total Hours)
+	
+
+Hank- (Total Hours)
+	]]></notes>
+            <task id="180" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-11-29" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM (30 Minutes)
+ 	-Created Sprint 5
+	-Refined/Groomed Product Backlog
+	-Created Sprint 5 task on Gantt
+	-Refined Gantt]]></notes>
+            </task>
+            <task id="182" name="System Document" color="#8cb6ce" meeting="false" start="2017-11-30" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Nov 30, 9:30-10:30AM (Total Hours)
+	-Worked in Class (On System Document)]]></notes>
+            </task>
+            <task id="196" name="Design" color="#8cb6ce" meeting="false" start="2017-12-01" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 2, 7:00-9:00PM (2 hours)
+	-Worked on design of Add Transaction
+	-Worked on design of Create Account
+	-Worked on design of Overview]]></notes>
+            </task>
+            <task id="201" name="Date Filler" color="#8cb6ce" meeting="false" start="2017-12-01" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 2, 7:00-7:30PM (30 minutes)
+	-Date auto fills/formats to the current date]]></notes>
             </task>
         </task>
     </tasks>
