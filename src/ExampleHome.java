@@ -19,7 +19,10 @@ import javax.swing.JTable;
 import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 import javax.swing.JTextArea;
+import javax.swing.RowFilter;
+
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JSeparator;
@@ -31,6 +34,7 @@ public class ExampleHome extends JFrame {
 	private JPanel contentPane;
 	private String[] fname, lname, accountType, phoneNumber, email;
 	private double[] balance;
+	private TableRowSorter<DefaultTableModel> sorter; 
 
 	//Launch Application:
 	public static void main(String[] args) {
@@ -142,6 +146,7 @@ public class ExampleHome extends JFrame {
 		String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
 		JTable bigTable = new JTable();
 		DefaultTableModel tableModelB;
+
 
 		//Table with 4 columns - Big Overview
 		tableModelB = new DefaultTableModel(0,6);
@@ -342,6 +347,7 @@ public class ExampleHome extends JFrame {
 		}
 		comboBoxChooseBox.setBounds(55, 410, 195, 22);
 		contentPane.add(comboBoxChooseBox);
+		
 		
 		//Button - Log out button - Fully functional - maybe make the JOptionPane appear with our logo
 		JButton btnLogOut = new JButton("Log Out");
@@ -615,7 +621,17 @@ public class ExampleHome extends JFrame {
         btnFilter.setOpaque(true);
         btnFilter.setBorderPainted(true);
 		btnFilter.setBounds(55, 450, 195, 25);
+		   btnFilter.addActionListener(new ActionListener() {
+
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	                RowFilter<DefaultTableModel, Object> rf  = RowFilter.regexFilter(comboBoxChooseBox.getSelectedItem().toString(), 0);
+	                sorter.setRowFilter(rf);
+	            }
+	        });
 		contentPane.add(btnFilter);
+		 sorter = new TableRowSorter<DefaultTableModel>(tableModelB);
+	       bigTable.setRowSorter(sorter);
 		
 		//Button - Refreshes Main Table - Functional - Can make it refresh smaller tables too
 		JButton btnRefresh = new JButton("Refresh");
