@@ -293,12 +293,12 @@ public class CreateAccountInside extends JFrame {
 					for(int i = 0; i < accs.size(); i++) 
 					{
 						//If it does, give an error message
-						if(accs.get(i).toString().equalsIgnoreCase(firstName + " " + lastName))
+						if((accs.get(i).getFirstName() + " " + accs.get(i).getLastName()).equalsIgnoreCase(firstName.trim() + " " + lastName.trim()))
 						{
 							Jerror += 1;
 						}
 					}
-					
+					System.out.println(Jerror);
 					//If it does, tell the user
 					if(Jerror > 0) 
 					{
