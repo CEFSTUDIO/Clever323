@@ -3,3 +3,4 @@ Michal Cassens,500,Deposit,University Of Montana,Credit Card,9/6/17
 Yolanda Reimer,700,Deposit,University Of Montana,Credit Card,9/8/17
 Patricia Duce,50,Expense,Five Guys,Credit Card,11/3/17
 Michael Cassens,100,Expense,Five Guys,Credit Card,11/28/17
+Patricia Duce,100,Expense,Five Guys,Credit Card,11/28/17
