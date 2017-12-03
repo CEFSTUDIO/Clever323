@@ -496,7 +496,7 @@ Hank- 10 Minutes
 ]]></notes>
             </task>
         </task>
-        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="3" complete="0" expand="true">
+        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="4" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | Nov 30, 9:30-10:30AM (Total Hours)
  	-Created Sprint 5
 	-Refined/Groomed Product Backlog
@@ -519,7 +519,7 @@ Hank- (Total Hours)
 	-Created Sprint 5 task on Gantt
 	-Refined Gantt]]></notes>
             </task>
-            <task id="182" name="System Document" color="#8cb6ce" meeting="false" start="2017-11-30" duration="2" complete="0" expand="true">
+            <task id="182" name="System Document" color="#8cb6ce" meeting="false" start="2017-11-30" duration="3" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Nov 30, 9:30-10:30AM | Dec 3, 12:00-2:00PM (3 Hours)
 	-Worked in Class (On System Document)
 	-Further Work on System Document]]></notes>
@@ -533,6 +533,10 @@ Hank- (Total Hours)
             <task id="201" name="Date Filler" color="#8cb6ce" meeting="false" start="2017-12-01" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Dec 2, 7:00-7:30PM (30 minutes)
 	-Date auto fills/formats to the current date]]></notes>
+            </task>
+            <task id="202" name="Filter" color="#8cb6ce" meeting="false" start="2017-12-04" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 2, 2:00-3:30PM (1 Hour)
+	-Table Filters based on Combo Box Selection]]></notes>
             </task>
         </task>
     </tasks>
