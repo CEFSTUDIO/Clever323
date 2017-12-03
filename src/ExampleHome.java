@@ -1,3 +1,8 @@
+//Author(s): Cameron Gomke, Hank, Cheyanne, Chase
+//File Name: Example Home
+//Purpose: CleverBudget
+//Date Created: 10/30/2017
+//Last Updated: 12/03/2017
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 import javax.swing.JFrame;

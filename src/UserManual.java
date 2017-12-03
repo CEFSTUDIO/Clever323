@@ -1,3 +1,8 @@
+//Author(s): Cameron Gomke, Cheyanne
+//File Name: User_Manual
+//Purpose: CleverBudget
+//Date Created: 10/30/2017
+//Last Updated: 12/03/2017
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;

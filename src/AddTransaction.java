@@ -1,8 +1,8 @@
-//Author(s): Cameron Gomke
+//Author(s): Cameron Gomke, Cheyanne Flickinger
 //File Name: AddTransaction (used for a button in the main function)
 //Purpose: CleverBudget
 //Date Created: 10/30/2017
-//Last Updated: 11/13/2017
+//Last Updated: 12/03/2017
 import java.awt.Color;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
