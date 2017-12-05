@@ -620,23 +620,9 @@ public class ExampleHome extends JFrame {
         });
 		contentPane.add(btnPrintReport);
 		
-		JButton btnFilter = new JButton("Filter");
-		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
-		btnFilter.setBackground(new Color(200, 200, 200));
-        btnFilter.setOpaque(true);
-        btnFilter.setBorderPainted(true);
-		btnFilter.setBounds(55, 450, 195, 25);
-		   btnFilter.addActionListener(new ActionListener() {
-
-	            @Override
-	            public void actionPerformed(ActionEvent e) {
-	                RowFilter<DefaultTableModel, Object> rf  = RowFilter.regexFilter(comboBoxChooseBox.getSelectedItem().toString(), 0);
-	                sorter.setRowFilter(rf);
-	            }
-	        });
-		contentPane.add(btnFilter);
-		 sorter = new TableRowSorter<DefaultTableModel>(tableModelB);
-	       bigTable.setRowSorter(sorter);
+		
+	       
+	    
 		
 		//Button - Refreshes Main Table - Functional - Can make it refresh smaller tables too
 		JButton btnRefresh = new JButton("Refresh");
@@ -647,6 +633,11 @@ public class ExampleHome extends JFrame {
 		btnRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				tableModelB.fireTableDataChanged();
+				
+				
+			    
+				
 				//Completely Re-Paints the bigTable
 				String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
 				JTable bigTable = new JTable();
@@ -656,6 +647,8 @@ public class ExampleHome extends JFrame {
 				tableModelB = new DefaultTableModel(0,6);
 				tableModelB.setColumnIdentifiers(bigColumns);
 				bigTable.setModel(tableModelB);
+				
+				
 
 				//Reading in the file, adding the data within to bigTable
 				String line;
@@ -696,55 +689,58 @@ public class ExampleHome extends JFrame {
 		        scrollPane.getViewport().setBackground(Color.WHITE);
 				contentPane.add(scrollPane);
 				
-				//Adding Name to the Combo Box
-				String[] details = null;
-				Account newAccount;
-				ArrayList<Account> smallDataList = new ArrayList<Account>();
-				try{       
-				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
-				    while((line = reader.readLine()) != null){
-				    	
-				    	//Splitting the line, and adding the first and last name to transaction (names)
-				    	details = line.split(",");
-				        newAccount = new Account();
-				        newAccount.setFirstName(details[0]);
-				        newAccount.setLastName(details[1]);
-				        newAccount.setStartingBalance(Double.parseDouble(details[2]));
-				        newAccount.setDescription(details[3]);
-				        newAccount.setPhoneNumber(details[4]);
-				        newAccount.setEmail(details[5]);
-				        smallDataList.add(newAccount);
-
-				    }
-				    reader.close();
-				 }
-						   
-				//Catching Errors
-				catch(FileNotFoundException e1){
-				    JOptionPane.showMessageDialog(null, "File not Found.");
-				}
-				catch(IOException e2){
-				    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
-				}
-				
-				
-				
-				int number = smallDataList.size() - 1;
-				//for(int i = 0; i < number; i++) {
-				System.out.println(number);
-				System.out.println(comboBoxChooseBox.getItemAt(number+1));
-				System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
-					if(comboBoxChooseBox.getItemAt(number+1).equals(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName()))
-					{
-						System.out.println("same");
-					}
-					else 
-					{
-						//System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
-						//System.out.println(comboBoxChooseBox.getItemAt(number));
-						//comboBoxChooseBox.addItem(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
-					}
-				//}
+				//RowFilter<DefaultTableModel, Object> ov  = RowFilter.regexFilter("",0);
+                //sorter.setRowFilter(ov);
+//				
+//				//Adding Name to the Combo Box
+//				String[] details = null;
+//				Account newAccount;
+//				ArrayList<Account> smallDataList = new ArrayList<Account>();
+//				try{       
+//				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
+//				    while((line = reader.readLine()) != null){
+//				    	
+//				    	//Splitting the line, and adding the first and last name to transaction (names)
+//				    	details = line.split(",");
+//				        newAccount = new Account();
+//				        newAccount.setFirstName(details[0]);
+//				        newAccount.setLastName(details[1]);
+//				        newAccount.setStartingBalance(Double.parseDouble(details[2]));
+//				        newAccount.setDescription(details[3]);
+//				        newAccount.setPhoneNumber(details[4]);
+//				        newAccount.setEmail(details[5]);
+//				        smallDataList.add(newAccount);
+//
+//				    }
+//				    reader.close();
+//				 }
+//						   
+//				//Catching Errors
+//				catch(FileNotFoundException e1){
+//				    JOptionPane.showMessageDialog(null, "File not Found.");
+//				}
+//				catch(IOException e2){
+//				    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+//				}
+//				
+//				
+//				
+//				int number = smallDataList.size() - 1;
+//				//for(int i = 0; i < number; i++) {
+//				System.out.println(number);
+//				System.out.println(comboBoxChooseBox.getItemAt(number+1));
+//				System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
+//					if(comboBoxChooseBox.getItemAt(number+1).equals(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName()))
+//					{
+//						System.out.println("same");
+//					}
+//					else 
+//					{
+//						//System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
+//						//System.out.println(comboBoxChooseBox.getItemAt(number));
+//						//comboBoxChooseBox.addItem(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
+//					}
+//				//}
 				
 				
 
@@ -753,6 +749,34 @@ public class ExampleHome extends JFrame {
 		btnRefresh.setBounds(55, 606, 195, 25);
 		contentPane.add(btnRefresh);
 		
+		
+		//Button - Filter
+		JButton btnFilter = new JButton("Filter");
+		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnFilter.setBackground(new Color(200, 200, 200));
+        btnFilter.setOpaque(true);
+        btnFilter.setBorderPainted(true);
+		btnFilter.setBounds(55, 450, 195, 25);
+		//tableModelB.fireTableDataChanged();
+		btnFilter.addActionListener(new ActionListener() {
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	            	
+	            	
+	            	
+	            	if(comboBoxChooseBox.getSelectedItem().equals("-- Overview --")) {
+	            		RowFilter<DefaultTableModel, Object> overviewFilter  = RowFilter.regexFilter("",0);
+		                sorter.setRowFilter(overviewFilter);
+	            	}
+	            	else {
+	            		RowFilter<DefaultTableModel, Object> personFilter  = RowFilter.regexFilter(comboBoxChooseBox.getSelectedItem().toString(), 0);
+		                sorter.setRowFilter(personFilter);
+	            	}
+	            }
+	        });
+		contentPane.add(btnFilter);
+		sorter = new TableRowSorter<DefaultTableModel>(tableModelB);
+	    bigTable.setRowSorter(sorter);
 		
 		JButton btnModifyAccount = new JButton("Modify Account");
 		btnModifyAccount.addActionListener(new ActionListener() {

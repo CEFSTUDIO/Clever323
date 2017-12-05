@@ -4,3 +4,12 @@ Yolanda Reimer,700,Deposit,University Of Montana,Credit Card,9/8/17
 Patricia Duce,50,Expense,Five Guys,Credit Card,11/3/17
 Michael Cassens,100,Expense,Five Guys,Credit Card,11/28/17Yolanda Reimer,100,Expense,Cameron,Credit Card,12/03/17
 Yolanda Reimer,100,Deposit,ggg,Credit Card,12/03/17
+Patricia Duce,100,Expense,me,Credit Card,12/04/17
+Patricia Duce,1,Expense,1,Credit Card,12/04/17
+Patricia Duce,2,Expense,2,Credit Card,12/04/17
+Patricia Duce,3,Expense,3,Credit Card,12/04/17
+Patricia Duce,4,Expense,4,Credit Card,12/04/17
+Patricia Duce,5,Expense,5,Credit Card,12/04/17
+Patricia Duce,6,Expense,6,Credit Card,12/04/17
+Patricia Duce,7,Expense,7,Credit Card,12/04/17
+Patricia Duce,8,Expense,8,Credit Card,12/04/17
