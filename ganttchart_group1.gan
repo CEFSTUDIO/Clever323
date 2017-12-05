@@ -496,8 +496,13 @@ Hank- 10 Minutes
 ]]></notes>
             </task>
         </task>
+<<<<<<< HEAD
         <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="5" complete="0" expand="true">
             <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | Nov 30, 9:30-10:30AM | Dec 2, 7:00-7:30PM | Dec 3, 12:00-2:00PM | Dec 2, 7:00-9:00PM| Dec 2, 2:00-3:30PM | Dec 4, 8:55-9:00PM  (7 Hours 35 Minutes)
+=======
+        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-27" duration="7" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | Nov 30, 9:30-10:30AM (Total Hours)
+>>>>>>> origin/master
  	-Created Sprint 5
 	-Refined/Groomed Product Backlog
 	-Created Sprint 5 task on Gantt
@@ -522,6 +527,21 @@ Hank- (Total Hours)
 	-Refined/Groomed Product Backlog
 	-Created Sprint 5 task on Gantt
 	-Refined Gantt]]></notes>
+            </task>
+            <task id="204" name="Refresh Button" color="#8cb6ce" meeting="false" start="2017-12-05" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Worked on the refresh and filter buttons
+Cameron Gomke
+12/4/17
+8:00 - 11:00 pm
+3 hours]]></notes>
+            </task>
+            <task id="206" name="Deletes" color="#8cb6ce" meeting="false" start="2017-11-27" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Worked on Delete buttons and fix misc bugs
+Cameron Gomke
+12/3/17
+8:00 - 12:00 pm
+4 hours
+]]></notes>
             </task>
             <task id="182" name="System Document" color="#8cb6ce" meeting="false" start="2017-11-30" duration="3" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Nov 30, 9:30-10:30AM | Dec 3, 12:00-2:00PM (3 Hours)

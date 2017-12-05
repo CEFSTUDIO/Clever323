@@ -15,7 +15,6 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -27,15 +26,14 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import javax.swing.JTextArea;
 import javax.swing.RowFilter;
-
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JSeparator;
-import javax.swing.JRadioButton;
 
+@SuppressWarnings("serial")
 public class ExampleHome extends JFrame {
 
-	//Private Attributes
+	//Private Attributes:
 	private JPanel contentPane;
 	private String[] fname, lname, accountType, phoneNumber, email;
 	private double[] balance;
@@ -384,9 +382,7 @@ public class ExampleHome extends JFrame {
         btnDeleteAccount.setBorderPainted(true);
 		btnDeleteAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				if (JOptionPane.showConfirmDialog(null, "Are you sure you want to Delete this account?", "CleverBudget - Delete Confirm", JOptionPane.YES_NO_CANCEL_OPTION) == JOptionPane.YES_NO_OPTION);
-				//comboBox.
+				DeleteAccount.main(null);
 			}
 			
 		});
@@ -462,9 +458,6 @@ public class ExampleHome extends JFrame {
 		
 		
 
-		int numOfAccs = comboBoxChooseBox.getItemCount()-1;
-		String first = (String) comboBoxChooseBox.getItemAt(0);
-		//System.out.println(first);
 		
 		try{       
 		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
@@ -574,7 +567,7 @@ public class ExampleHome extends JFrame {
 		contentPane.add(btnAddTransaction);
 		
 		
-		
+		//Button - Delete Transaction - NOT FUNCTIONAL
 		JButton btnDeleteTransaction = new JButton("Delete Transaction");
 		btnDeleteTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnDeleteTransaction.setBackground(new Color(200, 200, 200));
@@ -582,16 +575,18 @@ public class ExampleHome extends JFrame {
         btnDeleteTransaction.setBorderPainted(true);
 		btnDeleteTransaction.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showConfirmDialog(null, "Are you sure you want to Delete this Transaction?", "CleverBudget - Delete Confirm", JOptionPane.YES_NO_CANCEL_OPTION);
 				
+				//JOptionPane.showConfirmDialog(null, "Are you sure you want to Delete this Transaction?", "CleverBudget - Delete Confirm", JOptionPane.YES_NO_CANCEL_OPTION);
+			
 			}
 		});
 		btnDeleteTransaction.setBounds(1129, 445, 166, 25);
 		contentPane.add(btnDeleteTransaction);
 		
 		
-		
+		//Button - Fees - NOT FUNCTIONAL
 		JButton btnFees = new JButton("Fees");
+		//Button Attributes:
 		btnFees.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnFees.setBackground(new Color(200, 200, 200));
         btnFees.setOpaque(true);
@@ -599,13 +594,15 @@ public class ExampleHome extends JFrame {
 		btnFees.setBounds(55, 570, 195, 25);
 		contentPane.add(btnFees);
 		
-		
+		//Button - Print Report - FUNCTIONAL
 		JButton btnPrintReport = new JButton("Print Report");
+		//Button Attributes:
 		btnPrintReport.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
 		btnPrintReport.setBounds(55, 530, 195, 25);
+		//Button Action Listener:
 		btnPrintReport.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -750,19 +747,18 @@ public class ExampleHome extends JFrame {
 		contentPane.add(btnRefresh);
 		
 		
-		//Button - Filter
+		//Button - Filter - FUNCTIONAL
 		JButton btnFilter = new JButton("Filter");
+		//Button Attributes:
 		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnFilter.setBackground(new Color(200, 200, 200));
         btnFilter.setOpaque(true);
         btnFilter.setBorderPainted(true);
 		btnFilter.setBounds(55, 450, 195, 25);
-		//tableModelB.fireTableDataChanged();
+		//Button Action Listener:
 		btnFilter.addActionListener(new ActionListener() {
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
-	            	
-	            	
 	            	
 	            	if(comboBoxChooseBox.getSelectedItem().equals("-- Overview --")) {
 	            		RowFilter<DefaultTableModel, Object> overviewFilter  = RowFilter.regexFilter("",0);
@@ -775,6 +771,7 @@ public class ExampleHome extends JFrame {
 	            }
 	        });
 		contentPane.add(btnFilter);
+		//Filter Button Misc
 		sorter = new TableRowSorter<DefaultTableModel>(tableModelB);
 	    bigTable.setRowSorter(sorter);
 		
@@ -799,11 +796,6 @@ public class ExampleHome extends JFrame {
 		background_image.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/layout_bg.png")));
 		background_image.setBounds(0, 0, 1500, 900);
 		contentPane.add(background_image);
-		
-		
-		
-		
-		
 		
 		
 	} // End of Program
