@@ -15,7 +15,6 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -27,15 +26,14 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import javax.swing.JTextArea;
 import javax.swing.RowFilter;
-
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JSeparator;
-import javax.swing.JRadioButton;
 
+@SuppressWarnings("serial")
 public class ExampleHome extends JFrame {
 
-	//Private Attributes
+	//Private Attributes:
 	private JPanel contentPane;
 	private String[] fname, lname, accountType, phoneNumber, email;
 	private double[] balance;
@@ -385,7 +383,6 @@ public class ExampleHome extends JFrame {
 		btnDeleteAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				DeleteAccount.main(null);
-				//if (JOptionPane.showConfirmDialog(null, "Are you sure you want to Delete this account?", "CleverBudget - Delete Confirm", JOptionPane.YES_NO_CANCEL_OPTION) == JOptionPane.YES_NO_OPTION);
 			}
 			
 		});
@@ -461,9 +458,6 @@ public class ExampleHome extends JFrame {
 		
 		
 
-		int numOfAccs = comboBoxChooseBox.getItemCount()-1;
-		String first = (String) comboBoxChooseBox.getItemAt(0);
-		//System.out.println(first);
 		
 		try{       
 		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
