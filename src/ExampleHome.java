@@ -782,12 +782,14 @@ public class ExampleHome extends JFrame {
 	    bigTable.setRowSorter(sorter);
 		
 		JButton btnModifyAccount = new JButton("Modify Account");
+		btnModifyAccount.setBackground(new Color(200,200,200));
+		btnModifyAccount.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnModifyAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 			}
 		});
-		btnModifyAccount.setBounds(1129, 578, 162, 25);
+		btnModifyAccount.setBounds(1129, 578, 166, 25);
 		contentPane.add(btnModifyAccount);
 		
 		
