@@ -2,7 +2,7 @@
 // File Name: Create Account Inside
 // Purpose: CleverBudget
 // Date Created: 10/30/2017
-// Last Updated: 11/27/2017
+// Last Updated: 12/3/2017
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;

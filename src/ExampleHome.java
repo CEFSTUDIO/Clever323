@@ -117,8 +117,8 @@ public class ExampleHome extends JFrame {
 		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
 		}
 		
-		System.out.println(smallDataList.toString());
-		System.out.println(bigDataList.toString());
+		//System.out.println(smallDataList.toString());
+		//System.out.println(bigDataList.toString());
 				
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Frame and Graphical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Main JFrame Statistics
@@ -379,7 +379,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(1129, 576, 166, 25);
+		btnDeleteAccount.setBounds(1129, 616, 166, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -453,7 +453,7 @@ public class ExampleHome extends JFrame {
 
 		int numOfAccs = comboBoxChooseBox.getItemCount()-1;
 		String first = (String) comboBoxChooseBox.getItemAt(0);
-		System.out.println(first);
+		//System.out.println(first);
 		
 		try{       
 		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
@@ -707,19 +707,53 @@ public class ExampleHome extends JFrame {
 				}
 				
 				
+				
 				int number = smallDataList.size() - 1;
-				comboBoxChooseBox.addItem(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
+				//for(int i = 0; i < number; i++) {
+				System.out.println(number);
+				System.out.println(comboBoxChooseBox.getItemAt(number+1));
+				System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
+					if(comboBoxChooseBox.getItemAt(number+1).equals(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName()))
+					{
+						System.out.println("same");
+					}
+					else 
+					{
+						//System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
+						//System.out.println(comboBoxChooseBox.getItemAt(number));
+						//comboBoxChooseBox.addItem(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
+					}
+				//}
+				
+				
 
 			}
 		});
 		btnRefresh.setBounds(55, 606, 195, 25);
 		contentPane.add(btnRefresh);
 		
+		
+		JButton btnModifyAccount = new JButton("Modify Account");
+		btnModifyAccount.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		btnModifyAccount.setBounds(1129, 578, 162, 25);
+		contentPane.add(btnModifyAccount);
+		
+		
+		
+		
+		
+		
 		//Label - Background Image - Add last, otherwise it will cover everything
 		JLabel background_image = new JLabel();
 		background_image.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/layout_bg.png")));
 		background_image.setBounds(0, 0, 1500, 900);
 		contentPane.add(background_image);
+		
+		
 		
 		
 		
