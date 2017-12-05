@@ -496,13 +496,17 @@ Hank- 10 Minutes
 ]]></notes>
             </task>
         </task>
-        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="4" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | Nov 30, 9:30-10:30AM (Total Hours)
+        <task id="176" name="Sprint 5" color="#8cb6ce" meeting="false" start="2017-11-29" duration="5" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Nov 29, 1:00 - 1:30PM | Nov 30, 9:30-10:30AM | Dec 2, 7:00-7:30PM | Dec 3, 12:00-2:00PM | Dec 2, 7:00-9:00PM| Dec 2, 2:00-3:30PM | Dec 4, 8:55-9:00PM  (7 Hours 35 Minutes)
  	-Created Sprint 5
 	-Refined/Groomed Product Backlog
 	-Created Sprint 5 task on Gantt
 	-Refined Gantt	
 	-Worked in Class (On System Document)
+	-Refined Design
+	-Worked on System Document
+	-Date Filler
+	-Filter
 
 Cameron - (Total Hours)
 	
@@ -525,18 +529,25 @@ Hank- (Total Hours)
 	-Further Work on System Document]]></notes>
             </task>
             <task id="196" name="Design" color="#8cb6ce" meeting="false" start="2017-12-01" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Dec 2, 7:00-9:00PM (2 hours)
+                <notes><![CDATA[Cheyanne- Dec 2, 7:00-9:00PM| Dec 4, 8:55-9:00PM (2 hours 5 minutes)
 	-Worked on design of Add Transaction
 	-Worked on design of Create Account
-	-Worked on design of Overview]]></notes>
+	-Worked on design of Overview
+	-Changed Modify Button to Match]]></notes>
             </task>
             <task id="201" name="Date Filler" color="#8cb6ce" meeting="false" start="2017-12-01" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Dec 2, 7:00-7:30PM (30 minutes)
 	-Date auto fills/formats to the current date]]></notes>
             </task>
             <task id="202" name="Filter" color="#8cb6ce" meeting="false" start="2017-12-04" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Dec 2, 2:00-3:30PM (1 Hour)
+                <notes><![CDATA[Cheyanne- Dec 3, 2:00-3:30PM (1 Hour)
 	-Table Filters based on Combo Box Selection]]></notes>
+            </task>
+            <task id="209" name="Presentation" color="#8cb6ce" meeting="false" start="2017-12-05" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Class Presentation of Sprint 5 Review
+Cheyanne- 10 Minutes
+Cameron- 10 Minutes
+Hank- 10 Minutes ]]></notes>
             </task>
         </task>
     </tasks>
