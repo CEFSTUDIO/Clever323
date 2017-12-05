@@ -2,7 +2,7 @@
 //File Name: Login_System
 //Purpose: CleverBudget
 //Date Created: 10/30/2017
-//Last Updated: 11/28/2017
+//Last Updated: 12/03/2017
 import java.awt.Color;
 import java.awt.EventQueue;
 import javax.swing.JFrame;

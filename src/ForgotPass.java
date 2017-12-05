@@ -1,3 +1,8 @@
+//Author(s): Cameron Gomke, Cheyanne, Chase
+//File Name: ForgotPass
+//Purpose: CleverBudget
+//Date Created: 10/30/2017
+//Last Updated: 12/03/2017
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 

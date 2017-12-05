@@ -118,6 +118,7 @@
 		    -Add accounts (functionality) [✓]
         	    -Remove accounts (functionality) [x]
 		    -View/Filter account information (functionality) [x]
+		    -Modify Account(functionality) [x]
 		    -Forgot Passsword Implementation (functionality) [x]
            
             -Transaction [✓]
@@ -128,6 +129,7 @@
                         -Getters/Setters for each
 		    -Add transaction (functionality) [✓]
                     -Remove transaction (functionality) [x]
+		    -Filter table information (functionality) [✓]
                     -Save information (functionality) [✓]
 		    -Date Autofiller/Date Picker (functionality) [x]
 		    -Show Fees/Codes (functionality) [x]
