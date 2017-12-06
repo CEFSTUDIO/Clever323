@@ -1,0 +1,61 @@
+Sprint Final Backlog
+=====================================================
+-Research (Various)
+
+-Refine All Remaining Design (Tweaks/Changes)
+
+-System Document Work
+  -Any remaining pages
+  -Product Back Log Hard Copy
+  -Gantt Chart Hard Copy
+   
+-User Manual 
+  -Info
+	
+=====================================================
+-Briefly cover how core classes fit into MVC architecture
+	-Per Each Sprint Review
+	
+    	-Classes
+		      -User
+		      -Account
+		      -Transaction
+			    -Check (inherits from transaction)
+			    -Credit Card (inherits from transaction)
+		      -Visualizers (Swing)
+		
+=====================================================
+-Briefly cover Sprint Progress via Presentation
+	-Per Each Sprint Review
+		
+=====================================================
+ -Classes (Further Work- Must Be Done!)
+    -Account (User- csadmin, Pass- csci323) 
+        -Remove accounts (functionality) 
+            -[Note- Only remove empty accounts, retire ones with transactions]
+        -Modify Account(functionality)
+        -Show Balance for Each Account
+    
+    -Transaction
+        -Remove transaction (functionality)
+	      -Work on Refresh
+        -Show Fees/Codes (functionality) [Drop Down List]
+		        -8% held fee (all)
+		        -4% held credit card fee
+        -Benefits Calculator
+             -12% or 25%
+=====================================================
+-If We Have Time (Bonus Points)
+    -Forgot Passsword Implementation (functionality)
+    -Log Out Session (timer) 
+    -User Login (Seperate from Admin log in)
+    -Filter by Type of Transaction
+    -Ability to Reconcile Fees
+    -Break Down When Paying Worker
+=====================================================
+-Unit Testing
+
+-Executable Jar File
+  -Further pathing work/testing
+
+=====================================================
