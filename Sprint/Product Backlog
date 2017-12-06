@@ -35,12 +35,12 @@
 		-Implemented [✓]
 	
 	-User Manual Design
-		-Color scheme [x]
-                -Orientation of objects [x]
-		-Logos [x]
-		-Icons [x]
+		-Color scheme [✓]
+                -Orientation of objects [✓]
+		-Logos [✓]
+		-Icons [✓]
 		-Info [x]
-		-Implemented [x]
+		-Implemented [✓]
 	
 =====================================================
 -Briefly cover how core classes fit into MVC architecture [✓]
@@ -86,10 +86,10 @@
 	
 	-Other Screens Designs (Make everything match Log In/Overview)
         	-Color scheme [✓]
-                -Orientation of objects [x]
+                -Orientation of objects [✓]
 		-Logos [✓]
 		-Icons [✓]
-		-Implemented [x]
+		-Implemented [✓]
 
 =====================================================
 -MVC Architecture [✓]
@@ -117,8 +117,8 @@
                             -withdraw method
 		    -Add accounts (functionality) [✓]
         	    -Remove accounts (functionality) [x]
-		    -View/Filter account information (functionality) [x]
-		    -Modify Account(functionality) [x]
+		    -View/Filter Account information (functionality) [✓]
+		    -Modify Account (functionality) [x]
 		    -Forgot Passsword Implementation (functionality) [x]
            
             -Transaction [✓]
@@ -131,7 +131,7 @@
                     -Remove transaction (functionality) [x]
 		    -Filter table information (functionality) [✓]
                     -Save information (functionality) [✓]
-		    -Date Autofiller/Date Picker (functionality) [x]
+		    -Date Autofiller/Date Picker (functionality) [✓]
 		    -Show Fees/Codes (functionality) [x]
 		    	-8% held fee (all) [x]
 			-4% held credit card fee [x]
@@ -161,7 +161,7 @@
 
 -Hard Copy Documentation
 	
-	-Usability Forms (x3) [x]
+	-Usability Forms (x3) [✓]
 	
 	-System Documentation
 		-Cover Page [✓]
