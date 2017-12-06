@@ -509,7 +509,7 @@ Hank- 10 Minutes
 	-Filter
 	-Jar File
 
-Cameron - Dec 3, 8:00 - 12:00PM| Dec 4, 8:00 - 11:00PM (7 Hours)
+Cameron- Dec 3, 8:00 - 12:00PM| Dec 4, 8:00 - 11:00PM (7 Hours)
 	-Refresh Button
 	-Deletes
 	-Back End
@@ -571,6 +571,27 @@ Cameron Gomke
 Cheyanne- 10 Minutes
 Cameron- 10 Minutes
 ]]></notes>
+            </task>
+        </task>
+        <task id="241" name="Sprint Final" color="#8cb6ce" meeting="false" start="2017-12-06" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM  (Total Hours)
+ 	-Created Sprint Final
+	-Refined/Groomed Product Backlog
+	-Created Sprint Final task on Gantt
+	-Refined Gantt	
+	
+
+Cameron- (Time/Date Here)
+	
+
+Hank- (Time/Date Here)
+	]]></notes>
+            <task id="242" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-12-06" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM  (1 Hour)
+ 	-Created Sprint Final
+	-Refined/Groomed Product Backlog
+	-Created Sprint Final task on Gantt
+	-Refined Gantt	]]></notes>
             </task>
         </task>
     </tasks>
