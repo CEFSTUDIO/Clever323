@@ -13,20 +13,12 @@ Sprint Final Backlog
   -Info
 	
 =====================================================
--Briefly cover how core classes fit into MVC architecture
-	-Per Each Sprint Review
-	
-    	-Classes
-		      -User
-		      -Account
-		      -Transaction
-			    -Check (inherits from transaction)
-			    -Credit Card (inherits from transaction)
-		      -Visualizers (Swing)
-		
-=====================================================
 -Briefly cover Sprint Progress via Presentation
 	-Per Each Sprint Review
+	-No MVC Architecture slide
+	-Describe all features
+	-Explain what it is/what it can do
+	-No explanation of what was done
 		
 =====================================================
  -Classes (Further Work- Must Be Done!)
