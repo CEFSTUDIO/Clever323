@@ -109,7 +109,16 @@ public class Login_System {
 		middle_blue.setIcon(new ImageIcon("./blue_border.png"));
 		middle_blue.setBounds(0, 196, 594, 22);
 		contentPane.getContentPane().add(middle_blue);
-		
+	      
+        //Label - Developed By:
+        JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
+        lblDevelopedByClever.setBackground(Color.WHITE);
+        lblDevelopedByClever.setForeground(Color.BLACK);
+        lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
+        lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
+        lblDevelopedByClever.setBounds(312, 349, 272, 16);
+        contentPane.getContentPane().add(lblDevelopedByClever);
+        
 		//Label - Bottom Blue Border
 		JLabel bottom_blue = new JLabel();
 		bottom_blue.setIcon(new ImageIcon("./blue_border.png"));
@@ -121,16 +130,7 @@ public class Login_System {
 		banner_image.setIcon(new ImageIcon("./res/login_bg.png"));
 		banner_image.setBounds(-6, 0, 611, 218);
 		contentPane.getContentPane().add(banner_image);
-		
-		//Label - Developed By:
-		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
-		lblDevelopedByClever.setBackground(Color.WHITE);
-		lblDevelopedByClever.setForeground(Color.BLACK);
-		lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
-		lblDevelopedByClever.setBounds(312, 349, 272, 16);
-		contentPane.getContentPane().add(lblDevelopedByClever);
-		
+
 		//Button - Reset Text Fields
 		JButton btnReset = new JButton("Reset");
 		btnReset.setBackground(new Color(200, 200, 200));

@@ -2,7 +2,7 @@
 //File Name: Example Home
 //Purpose: CleverBudget
 //Date Created: 10/30/2017
-//Last Updated: 12/05/2017
+//Last Updated: 12/12/2017
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
@@ -17,6 +17,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import javax.swing.JTable;
@@ -146,13 +147,13 @@ public class ExampleHome extends JFrame {
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Code for Main Overview Tables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//~~~~~~~~~~~~~~~~ Big Table ~~~~~~~~~~~~~~~~
 		//Big Table Overview
-		String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
+		String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Code:", "Date:"};
 		JTable bigTable = new JTable();
 		DefaultTableModel tableModelB;
 
 
 		//Table with 4 columns - Big Overview
-		tableModelB = new DefaultTableModel(0,6);
+		tableModelB = new DefaultTableModel(0,7);
 		tableModelB.setColumnIdentifiers(bigColumns);
 		bigTable.setModel(tableModelB);
 
@@ -182,14 +183,15 @@ public class ExampleHome extends JFrame {
 		bigTable.setBorder(null);
 		bigTable.getColumnModel().getColumn(0).setPreferredWidth(150);
 		bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-		bigTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+		bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
 		bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
 		bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-		bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
+		bigTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+		bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
 		bigTable.setBounds(467, 200, 594, 375);
 		JScrollPane scrollPane = new JScrollPane(bigTable);
 		scrollPane.setLocation(365, 185);
-		scrollPane.setSize(719, 516);
+		scrollPane.setSize(719, 458);
 		scrollPane.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane);
 		
@@ -268,7 +270,7 @@ public class ExampleHome extends JFrame {
 		//Label - Main logo, big one
 		JLabel lblMainIcon = new JLabel();
 		lblMainIcon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/logo.png")));
-		lblMainIcon.setBounds(65, 117, 210, 210);
+		lblMainIcon.setBounds(65, 104, 210, 210);
 		contentPane.add(lblMainIcon);
 		
 		//Label - Welcome Text
@@ -286,7 +288,7 @@ public class ExampleHome extends JFrame {
 		//Label - Total Balance 
 		JLabel lblTotalBalance = new JLabel("Total Balance: " + totalBalance);
 		lblTotalBalance.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblTotalBalance.setBounds(639, 786, 461, 54);
+		lblTotalBalance.setBounds(573, 647, 514, 54);
 		contentPane.add(lblTotalBalance);
 		
 		//Label - Transaction
@@ -323,7 +325,7 @@ public class ExampleHome extends JFrame {
 				+ "the Department's funds and spendings via\r\n"
 				+ "professors through the use of dynamic, yet\r\n"
 				+ "simple implementation of Java!");
-		txtrUserGuide.setBounds(55, 339, 290, 75);
+		txtrUserGuide.setBounds(55, 324, 290, 75);
 		contentPane.add(txtrUserGuide);
 		
 		
@@ -348,7 +350,7 @@ public class ExampleHome extends JFrame {
 		for (int i = 0; i < smallDataList.size(); i++) {
 			comboBoxChooseBox.addItem(smallDataList.get(i).getFirstName() + " " + smallDataList.get(i).getLastName());
 		}
-		comboBoxChooseBox.setBounds(55, 410, 195, 22);
+		comboBoxChooseBox.setBounds(55, 397, 195, 22);
 		contentPane.add(comboBoxChooseBox);
 		
 		
@@ -371,7 +373,7 @@ public class ExampleHome extends JFrame {
 				}
 			}
 		});
-		btnLogOut.setBounds(55, 642, 195, 25);
+		btnLogOut.setBounds(55, 618, 195, 25);
 		contentPane.add(btnLogOut);
 		
 		//Button - Delete Account - NOT FUNCTIONAL
@@ -515,7 +517,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnDisplayAccountInformation.setBounds(55, 490, 195, 25);
+		btnDisplayAccountInformation.setBounds(55, 466, 195, 25);
 		contentPane.add(btnDisplayAccountInformation);
 		
 		
@@ -591,7 +593,7 @@ public class ExampleHome extends JFrame {
 		btnFees.setBackground(new Color(200, 200, 200));
         btnFees.setOpaque(true);
         btnFees.setBorderPainted(true);
-		btnFees.setBounds(55, 570, 195, 25);
+		btnFees.setBounds(55, 540, 195, 25);
 		contentPane.add(btnFees);
 		
 		//Button - Print Report - FUNCTIONAL
@@ -601,7 +603,7 @@ public class ExampleHome extends JFrame {
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
-		btnPrintReport.setBounds(55, 530, 195, 25);
+		btnPrintReport.setBounds(55, 502, 195, 25);
 		//Button Action Listener:
 		btnPrintReport.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -636,12 +638,12 @@ public class ExampleHome extends JFrame {
 			    
 				
 				//Completely Re-Paints the bigTable
-				String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Date:"};
+				String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Code:", "Date:"};
 				JTable bigTable = new JTable();
 				DefaultTableModel tableModelB;
 
 				//Table with 4 columns - Big Overview
-				tableModelB = new DefaultTableModel(0,6);
+				tableModelB = new DefaultTableModel(0,7);
 				tableModelB.setColumnIdentifiers(bigColumns);
 				bigTable.setModel(tableModelB);
 				
@@ -675,14 +677,15 @@ public class ExampleHome extends JFrame {
 				bigTable.setBorder(null);
 				bigTable.getColumnModel().getColumn(0).setPreferredWidth(150);
 		        bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-		        bigTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+		        bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
 		        bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
 		        bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(75);
+		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+		        bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
 		        bigTable.setBounds(467, 200, 594, 375);
 		        JScrollPane scrollPane = new JScrollPane(bigTable);
 		        scrollPane.setLocation(365, 185);
-		        scrollPane.setSize(719, 516);
+		        scrollPane.setSize(719, 458);
 		        scrollPane.getViewport().setBackground(Color.WHITE);
 				contentPane.add(scrollPane);
 				
@@ -743,7 +746,7 @@ public class ExampleHome extends JFrame {
 
 			}
 		});
-		btnRefresh.setBounds(55, 606, 195, 25);
+		btnRefresh.setBounds(55, 576, 195, 25);
 		contentPane.add(btnRefresh);
 		
 		
@@ -754,7 +757,7 @@ public class ExampleHome extends JFrame {
 		btnFilter.setBackground(new Color(200, 200, 200));
         btnFilter.setOpaque(true);
         btnFilter.setBorderPainted(true);
-		btnFilter.setBounds(55, 450, 195, 25);
+		btnFilter.setBounds(55, 430, 195, 25);
 		//Button Action Listener:
 		btnFilter.addActionListener(new ActionListener() {
 	            @Override

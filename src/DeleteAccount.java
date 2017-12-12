@@ -1,8 +1,8 @@
-//Author(s): Cameron Gomke
+//Author(s): Cameron Gomke, Cheyanne
 //File Name: Delete Account 
 //Purpose: CleverBudget
 //Date Created: 10/30/2017
-//Last Updated: 12/05/2017
+//Last Updated: 12/12/2017
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -26,6 +26,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.JSeparator;
+import javax.swing.SwingConstants;
 
 public class DeleteAccount extends JFrame {
 
@@ -37,6 +38,7 @@ public class DeleteAccount extends JFrame {
 			public void run() {
 				try {
 					DeleteAccount frame = new DeleteAccount();
+					frame.getContentPane().setBackground(new Color(207, 210, 215));
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -121,20 +123,21 @@ public class DeleteAccount extends JFrame {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("res/AppIcon.png")));
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setTitle("Delete Account");
-		setBounds(100, 100, 352, 230);
+		setBounds(100, 100, 400, 250);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
 		//Label - Title
-		JLabel lblTitle = new JLabel("Please choose an account to delete from the system:");
+		JLabel lblTitle = new JLabel("Please Choose an Account to Delete");
+		lblTitle.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitle.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblTitle.setBounds(12, 25, 303, 16);
+		lblTitle.setBounds(12, 25, 362, 16);
 		contentPane.add(lblTitle);
 		
 		//Separator - Looks nice
 		JSeparator separator = new JSeparator();
-		separator.setBounds(12, 54, 310, 2);
+		separator.setBounds(10, 54, 364, 2);
 		contentPane.add(separator);
 		
 		//Combo Box - Choose Combo Box
@@ -143,11 +146,12 @@ public class DeleteAccount extends JFrame {
 			comboBoxChooseBox.addItem(smallDataList.get(i).getFirstName() + " " + smallDataList.get(i).getLastName());
 		}
 		contentPane.setLayout(null);
-		comboBoxChooseBox.setBounds(32, 95, 246, 22);
+		comboBoxChooseBox.setBounds(32, 95, 310, 22);
 		contentPane.add(comboBoxChooseBox);		
 		
 		//Button - Cancel - FUNCTIONAL
 		JButton btnCancel = new JButton("Cancel");
+		btnCancel.setFont(new Font("Verdana", Font.BOLD, 11));
 		//Button Attributes:
 		btnCancel.setBackground(new Color(225, 79, 79));
 		btnCancel.setOpaque(true);
@@ -158,7 +162,7 @@ public class DeleteAccount extends JFrame {
 				dispose();
 			}
 		});
-		btnCancel.setBounds(181, 149, 97, 25);
+		btnCancel.setBounds(245, 149, 97, 25);
 		contentPane.add(btnCancel);
 		
 		//Button - Delete - NOT FUNCTIONAL
