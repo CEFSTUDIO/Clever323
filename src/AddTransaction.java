@@ -254,11 +254,10 @@ public class AddTransaction extends JFrame {
 				//Error checking for if Amount is a number
 				double size = amount.length();
 				double sizeError = 0;
-				String a = ".";
 				
 				for (int i = 0; i < size; i++) 
 				{
-					if (!Character.isDigit(amount.charAt(i)) && !amount.equals(a)) 
+					if (!Character.isDigit(amount.charAt(i))) 
 					{
 						sizeError += 1;
 					}
