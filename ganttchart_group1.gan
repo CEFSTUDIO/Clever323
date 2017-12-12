@@ -573,13 +573,15 @@ Cameron- 10 Minutes
 ]]></notes>
             </task>
         </task>
-        <task id="241" name="Sprint Final" color="#8cb6ce" meeting="false" start="2017-12-06" duration="5" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM | Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM |  Dec 12, 10:30-11:00AM (Total Hours)
+        <task id="241" name="Sprint Final" color="#8cb6ce" meeting="false" start="2017-12-06" duration="7" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM | Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM |  Dec 12, 10:30-11:00AM | Dec 12, 1:00 - 4:00PM (Total Hours)
  	-Created Sprint Final
 	-Refined/Groomed Product Backlog
 	-Created Sprint Final task on Gantt
 	-Refined Gantt	
 	-Worked on System Document x3
+	-Added Transaction Codes to Transaction
+	-Worked on Design
 	
 
 Cameron- (Time/Date Here)
@@ -599,7 +601,28 @@ Hank- (Time/Date Here)
 	-Worked in Class (On System Document)
 	-Further work on System Document
 	-Worked in Class (On System Document)
+	*Note- Includes Gantt and Product Log Hard Copy
 	]]></notes>
+            </task>
+            <task id="245" name="Transaction Codes" color="#8cb6ce" meeting="false" start="2017-12-12" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 12, 1:00 - 4:00PM (3 Hours)
+	-Entered in Transaction Codes
+	-Linked them to J-Table
+	]]></notes>
+            </task>
+            <task id="249" name="Design" color="#8cb6ce" meeting="false" start="2017-12-12" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 12, 1:00 - 4:00PM (3 Hours)
+	-Worked on Design for
+		-Add Transaction
+		-Add Account
+		-Delete Account
+		-Overview]]></notes>
+            </task>
+            <task id="252" name="Presentation" color="#8cb6ce" meeting="false" start="2017-12-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Class Presentation of Sprint Final
+Cheyanne- 10 Minutes
+Cameron- 10 Minutes
+Hank- 10 Minutes]]></notes>
             </task>
         </task>
     </tasks>
