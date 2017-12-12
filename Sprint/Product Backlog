@@ -13,22 +13,25 @@
 -Figure out and display initial view [✓]
 -Research [✓] [Various]
         -Login Screen 
+		-Login [✓]
                 -Log Out [✓]
                 -Create Account (User- csadmin, Password- csci323) [✓]
                 -Forgot Password [x]
-		-View Account [✓]
-		-Delete Account [x]
+		-User Manual [✓]
+		-Reset [✓]
+		-Exit [✓]
         
         -Buttons
                 -Login [✓]
                 -Log Out [✓]
                 -Create Account [✓]
                 -Forgot Password [✓]
-		-View Account [✓]
-		-Delete Account [✓]
+		-User Manual [✓]
+		-Reset [✓]
+		-Exit [✓]
 		
 	-Login Design
-                -Color scheme [✓]
+                -Color Scheme [✓]
                 -Orientation of objects [✓]
 		-Logos [✓]
 		-Icons [✓]
@@ -66,6 +69,13 @@
                         -Deposit
                         -Withdraw
 		-Delete Transaction [✓]
+		-Filter [✓]
+		-Print Report [✓]
+		-View Account Info [✓]
+		-Refresh [✓]
+		-Create Account [✓]
+		-Delete Account [✓]
+		-Modify Account [✓]
         
         -Report View [✓]
                 -Generate Printable Report [✓]
@@ -133,6 +143,7 @@
                     -Save information (functionality) [✓]
 		    -Date Autofiller/Date Picker (functionality) [✓]
 		    -Show Fees/Codes (functionality) [x]
+		    	-Transaction Codes [✓]
 		    	-8% held fee (all) [x]
 			-4% held credit card fee [x]
 			-Benefits Calculator [x]
@@ -149,10 +160,10 @@
                     -number
                          -Getters/Setters for each
 	
-	-Visualizers (Various) [x]
+	-Visualizers (Various) [✓]
 		-Display Screens [✓]
 		-Show Information [✓]
-		-All match design [x]
+		-All match design [✓]
 
 =====================================================
 -Unit Testing [x]
@@ -166,19 +177,18 @@
 	-System Documentation
 		-Cover Page [✓]
 		-Table of Contents [✓]
-		-Introduction [x]
-		-Purpose [x]
+		-Introduction [✓]
+		-Purpose [✓]
 		-System Overview
-			-MVC Architecture Diagram [x]
-			-Functionality [x]
-			-Non functional requirements (that were implemented) [x]
-		-Database Design (Description of File writing System) [x]
-		-System Security (Password System) [x]
+			-MVC Architecture Diagram [✓]
+			-Functionality [✓]
+			-Non functional requirements (that were implemented) [✓]
+		-Database Design (Description of File writing System) [✓]
+		-System Security (Password System) [✓]
 		-System Requirements
-			-Hardware (OS, Computer Specs) [x]
-			-Software (Java) [x]
+			-Hardware (OS, Computer Specs) [✓]
+			-Software (Java) [✓]
 		-Roles & Responsibilities of Members [✓]
-		-Project References (If Any) [x]
 		-Git Repository Location [✓]
 		
 	-Product Backlog 
@@ -186,5 +196,5 @@
 		-Shows unfinished items [✓]
 	
 	-Gantt Chart 
-		-Timeline of Progress (not specific individual work/hours) [x]
+		-Timeline of Progress (not specific individual work/hours) [✓]
 =====================================================
