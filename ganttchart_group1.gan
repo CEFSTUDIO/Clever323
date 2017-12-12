@@ -573,13 +573,13 @@ Cameron- 10 Minutes
 ]]></notes>
             </task>
         </task>
-        <task id="241" name="Sprint Final" color="#8cb6ce" meeting="false" start="2017-12-06" duration="3" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM| Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM (Total Hours)
+        <task id="241" name="Sprint Final" color="#8cb6ce" meeting="false" start="2017-12-06" duration="5" complete="0" expand="true">
+            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM | Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM |  Dec 12, 10:30-11:00AM (Total Hours)
  	-Created Sprint Final
 	-Refined/Groomed Product Backlog
 	-Created Sprint Final task on Gantt
 	-Refined Gantt	
-	-Worked on System Document x2
+	-Worked on System Document x3
 	
 
 Cameron- (Time/Date Here)
@@ -594,10 +594,11 @@ Hank- (Time/Date Here)
 	-Created Sprint Final task on Gantt
 	-Refined Gantt	]]></notes>
             </task>
-            <task id="243" name="System Document" color="#8cb6ce" meeting="false" start="2017-12-07" duration="2" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Dec 7, 10:00 - 11:00AM | Dec 10, 1:00 - 3:00AM
+            <task id="243" name="System Document" color="#8cb6ce" meeting="false" start="2017-12-07" duration="4" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 7, 10:00 - 11:00AM | Dec 10, 1:00 - 3:00AM | Dec 12, 10:30-11:00AM
 	-Worked in Class (On System Document)
 	-Further work on System Document
+	-Worked in Class (On System Document)
 	]]></notes>
             </task>
         </task>
