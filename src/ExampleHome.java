@@ -190,7 +190,7 @@ public class ExampleHome extends JFrame {
 		bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
 		bigTable.setBounds(467, 200, 594, 375);
 		JScrollPane scrollPane = new JScrollPane(bigTable);
-		scrollPane.setLocation(365, 185);
+		scrollPane.setLocation(347, 187);
 		scrollPane.setSize(862, 458);
 		scrollPane.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane);
@@ -277,13 +277,13 @@ public class ExampleHome extends JFrame {
 		//Label - Transaction
 		JLabel lblTransaction = new JLabel("Transaction");
 		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblTransaction.setBounds(1302, 209, 136, 16);
+		lblTransaction.setBounds(1234, 190, 136, 16);
 		contentPane.add(lblTransaction);
 		
 		//Label - Account
 		JLabel lblAccount = new JLabel("Account");
 		lblAccount.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblAccount.setBounds(1304, 335, 86, 16);
+		lblAccount.setBounds(1253, 504, 86, 16);
 		contentPane.add(lblAccount);
 		
 		//Label - All Transactions
@@ -333,7 +333,7 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Log out button - Fully functional - maybe make the JOptionPane appear with our logo
 		JButton btnLogOut = new JButton("Log Out");
-		btnLogOut.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnLogOut.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnLogOut.setBackground(new Color(225, 79, 79));
         btnLogOut.setOpaque(true);
         btnLogOut.setBorderPainted(true);
@@ -355,7 +355,7 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Delete Account - NOT FUNCTIONAL
 		JButton btnDeleteAccount = new JButton("Delete Account");
-		btnDeleteAccount.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnDeleteAccount.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnDeleteAccount.setBackground(new Color(200, 200, 200));
         btnDeleteAccount.setOpaque(true);
         btnDeleteAccount.setBorderPainted(true);
@@ -365,7 +365,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(1272, 453, 166, 25);
+		btnDeleteAccount.setBounds(1219, 619, 141, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -467,7 +467,7 @@ public class ExampleHome extends JFrame {
 		
 		
 		JButton btnDisplayAccountInformation = new JButton("Display Account Info");
-		btnDisplayAccountInformation.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnDisplayAccountInformation.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnDisplayAccountInformation.setBackground(new Color(200, 200, 200));
         btnDisplayAccountInformation.setOpaque(true);
         btnDisplayAccountInformation.setBorderPainted(true);
@@ -504,7 +504,7 @@ public class ExampleHome extends JFrame {
 		
 		//Button - Add Account - link to jTable
 		JButton btnAddAccount = new JButton("Add Account");
-		btnAddAccount.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnAddAccount.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnAddAccount.setBackground(new Color(200, 200, 200));
         btnAddAccount.setOpaque(true);
         btnAddAccount.setBorderPainted(true);
@@ -518,7 +518,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnAddAccount.setBounds(1272, 377, 166, 25);
+		btnAddAccount.setBounds(1219, 541, 141, 25);
 		contentPane.add(btnAddAccount);
 				
 		
@@ -526,7 +526,7 @@ public class ExampleHome extends JFrame {
 
 		//Button - Add Transaction
 		JButton btnAddTransaction = new JButton("Add Transaction");
-		btnAddTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnAddTransaction.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnAddTransaction.setBackground(new Color(200, 200, 200));
         btnAddTransaction.setOpaque(true);
         btnAddTransaction.setBorderPainted(true);
@@ -540,13 +540,13 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnAddTransaction.setBounds(1272, 238, 166, 25);
+		btnAddTransaction.setBounds(1219, 226, 141, 25);
 		contentPane.add(btnAddTransaction);
 		
 		
 		//Button - Delete Transaction - NOT FUNCTIONAL
 		JButton btnDeleteTransaction = new JButton("Delete Transaction");
-		btnDeleteTransaction.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnDeleteTransaction.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnDeleteTransaction.setBackground(new Color(200, 200, 200));
         btnDeleteTransaction.setOpaque(true);
         btnDeleteTransaction.setBorderPainted(true);
@@ -557,14 +557,14 @@ public class ExampleHome extends JFrame {
 				DeleteTransaction.main(null);
 			}
 		});
-		btnDeleteTransaction.setBounds(1272, 276, 166, 25);
+		btnDeleteTransaction.setBounds(1219, 262, 141, 25);
 		contentPane.add(btnDeleteTransaction);
 		
 		
 		//Button - Fees - NOT FUNCTIONAL
 		JButton btnFees = new JButton("Fees");
 		//Button Attributes:
-		btnFees.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnFees.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnFees.setBackground(new Color(200, 200, 200));
         btnFees.setOpaque(true);
         btnFees.setBorderPainted(true);
@@ -574,7 +574,7 @@ public class ExampleHome extends JFrame {
 		//Button - Print Report - FUNCTIONAL
 		JButton btnPrintReport = new JButton("Print Report");
 		//Button Attributes:
-		btnPrintReport.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnPrintReport.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnPrintReport.setBackground(new Color(200, 200, 200));
         btnPrintReport.setOpaque(true);
         btnPrintReport.setBorderPainted(true);
@@ -597,7 +597,7 @@ public class ExampleHome extends JFrame {
 		//Button - Filter
 		JButton btnFilter = new JButton("Filter");
 		//Button Attributes:
-		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnFilter.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnFilter.setBackground(new Color(200, 200, 200));
         btnFilter.setOpaque(true);
         btnFilter.setBorderPainted(true);
@@ -625,7 +625,7 @@ public class ExampleHome extends JFrame {
 
 		//Button - Refreshes Main Table - Functional - Can make it refresh smaller tables too
 		JButton btnRefresh = new JButton("Refresh");
-		btnRefresh.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnRefresh.setFont(new Font("Verdana", Font.BOLD, 10));
 	    btnRefresh.setBackground(new Color(70, 137, 191));
 	    btnRefresh.setOpaque(true);
 	    btnRefresh.setBorderPainted(true);
@@ -755,13 +755,13 @@ public class ExampleHome extends JFrame {
 	    //Button - Modify Account - NOT FUNCTIONAL
 		JButton btnModifyAccount = new JButton("Modify Account");
 		btnModifyAccount.setBackground(new Color(200,200,200));
-		btnModifyAccount.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnModifyAccount.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnModifyAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 			}
 		});
-		btnModifyAccount.setBounds(1272, 415, 166, 25);
+		btnModifyAccount.setBounds(1219, 583, 141, 25);
 		contentPane.add(btnModifyAccount);
 		
 		
