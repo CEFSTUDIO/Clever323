@@ -143,7 +143,7 @@ public class Login_System {
 				txtPassword.setText(null);
 			}
 		});
-		btnReset.setBounds(49, 292, 97, 25);
+		btnReset.setBounds(123, 292, 97, 25);
 		contentPane.getContentPane().add(btnReset);
 		
 		//Button - Exit Program
@@ -162,7 +162,7 @@ public class Login_System {
 				}
 			}
 		});
-		btnExit.setBounds(364, 292, 165, 25);
+		btnExit.setBounds(280, 239, 165, 25);
 		contentPane.getContentPane().add(btnExit);
 		
 		//Button - User Manual - Fill Out
@@ -177,7 +177,7 @@ public class Login_System {
 				
 			}
 		});
-		btnUserManual.setBounds(177, 292, 158, 25);
+		btnUserManual.setBounds(280, 292, 165, 25);
 		contentPane.getContentPane().add(btnUserManual); 
 		
 		//Button - Login - Encrypt? - More than just robyn?
@@ -226,35 +226,8 @@ public class Login_System {
 				}
 			}
 		});
-		btnLogin.setBounds(49, 241, 97, 25);
+		btnLogin.setBounds(123, 239, 97, 25);
 		contentPane.getContentPane().add(btnLogin);
-		
-		//Button - Forgot Password - NOT FUNCTIONAL
-		JButton btnForgotPassword = new JButton("Forgot Password?");
-		btnForgotPassword.setBackground(new Color(200, 200, 200));
-		btnForgotPassword.setOpaque(true);
-		btnForgotPassword.setBorderPainted(true);
-		btnForgotPassword.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			
-				ForgotPass.main(null);
-			}
-		});
-		btnForgotPassword.setBounds(177, 241, 158, 25);
-		contentPane.getContentPane().add(btnForgotPassword);
-		
-		//Button - Create New Account  - NOT FUNCTIONAL
-		JButton btnCreateNewAccount = new JButton("Create New Account");
-		btnCreateNewAccount.setBackground(new Color(70, 137, 191));
-		btnCreateNewAccount.setOpaque(true);
-		btnCreateNewAccount.setBorderPainted(true);
-		btnCreateNewAccount.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-			}
-		});
-		btnCreateNewAccount.setBounds(364, 241, 165, 25);
-		contentPane.getContentPane().add(btnCreateNewAccount);
 		
 	}
 }

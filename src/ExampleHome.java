@@ -186,25 +186,23 @@ public class ExampleHome extends JFrame {
 		bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
 		bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
 		bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-		bigTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+		bigTable.getColumnModel().getColumn(5).setPreferredWidth(150);
 		bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
 		bigTable.setBounds(467, 200, 594, 375);
 		JScrollPane scrollPane = new JScrollPane(bigTable);
 		scrollPane.setLocation(365, 185);
-		scrollPane.setSize(719, 458);
+		scrollPane.setSize(862, 458);
 		scrollPane.getViewport().setBackground(Color.WHITE);
 		contentPane.add(scrollPane);
 		
 		//~~~~~~~~~~~~~~~~ Small Table ~~~~~~~~~~~~~~~~
 		//Small Table Overview
 		String smallColumns[] =  {"Name:", "Balance:", "Last Transaction:"};
-		JTable smallTable = new JTable();
 		DefaultTableModel tableModelS;
 
 		//Table with 4 columns - Small Overview
 		tableModelS = new DefaultTableModel(0,3);
 		tableModelS.setColumnIdentifiers(smallColumns);
-		smallTable.setModel(tableModelS);
 		 
 		//Attributes for reading in big data:
 		Transaction newT;
@@ -250,21 +248,6 @@ public class ExampleHome extends JFrame {
 			
 			
 		}
-		//Small table Statistics
-		smallTable.setEnabled(false);
-		smallTable.setColumnSelectionAllowed(true);			
-		smallTable.setRowHeight(25);
-		smallTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		smallTable.setBorder(null);
-		smallTable.getColumnModel().getColumn(0).setPreferredWidth(150);
-		smallTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-		smallTable.getColumnModel().getColumn(2).setPreferredWidth(200);
-		smallTable.setBounds(800, 200, 594, 375);
-		JScrollPane scrollPane1 = new JScrollPane(smallTable);
-		scrollPane1.setLocation(1094, 185);
-		scrollPane1.setSize(250, 137);
-		scrollPane1.getViewport().setBackground(Color.WHITE);
-		contentPane.add(scrollPane1);
 				
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Frame and Graphical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Label - Main logo, big one
@@ -288,32 +271,26 @@ public class ExampleHome extends JFrame {
 		//Label - Total Balance 
 		JLabel lblTotalBalance = new JLabel("Total Balance: " + totalBalance);
 		lblTotalBalance.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblTotalBalance.setBounds(573, 647, 514, 54);
+		lblTotalBalance.setBounds(650, 656, 514, 54);
 		contentPane.add(lblTotalBalance);
 		
 		//Label - Transaction
 		JLabel lblTransaction = new JLabel("Transaction");
 		lblTransaction.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblTransaction.setBounds(1155, 375, 136, 16);
+		lblTransaction.setBounds(1302, 209, 136, 16);
 		contentPane.add(lblTransaction);
 		
 		//Label - Account
 		JLabel lblAccount = new JLabel("Account");
 		lblAccount.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblAccount.setBounds(1164, 513, 86, 16);
+		lblAccount.setBounds(1304, 335, 86, 16);
 		contentPane.add(lblAccount);
 		
 		//Label - All Transactions
-		JLabel lblAllTransactions = new JLabel("All Transactions");
+		JLabel lblAllTransactions = new JLabel("All Transactions:");
 		lblAllTransactions.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblAllTransactions.setBounds(626, 128, 437, 57);
+		lblAllTransactions.setBounds(650, 128, 437, 57);
 		contentPane.add(lblAllTransactions);
-		
-		//Label - Account Balances
-		JLabel lblAccountBalances = new JLabel("Account Balances");
-		lblAccountBalances.setFont(new Font("Verdana", Font.BOLD, 20));
-		lblAccountBalances.setBounds(1129, 140, 309, 32);
-		contentPane.add(lblAccountBalances);
 		
 		//Text Area - Small User Guide
 		JTextArea txtrUserGuide = new JTextArea();
@@ -388,7 +365,7 @@ public class ExampleHome extends JFrame {
 			}
 			
 		});
-		btnDeleteAccount.setBounds(1129, 616, 166, 25);
+		btnDeleteAccount.setBounds(1272, 453, 166, 25);
 		contentPane.add(btnDeleteAccount);
 		
 		
@@ -541,7 +518,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnAddAccount.setBounds(1129, 540, 166, 25);
+		btnAddAccount.setBounds(1272, 377, 166, 25);
 		contentPane.add(btnAddAccount);
 				
 		
@@ -557,15 +534,13 @@ public class ExampleHome extends JFrame {
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				
 				//Calling AddTransaction panel
 				AddTransaction.main(null);
-				
 				
 			}
 			
 		});
-		btnAddTransaction.setBounds(1129, 409, 166, 25);
+		btnAddTransaction.setBounds(1272, 238, 166, 25);
 		contentPane.add(btnAddTransaction);
 		
 		
@@ -578,11 +553,11 @@ public class ExampleHome extends JFrame {
 		btnDeleteTransaction.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				//JOptionPane.showConfirmDialog(null, "Are you sure you want to Delete this Transaction?", "CleverBudget - Delete Confirm", JOptionPane.YES_NO_CANCEL_OPTION);
-			
+				//Calling DeleteTransaction panel
+				DeleteTransaction.main(null);
 			}
 		});
-		btnDeleteTransaction.setBounds(1129, 445, 166, 25);
+		btnDeleteTransaction.setBounds(1272, 276, 166, 25);
 		contentPane.add(btnDeleteTransaction);
 		
 		
@@ -619,10 +594,35 @@ public class ExampleHome extends JFrame {
         });
 		contentPane.add(btnPrintReport);
 		
+		//Button - Filter
+		JButton btnFilter = new JButton("Filter");
+		//Button Attributes:
+		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
+		btnFilter.setBackground(new Color(200, 200, 200));
+        btnFilter.setOpaque(true);
+        btnFilter.setBorderPainted(true);
+		btnFilter.setBounds(55, 430, 195, 25);
+		//Button Action Listener:
+		btnFilter.addActionListener(new ActionListener() {
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	            	
+	            	if(comboBoxChooseBox.getSelectedItem().equals("-- Overview --")) {
+	            		RowFilter<DefaultTableModel, Object> overviewFilter  = RowFilter.regexFilter("",0);
+		                sorter.setRowFilter(overviewFilter);
+	            	}
+	            	else {
+	            		RowFilter<DefaultTableModel, Object> personFilter  = RowFilter.regexFilter(comboBoxChooseBox.getSelectedItem().toString(), 0);
+		                sorter.setRowFilter(personFilter);
+	            	}
+	            }
+	        });
+		contentPane.add(btnFilter);
+		//Filter Button Misc
+		sorter = new TableRowSorter<DefaultTableModel>(tableModelB);
+	    bigTable.setRowSorter(sorter);
 		
-	       
-	    
-		
+
 		//Button - Refreshes Main Table - Functional - Can make it refresh smaller tables too
 		JButton btnRefresh = new JButton("Refresh");
 		btnRefresh.setFont(new Font("Verdana", Font.BOLD, 11));
@@ -750,34 +750,9 @@ public class ExampleHome extends JFrame {
 		contentPane.add(btnRefresh);
 		
 		
-		//Button - Filter - FUNCTIONAL
-		JButton btnFilter = new JButton("Filter");
-		//Button Attributes:
-		btnFilter.setFont(new Font("Verdana", Font.BOLD, 11));
-		btnFilter.setBackground(new Color(200, 200, 200));
-        btnFilter.setOpaque(true);
-        btnFilter.setBorderPainted(true);
-		btnFilter.setBounds(55, 430, 195, 25);
-		//Button Action Listener:
-		btnFilter.addActionListener(new ActionListener() {
-	            @Override
-	            public void actionPerformed(ActionEvent e) {
-	            	
-	            	if(comboBoxChooseBox.getSelectedItem().equals("-- Overview --")) {
-	            		RowFilter<DefaultTableModel, Object> overviewFilter  = RowFilter.regexFilter("",0);
-		                sorter.setRowFilter(overviewFilter);
-	            	}
-	            	else {
-	            		RowFilter<DefaultTableModel, Object> personFilter  = RowFilter.regexFilter(comboBoxChooseBox.getSelectedItem().toString(), 0);
-		                sorter.setRowFilter(personFilter);
-	            	}
-	            }
-	        });
-		contentPane.add(btnFilter);
-		//Filter Button Misc
-		sorter = new TableRowSorter<DefaultTableModel>(tableModelB);
-	    bigTable.setRowSorter(sorter);
 		
+		
+	    //Button - Modify Account - NOT FUNCTIONAL
 		JButton btnModifyAccount = new JButton("Modify Account");
 		btnModifyAccount.setBackground(new Color(200,200,200));
 		btnModifyAccount.setFont(new Font("Verdana", Font.BOLD, 11));
@@ -786,7 +761,7 @@ public class ExampleHome extends JFrame {
 				
 			}
 		});
-		btnModifyAccount.setBounds(1129, 578, 166, 25);
+		btnModifyAccount.setBounds(1272, 415, 166, 25);
 		contentPane.add(btnModifyAccount);
 		
 		

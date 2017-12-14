@@ -1,12 +1,10 @@
-//Author(s): Cameron Gomke, Cheyanne
-//File Name: Delete Account 
-//Purpose: CleverBudget
-//Date Created: 10/30/2017
-//Last Updated: 12/12/2017
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -16,29 +14,29 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JLabel;
 import javax.swing.JSeparator;
 import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
 
-public class DeleteAccount extends JFrame {
+public class DeleteTransaction extends JFrame {
 
 	private JPanel contentPane;
 
-	//Launch Application:
+	/**
+	 * Launch the application.
+	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					DeleteAccount frame = new DeleteAccount();
-					frame.getContentPane().setBackground(new Color(207, 210, 215));
+					DeleteTransaction frame = new DeleteTransaction();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,14 +44,11 @@ public class DeleteAccount extends JFrame {
 			}
 		});
 	}
-	
-	public void showMessage() {
-		JOptionPane.showMessageDialog(this, "There is a tranaction associated with this account, please delete all transactions prior");
-	}
-	
-	
-	//Create The Frame:
-	public DeleteAccount() {
+
+	/**
+	 * Create the frame.
+	 */
+	public DeleteTransaction() {
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Attributes for reading in small and big data: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 		String smallDataFile = "smallData.txt";
 		String bigDataFile = "bigData.txt";
@@ -125,34 +120,35 @@ public class DeleteAccount extends JFrame {
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Statistics for Frame: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("res/AppIcon.png")));
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		setTitle("Delete Account");
-		setBounds(100, 100, 400, 250);
+		setTitle("Delete Transaction\r\n");
+		setBounds(100, 100, 505, 245);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
 		//Label - Title
-		JLabel lblTitle = new JLabel("Please Choose an Account to Delete:");
+		JLabel lblTitle = new JLabel("Please Choose a Transcation to Delete:");
 		lblTitle.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitle.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblTitle.setBounds(12, 25, 362, 16);
+		lblTitle.setBounds(60, 25, 362, 16);
 		contentPane.add(lblTitle);
 		
 		//Separator - Looks nice
 		JSeparator separator = new JSeparator();
-		separator.setBounds(10, 54, 364, 2);
+		separator.setBounds(10, 54, 465, 2);
 		contentPane.add(separator);
 		
 		//Combo Box - Choose Combo Box
 		JComboBox<String> comboBoxChooseBox = new JComboBox<String>();
-		for (int i = 0; i < smallDataList.size(); i++) {
-			comboBoxChooseBox.addItem(smallDataList.get(i).getFirstName() + " " + smallDataList.get(i).getLastName());
+		for (int i = 0; i < bigDataList.size(); i++) {
+			comboBoxChooseBox.addItem(bigDataList.get(i).getName() + "          -          " + bigDataList.get(i).getDepositOrWithdraw() 
+					+ "          -          " + bigDataList.get(i).getToOrFrom());
 		}
 		contentPane.setLayout(null);
-		comboBoxChooseBox.setBounds(32, 95, 310, 22);
+		comboBoxChooseBox.setBounds(32, 95, 437, 22);
 		contentPane.add(comboBoxChooseBox);		
 		
-		//Button - Cancel - FUNCTIONAL
+		//Button - Cancel
 		JButton btnCancel = new JButton("Cancel");
 		btnCancel.setFont(new Font("Verdana", Font.BOLD, 11));
 		//Button Attributes:
@@ -165,10 +161,8 @@ public class DeleteAccount extends JFrame {
 				dispose();
 			}
 		});
-		btnCancel.setBounds(245, 149, 97, 25);
+		btnCancel.setBounds(264, 148, 97, 25);
 		contentPane.add(btnCancel);
-		
-		
 		
 		//Button - Delete - NOT FUNCTIONAL
 		JButton btnDelete = new JButton("Delete");
@@ -181,23 +175,14 @@ public class DeleteAccount extends JFrame {
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				for(int i = 0; i < bigDataList.size(); i++)
-				{
-					if(bigDataList.get(i).getName().equalsIgnoreCase((String) comboBoxChooseBox.getSelectedItem())) 
-					{
-						showMessage();
-						return;
-					}
-				}
-
 				JFrame deleteFrame = new JFrame("Delete Confirmation");
 				if (JOptionPane.showConfirmDialog(deleteFrame, "Are you sure you want to delete '" + comboBoxChooseBox.getSelectedItem() + "'?", "Delete Confirmation", 
 						JOptionPane.YES_NO_CANCEL_OPTION) == JOptionPane.YES_OPTION) 
 				{
 										
 					
-					File inputFile = new File("smallData.txt");
-					File tempFile = new File("smallDataEx.txt");
+					File inputFile = new File("bigData.txt");
+					File tempFile = new File("bigDataEx.txt");
 
 					
 					BufferedReader reader;
@@ -241,8 +226,20 @@ public class DeleteAccount extends JFrame {
 				
 			}
 		});
-		btnDelete.setBounds(32, 149, 97, 25);
+		btnDelete.setBounds(79, 148, 97, 25);
 		contentPane.add(btnDelete);
-	
-	} // End of Frame
+		
+		JLabel lblProfessor = new JLabel("Professor:     -");
+		lblProfessor.setBounds(32, 69, 97, 16);
+		contentPane.add(lblProfessor);
+		
+		JLabel lblToFrom = new JLabel("To / From:");
+		lblToFrom.setBounds(327, 69, 77, 16);
+		contentPane.add(lblToFrom);
+		
+		JLabel lblExpenseDeposit = new JLabel("Expense / Deposit:     -");
+		lblExpenseDeposit.setBounds(153, 69, 149, 16);
+		contentPane.add(lblExpenseDeposit);
+			
+	}
 }
