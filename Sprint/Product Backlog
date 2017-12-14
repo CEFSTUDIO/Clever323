@@ -126,9 +126,9 @@
                             -deposit method
                             -withdraw method
 		    -Add accounts (functionality) [✓]
-        	    -Remove accounts (functionality) [x]
+        	    -Remove accounts (functionality) [✓]
 		    -View/Filter Account information (functionality) [✓]
-		    -Modify Account (functionality) [x]
+		    -Modify Account (functionality) [✓]
 		    -Forgot Passsword Implementation (functionality) [x]
            
             -Transaction [✓]
@@ -138,7 +138,7 @@
                     -receiver account
                         -Getters/Setters for each
 		    -Add transaction (functionality) [✓]
-                    -Remove transaction (functionality) [x]
+                    -Remove transaction (functionality) [✓]
 		    -Filter table information (functionality) [✓]
                     -Save information (functionality) [✓]
 		    -Date Autofiller/Date Picker (functionality) [✓]
@@ -166,9 +166,9 @@
 		-All match design [✓]
 
 =====================================================
--Unit Testing [x]
+-Unit Testing [✓]
 
--Executable Jar File [x]
+-Executable Jar File [✓]
 
 -Hard Copy Documentation
 	
