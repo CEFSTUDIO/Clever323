@@ -574,7 +574,7 @@ Cameron- 10 Minutes
             </task>
         </task>
         <task id="241" name="Sprint Final" color="#8cb6ce" meeting="false" start="2017-12-06" duration="7" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM | Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM |  Dec 12, 10:30-11:00AM | Dec 12, 1:00 - 4:00PM | Dec 13, 11:30-12:30 | Dec 14, 7:00 - 8:00AM (9 Hours)
+            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM | Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM |  Dec 12, 10:30-11:00AM | Dec 12, 1:00 - 4:00PM | Dec 13, 11:30-12:30 | Dec 14, 9:00 - 10:00AM (9 Hours)
  	-Created Sprint Final
 	-Refined/Groomed Product Backlog
 	-Created Sprint Final task on Gantt
@@ -650,7 +650,7 @@ Hank- Dec 14 (Many Hours)
 	-Completed User Manual]]></notes>
             </task>
             <task id="267" name="Jar File" color="#8cb6ce" meeting="false" start="2017-12-14" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Dec 14, 7:00 - 8:00AM  (1 Hour)
+                <notes><![CDATA[Cheyanne- Dec 14, 9:00 - 10:00AM  (1 Hour)
  	-Created Jar File
 	-Organized Repository]]></notes>
             </task>
