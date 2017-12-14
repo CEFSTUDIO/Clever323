@@ -37,6 +37,7 @@ public class DeleteTransaction extends JFrame {
 			public void run() {
 				try {
 					DeleteTransaction frame = new DeleteTransaction();
+					frame.getContentPane().setBackground(new Color(207, 210, 215));
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -127,7 +128,7 @@ public class DeleteTransaction extends JFrame {
 		setContentPane(contentPane);
 		
 		//Label - Title
-		JLabel lblTitle = new JLabel("Please Choose a Transcation to Delete:");
+		JLabel lblTitle = new JLabel("Please Choose a Transaction to Delete:");
 		lblTitle.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitle.setFont(new Font("Verdana", Font.BOLD, 16));
 		lblTitle.setBounds(60, 25, 362, 16);
@@ -140,6 +141,7 @@ public class DeleteTransaction extends JFrame {
 		
 		//Combo Box - Choose Combo Box
 		JComboBox<String> comboBoxChooseBox = new JComboBox<String>();
+		comboBoxChooseBox.setFont(new Font("Verdana", Font.PLAIN, 11));
 		for (int i = 0; i < bigDataList.size(); i++) {
 			comboBoxChooseBox.addItem(bigDataList.get(i).getName() + ", " + bigDataList.get(i).getDepositOrWithdraw() 
 					+ ", " + bigDataList.get(i).getToOrFrom());
@@ -163,7 +165,7 @@ public class DeleteTransaction extends JFrame {
 				dispose();
 			}
 		});
-		btnCancel.setBounds(264, 148, 97, 25);
+		btnCancel.setBounds(327, 148, 142, 25);
 		contentPane.add(btnCancel);
 		
 		//Button - Delete - NOT FUNCTIONAL
@@ -235,19 +237,22 @@ public class DeleteTransaction extends JFrame {
 				
 			}
 		});
-		btnDelete.setBounds(79, 148, 97, 25);
+		btnDelete.setBounds(32, 148, 122, 25);
 		contentPane.add(btnDelete);
 		
 		JLabel lblProfessor = new JLabel("Professor:     -");
+		lblProfessor.setFont(new Font("Verdana", Font.BOLD, 11));
 		lblProfessor.setBounds(32, 69, 97, 16);
 		contentPane.add(lblProfessor);
 		
 		JLabel lblToFrom = new JLabel("To / From:");
+		lblToFrom.setFont(new Font("Verdana", Font.BOLD, 11));
 		lblToFrom.setBounds(327, 69, 77, 16);
 		contentPane.add(lblToFrom);
 		
 		JLabel lblExpenseDeposit = new JLabel("Expense / Deposit:     -");
-		lblExpenseDeposit.setBounds(153, 69, 149, 16);
+		lblExpenseDeposit.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblExpenseDeposit.setBounds(153, 69, 166, 16);
 		contentPane.add(lblExpenseDeposit);
 			
 	}

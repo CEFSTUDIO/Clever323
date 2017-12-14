@@ -574,7 +574,7 @@ Cameron- 10 Minutes
             </task>
         </task>
         <task id="241" name="Sprint Final" color="#8cb6ce" meeting="false" start="2017-12-06" duration="7" complete="0" expand="true">
-            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM | Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM |  Dec 12, 10:30-11:00AM | Dec 12, 1:00 - 4:00PM (Total Hours)
+            <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM | Dec 7, 10:00 - 11:00AM| Dec 10, 1:00 - 3:00AM |  Dec 12, 10:30-11:00AM | Dec 12, 1:00 - 4:00PM | Dec 13, 11:30-12:30 | Dec 14, 7:00 - 8:00AM (9 Hours)
  	-Created Sprint Final
 	-Refined/Groomed Product Backlog
 	-Created Sprint Final task on Gantt
@@ -582,12 +582,21 @@ Cameron- 10 Minutes
 	-Worked on System Document x3
 	-Added Transaction Codes to Transaction
 	-Worked on Design
+	-Completed System Document
+	-Completed User Manual
+	-Jar File
 	
 
-Cameron- (Time/Date Here)
+Cameron-Dec 14 (Many Hours)
+	-Delete Transaction
+	-Delete Account
+	-Various Back End
 	
 
-Hank- (Time/Date Here)
+Hank- Dec 14 (Many Hours)	
+	-Presentation
+	-Modify Account
+	-Various Back End
 	]]></notes>
             <task id="242" name="Sprint/Product Logs" color="#8cb6ce" meeting="false" start="2017-12-06" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Cheyanne- Dec 6, 12:00 - 1:00PM  (1 Hour)
@@ -596,11 +605,27 @@ Hank- (Time/Date Here)
 	-Created Sprint Final task on Gantt
 	-Refined Gantt	]]></notes>
             </task>
-            <task id="243" name="System Document" color="#8cb6ce" meeting="false" start="2017-12-07" duration="4" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Dec 7, 10:00 - 11:00AM | Dec 10, 1:00 - 3:00AM | Dec 12, 10:30-11:00AM
+            <task id="259" name="Back End" color="#8cb6ce" meeting="false" start="2017-12-13" duration="2" complete="0" expand="true">
+                <notes><![CDATA[Cameron-Dec 14 (Many Hours)
+	-Delete Transaction
+	-Delete Account
+	-Various Back End
+	
+
+Hank- Dec 14 (Many Hours)	
+	-Modify Account
+	-Various Back End]]></notes>
+            </task>
+            <task id="265" name="Powerpoint" color="#8cb6ce" meeting="false" start="2017-12-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Hank- Dec 14 (Many Hours)	
+	-Presentation]]></notes>
+            </task>
+            <task id="243" name="System Document" color="#8cb6ce" meeting="false" start="2017-12-07" duration="6" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 7, 10:00 - 11:00AM | Dec 10, 1:00 - 3:00AM | Dec 12, 10:30-11:00AM| Dec 13, 11:30-12:30 (4 Hours)
 	-Worked in Class (On System Document)
 	-Further work on System Document
 	-Worked in Class (On System Document)
+	-Worked further on System Document
 	*Note- Includes Gantt and Product Log Hard Copy
 	]]></notes>
             </task>
@@ -611,12 +636,23 @@ Hank- (Time/Date Here)
 	]]></notes>
             </task>
             <task id="249" name="Design" color="#8cb6ce" meeting="false" start="2017-12-12" duration="1" complete="0" expand="true">
-                <notes><![CDATA[Cheyanne- Dec 12, 1:00 - 4:00PM (3 Hours)
+                <notes><![CDATA[Cheyanne- Dec 12, 1:00 - 4:00PM | Dec 14, 7:00 - 8:00AM (4 Hours)
 	-Worked on Design for
 		-Add Transaction
 		-Add Account
 		-Delete Account
-		-Overview]]></notes>
+		-Overview
+		-Modify Account
+		-Fees]]></notes>
+            </task>
+            <task id="255" name="User Manual" color="#8cb6ce" meeting="false" start="2017-12-13" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 13, 11:30-12:30 (30 Minutes)
+	-Completed User Manual]]></notes>
+            </task>
+            <task id="267" name="Jar File" color="#8cb6ce" meeting="false" start="2017-12-14" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Cheyanne- Dec 14, 7:00 - 8:00AM  (1 Hour)
+ 	-Created Jar File
+	-Organized Repository]]></notes>
             </task>
             <task id="252" name="Presentation" color="#8cb6ce" meeting="false" start="2017-12-14" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Class Presentation of Sprint Final
