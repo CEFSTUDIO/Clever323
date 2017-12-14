@@ -40,6 +40,7 @@ public class ExampleHome extends JFrame {
 	private String[] fname, lname, accountType, phoneNumber, email;
 	private double[] balance;
 	private TableRowSorter<DefaultTableModel> sorter; 
+	public static int getIndex;
 
 	//Launch Application:
 	public static void main(String[] args) {
@@ -330,6 +331,7 @@ public class ExampleHome extends JFrame {
 		}
 		comboBoxChooseBox.setBounds(55, 397, 195, 22);
 		contentPane.add(comboBoxChooseBox);
+		
 		
 		
 		//Button - Log out button - Fully functional - maybe make the JOptionPane appear with our logo
@@ -758,7 +760,9 @@ public class ExampleHome extends JFrame {
 		btnModifyAccount.setFont(new Font("Verdana", Font.BOLD, 10));
 		btnModifyAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+			    if(comboBoxChooseBox.getSelectedIndex() != 0) {
+				ModifyAccount.main(comboBoxChooseBox.getSelectedIndex());
+				}
 			}
 		});
 		btnModifyAccount.setBounds(1219, 583, 141, 25);
@@ -776,5 +780,6 @@ public class ExampleHome extends JFrame {
 		contentPane.add(background_image);
 		
 		
-	} // End of Program
+	}
+	
 }

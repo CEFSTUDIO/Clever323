@@ -324,7 +324,12 @@ public class CreateAccountInside extends JFrame {
 				} // End of else, button pressed and all is good
 			}
 		});
+		
+
+		
 		btnCreateAccount.setBounds(137, 288, 153, 25);
 		contentPane.add(btnCreateAccount);
 	}
+	
+	
 }
