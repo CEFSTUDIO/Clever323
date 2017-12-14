@@ -121,7 +121,7 @@ public class DeleteTransaction extends JFrame {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("res/AppIcon.png")));
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setTitle("Delete Transaction\r\n");
-		setBounds(100, 100, 505, 245);
+		setBounds(100, 100, 829, 245);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -141,13 +141,15 @@ public class DeleteTransaction extends JFrame {
 		//Combo Box - Choose Combo Box
 		JComboBox<String> comboBoxChooseBox = new JComboBox<String>();
 		for (int i = 0; i < bigDataList.size(); i++) {
-			comboBoxChooseBox.addItem(bigDataList.get(i).getName() + "          -          " + bigDataList.get(i).getDepositOrWithdraw() 
-					+ "          -          " + bigDataList.get(i).getToOrFrom());
+			comboBoxChooseBox.addItem(bigDataList.get(i).getName() + ", " + bigDataList.get(i).getDepositOrWithdraw() 
+					+ ", " + bigDataList.get(i).getToOrFrom());
+			
 		}
 		contentPane.setLayout(null);
 		comboBoxChooseBox.setBounds(32, 95, 437, 22);
 		contentPane.add(comboBoxChooseBox);		
 		
+
 		//Button - Cancel
 		JButton btnCancel = new JButton("Cancel");
 		btnCancel.setFont(new Font("Verdana", Font.BOLD, 11));
@@ -189,22 +191,29 @@ public class DeleteTransaction extends JFrame {
 					try {
 						reader = new BufferedReader(new FileReader(inputFile));
 						BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
-
-						String lineToRemove = (String) comboBoxChooseBox.getSelectedItem();
-						String currentLine;
 						
+						
+						String currentLine;
+					
 						while((currentLine = reader.readLine()) != null) {
-						    // trim newline when comparing with lineToRemove
+							
+							String compare = (String) comboBoxChooseBox.getSelectedItem();
+							
+//						    // trim newline when comparing with lineToRemove
 						    String trimmedLine = currentLine.trim();
-						    
-						    // Split line into tokens
+//						    
+//						    // Split line into tokens
 						    String[] tokens = trimmedLine.split(",");
+						    String new1 = tokens[0] + ", " + tokens[2] + ", " + tokens[3];
 						    
-						    // First name + space + last name
-						    String currentName = tokens[0] + " " + tokens[1];
+						    System.out.println(new1) ;
+						    System.out.println(compare);
+				
 						    
-						    if(currentName.equalsIgnoreCase(lineToRemove)) continue;
-						    writer.write(currentLine + System.getProperty("line.separator"));
+						   
+						      if(new1.equalsIgnoreCase(compare)) continue;
+							  writer.write(currentLine + System.getProperty("line.separator"));
+						  
 						}
 						writer.close();
 						reader.close(); 

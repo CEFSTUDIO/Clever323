@@ -30,6 +30,7 @@ import javax.swing.RowFilter;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JSeparator;
+import javax.swing.ListSelectionModel;
 
 @SuppressWarnings("serial")
 public class ExampleHome extends JFrame {
@@ -149,6 +150,10 @@ public class ExampleHome extends JFrame {
 		//Big Table Overview
 		String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Code:", "Date:"};
 		JTable bigTable = new JTable();
+		bigTable.setEnabled(false);
+		bigTable.setCellSelectionEnabled(true);
+		bigTable.setColumnSelectionAllowed(true);
+		bigTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		DefaultTableModel tableModelB;
 
 
@@ -174,10 +179,6 @@ public class ExampleHome extends JFrame {
 		catch(IOException e){
 		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
 		}
-		
-		//Big table Statistics
-		bigTable.setEnabled(false);
-		bigTable.setColumnSelectionAllowed(true);			
 		bigTable.setRowHeight(25);
 		bigTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		bigTable.setBorder(null);
@@ -634,24 +635,61 @@ public class ExampleHome extends JFrame {
 				
 				tableModelB.fireTableDataChanged();
 				
+				String bigDataFile = "bigData.txt";
+				String line;
+				BufferedReader reader;
+				String[] details = null;
 				
-			    
+				Transaction newTransaction;
+				Account newAccount;
+				ArrayList<Account> smallDataList = new ArrayList<Account>();
+				ArrayList<Transaction> bigDataList = new ArrayList<Transaction>();
+
+				//Reading in Big Data
+				try{       
+				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
+				    while((line = reader.readLine()) != null){
+				    	
+				    	//Splitting the line, and adding the first and last name to transaction (names)
+				    	details = line.split(",");
+				        newTransaction = new Transaction();
+				        newTransaction.setName(details[0]);
+				        newTransaction.setAmount(Double.parseDouble(details[1]));
+				        newTransaction.setDepositOrWithdraw(details[2]);
+				        newTransaction.setToOrFrom(details[3]);
+				        newTransaction.setType(details[4]);
+				        newTransaction.setDate(details[5]);
+				        bigDataList.add(newTransaction);
+
+				    }
+				    reader.close();
+				 }
+						   
+				//Catching Errors
+				catch(FileNotFoundException e1){
+				    JOptionPane.showMessageDialog(null, "File not Found.");
+				}
+				catch(IOException e1){
+				    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+				}
 				
-				//Completely Re-Paints the bigTable
+				//~~~~~~~~~~~~~~~~ Big Table ~~~~~~~~~~~~~~~~
+				//Big Table Overview
 				String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Code:", "Date:"};
 				JTable bigTable = new JTable();
+				bigTable.setEnabled(false);
+				bigTable.setCellSelectionEnabled(true);
+				bigTable.setColumnSelectionAllowed(true);
+				bigTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 				DefaultTableModel tableModelB;
+
 
 				//Table with 4 columns - Big Overview
 				tableModelB = new DefaultTableModel(0,7);
 				tableModelB.setColumnIdentifiers(bigColumns);
 				bigTable.setModel(tableModelB);
-				
-				
 
 				//Reading in the file, adding the data within to bigTable
-				String line;
-				BufferedReader reader;
 				try{       
 				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
 				       
@@ -665,82 +703,29 @@ public class ExampleHome extends JFrame {
 				catch(FileNotFoundException e1){
 				    JOptionPane.showMessageDialog(null, "File not Found.");
 				}
-				catch(IOException e2){
+				catch(IOException e1){
 				    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
 				}
-				
-				//Big table Statistics
-				bigTable.setEnabled(false);
-				bigTable.setColumnSelectionAllowed(true);			
 				bigTable.setRowHeight(25);
 				bigTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
 				bigTable.setBorder(null);
 				bigTable.getColumnModel().getColumn(0).setPreferredWidth(150);
-		        bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-		        bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
-		        bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
-		        bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(100);
-		        bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
-		        bigTable.setBounds(467, 200, 594, 375);
-		        JScrollPane scrollPane = new JScrollPane(bigTable);
-		        scrollPane.setLocation(365, 185);
-		        scrollPane.setSize(719, 458);
-		        scrollPane.getViewport().setBackground(Color.WHITE);
+				bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
+				bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
+				bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
+				bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
+				bigTable.getColumnModel().getColumn(5).setPreferredWidth(150);
+				bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
+				bigTable.setBounds(467, 200, 594, 375);
+				JScrollPane scrollPane = new JScrollPane(bigTable);
+				scrollPane.setLocation(365, 185);
+				scrollPane.setSize(862, 458);
+				scrollPane.getViewport().setBackground(Color.WHITE);
 				contentPane.add(scrollPane);
 				
-				//RowFilter<DefaultTableModel, Object> ov  = RowFilter.regexFilter("",0);
-                //sorter.setRowFilter(ov);
-//				
-//				//Adding Name to the Combo Box
-//				String[] details = null;
-//				Account newAccount;
-//				ArrayList<Account> smallDataList = new ArrayList<Account>();
-//				try{       
-//				    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
-//				    while((line = reader.readLine()) != null){
-//				    	
-//				    	//Splitting the line, and adding the first and last name to transaction (names)
-//				    	details = line.split(",");
-//				        newAccount = new Account();
-//				        newAccount.setFirstName(details[0]);
-//				        newAccount.setLastName(details[1]);
-//				        newAccount.setStartingBalance(Double.parseDouble(details[2]));
-//				        newAccount.setDescription(details[3]);
-//				        newAccount.setPhoneNumber(details[4]);
-//				        newAccount.setEmail(details[5]);
-//				        smallDataList.add(newAccount);
-//
-//				    }
-//				    reader.close();
-//				 }
-//						   
-//				//Catching Errors
-//				catch(FileNotFoundException e1){
-//				    JOptionPane.showMessageDialog(null, "File not Found.");
-//				}
-//				catch(IOException e2){
-//				    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
-//				}
-//				
-//				
-//				
-//				int number = smallDataList.size() - 1;
-//				//for(int i = 0; i < number; i++) {
-//				System.out.println(number);
-//				System.out.println(comboBoxChooseBox.getItemAt(number+1));
-//				System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
-//					if(comboBoxChooseBox.getItemAt(number+1).equals(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName()))
-//					{
-//						System.out.println("same");
-//					}
-//					else 
-//					{
-//						//System.out.println(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
-//						//System.out.println(comboBoxChooseBox.getItemAt(number));
-//						//comboBoxChooseBox.addItem(smallDataList.get(number).getFirstName() + " " + smallDataList.get(number).getLastName());
-//					}
-//				//}
+			    
+				
+				
 				
 				
 

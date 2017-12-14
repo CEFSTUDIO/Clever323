@@ -13,6 +13,7 @@ public class Transaction {
 	private String type;
 	private String toOrFrom;
 	private String code;
+	private int tranNum;
 	
 	//Getters and Setters:
 	public double getAmount() {
@@ -57,11 +58,15 @@ public class Transaction {
     public void setCode(String code) {
         this.code = code;
     }
-    
-	@Override
-	public String toString() {
-		return "Transaction [name=" + name + ", amount=" + amount + ", code" + code + ", date=" + date + ", depositOrWithdraw="
-				+ depositOrWithdraw + ", type=" + type + ", toOrFrom=" + toOrFrom + "]";
+	public int getTranNum() {
+		return tranNum;
 	}
+	public void setTranNum(int tranNum) {
+		this.tranNum = tranNum;
+	}
+	
+	
+	
+	
 
 }

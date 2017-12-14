@@ -41,6 +41,7 @@ public class AddTransaction extends JFrame {
 	private JTextField textAmount;
 	private JTextField textToFrom;
 	private JTextField textDate;
+	int lineNum = 0;
 
 	//Launch The Application:
 	public static void main(String[] args) {
@@ -60,13 +61,76 @@ public class AddTransaction extends JFrame {
 
 	//Create the Frame:
 	public AddTransaction() {
-		//Attributes for reading in small data:
 		String smallDataFile = "smallData.txt";
+		String bigDataFile = "bigData.txt";
 		String line;
 		BufferedReader reader;
 		String[] details = null;
+		
+		Transaction newTransaction;
+		Account newAccount;
+		ArrayList<Account> smallDataList = new ArrayList<Account>();
+		ArrayList<Transaction> bigDataList = new ArrayList<Transaction>();
+
+		//Reading in Big Data:
+		try{       
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
+		    while((line = reader.readLine()) != null){
+		    	
+		    	//Splitting the line, and adding the first and last name to transaction (names)
+		    	details = line.split(",");
+		        newTransaction = new Transaction();
+		        newTransaction.setName(details[0]);
+		        newTransaction.setAmount(Double.parseDouble(details[1]));
+		        newTransaction.setDepositOrWithdraw(details[2]);
+		        newTransaction.setToOrFrom(details[3]);
+		        newTransaction.setType(details[4]);
+		        newTransaction.setDate(details[5]);
+		        bigDataList.add(newTransaction);
+
+		    }
+		    reader.close();
+		 }
+				   
+		//Catching Errors
+		catch(FileNotFoundException e1){
+		    JOptionPane.showMessageDialog(null, "File not Found.");
+		}
+		catch(IOException e){
+		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+		}
+		
+		//Reading in Small Data
+		try{       
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
+		    while((line = reader.readLine()) != null){
+		    	
+		    	//Splitting the line, and adding the first and last name to transaction (names)
+		    	details = line.split(",");
+		        newAccount = new Account();
+		        newAccount.setFirstName(details[0]);
+		        newAccount.setLastName(details[1]);
+		        newAccount.setStartingBalance(Double.parseDouble(details[2]));
+		        newAccount.setDescription(details[3]);
+		        newAccount.setPhoneNumber(details[4]);
+		        newAccount.setEmail(details[5]);
+		        smallDataList.add(newAccount);
+
+		    }
+		    reader.close();
+		 }
+				   
+		//Catching Errors
+		catch(FileNotFoundException e1){
+		    JOptionPane.showMessageDialog(null, "File not Found.");
+		}
+		catch(IOException e){
+		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+		}
+		
 		Transaction newT;
 		ArrayList<Transaction> names = new ArrayList<Transaction>();
+		//int lineNum = 0;
 
 		//Reading in the file, used for Name Combo Box
 		try{       
@@ -77,6 +141,7 @@ public class AddTransaction extends JFrame {
 		        newT = new Transaction();
 		        newT.setName(details[0] + " " + details[1]);
 		        names.add(newT);
+		        
 		    }
 		    reader.close();
 		 }
@@ -246,10 +311,11 @@ public class AddTransaction extends JFrame {
 				String paymentType = (String) comboBoxPaymentTypeBox.getSelectedItem();
 				String code = (String) comboBoxCode.getSelectedItem();
 				String date = textDate.getText();
+//				int tranNum = 
 				
 				
 				//delete
-				System.out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + code + "," + date);
+				//System.out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + code + "," + date);
 				
 				//Error checking for if Amount is a number
 				double size = amount.length();
@@ -300,6 +366,8 @@ public class AddTransaction extends JFrame {
 							newTran.setType(paymentType);
 							newTran.setCode(code);
 							newTran.setDate(date);
+							newTran.setTranNum(bigDataList.size());
+							
 							transactionList.add(newTran);
 						}
 					} 
@@ -321,7 +389,8 @@ public class AddTransaction extends JFrame {
 							BufferedWriter bw = new BufferedWriter(fw);
 							PrintWriter out = new PrintWriter(bw))
 					{
-						out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + code + "," + date);
+						int transNum = transactionList.get(bigDataList.size() - 1).getTranNum();
+						out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + code + "," + date + "," + transNum);
 						dispose();
 					}
 						
