@@ -680,7 +680,7 @@ public class ExampleHome extends JFrame {
 		        bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
 		        bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
 		        bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(150);
 		        bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
 		        bigTable.setBounds(467, 200, 594, 375);
 		        JScrollPane scrollPane = new JScrollPane(bigTable);
