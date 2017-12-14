@@ -2,8 +2,8 @@
 // File Name: Create Account Inside
 // Purpose: CleverBudget
 // Date Created: 10/30/2017
-// Last Updated: 12/3/2017
-// Last Updated: 12/03/2017
+// Last Updated: 12/12/2017
+import java.awt.Color;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -46,6 +46,7 @@ public class CreateAccountInside extends JFrame {
 			public void run() {
 				try {
 					CreateAccountInside frame = new CreateAccountInside();
+					frame.getContentPane().setBackground(new Color(207, 210, 215));
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -72,7 +73,7 @@ public class CreateAccountInside extends JFrame {
 		contentPane.add(separator);
 		
 		//Label - Use label at top
-		JLabel lblUseCreateA = new JLabel("Use: Create a new account for the table\r\n");
+		JLabel lblUseCreateA = new JLabel("Use: Create a New Account for the Table\r\n");
 		lblUseCreateA.setFont(new Font("Verdana", Font.BOLD, 11));
 		lblUseCreateA.setBounds(12, 13, 379, 16);
 		contentPane.add(lblUseCreateA);
@@ -85,23 +86,23 @@ public class CreateAccountInside extends JFrame {
 		
 		//Label - First Name
 		JLabel lblFirstName = new JLabel("First Name");
-		lblFirstName.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblFirstName.setFont(new Font("Verdana", Font.BOLD, 13));
 		lblFirstName.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblFirstName.setBounds(35, 77, 89, 16);
+		lblFirstName.setBounds(45, 74, 89, 16);
 		contentPane.add(lblFirstName);
 		
 		//Label - Last Name
 		JLabel lblLastName = new JLabel("Last Name");
-		lblLastName.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblLastName.setFont(new Font("Verdana", Font.BOLD, 13));
 		lblLastName.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblLastName.setBounds(35, 104, 89, 16);
+		lblLastName.setBounds(45, 101, 89, 16);
 		contentPane.add(lblLastName);
 		
 		//Label - Account Balance
 		JLabel lblAccountBalance = new JLabel("Account Balance");
-		lblAccountBalance.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblAccountBalance.setFont(new Font("Verdana", Font.BOLD, 13));
 		lblAccountBalance.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblAccountBalance.setBounds(-29, 135, 153, 16);
+		lblAccountBalance.setBounds(-20, 130, 153, 16);
 		contentPane.add(lblAccountBalance);
 		
 		//Label - Account Balance Example
@@ -113,14 +114,15 @@ public class CreateAccountInside extends JFrame {
 		//Label - Description
 		JLabel lblDescription = new JLabel("Description");
 		lblDescription.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblDescription.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblDescription.setBounds(35, 182, 89, 16);
+		lblDescription.setFont(new Font("Verdana", Font.BOLD, 13));
+		lblDescription.setBounds(45, 177, 89, 16);
 		contentPane.add(lblDescription);
 		
 		//Label - Phone Number
 		JLabel lblPhoneNumber = new JLabel("Phone Number");
-		lblPhoneNumber.setFont(new Font("Verdana", Font.BOLD, 11));
-		lblPhoneNumber.setBounds(35, 209, 114, 16);
+		lblPhoneNumber.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblPhoneNumber.setFont(new Font("Verdana", Font.BOLD, 13));
+		lblPhoneNumber.setBounds(20, 209, 114, 16);
 		contentPane.add(lblPhoneNumber);
 		
 		//Label - Phone Number Example
@@ -131,17 +133,11 @@ public class CreateAccountInside extends JFrame {
 		
 		//Label - Email
 		JLabel lblEmail = new JLabel("Email");
-		lblEmail.setFont(new Font("Verdana", Font.BOLD, 11));
+		lblEmail.setFont(new Font("Verdana", Font.BOLD, 13));
 		lblEmail.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblEmail.setBounds(35, 242, 89, 16);
+		lblEmail.setBounds(45, 241, 89, 16);
 		contentPane.add(lblEmail);
 		
-		//Label - Developed by:
-		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
-		lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
-		lblDevelopedByClever.setBounds(215, 320, 209, 16);
-		contentPane.add(lblDevelopedByClever);
 		
 		//Text Field - First Name
 		txtFirst = new JTextField();
@@ -180,6 +176,9 @@ public class CreateAccountInside extends JFrame {
 		txtEmail.setColumns(10);
 		
 		JButton btnCreateAccount = new JButton("Create Account");
+		btnCreateAccount.setBackground(new Color(70, 137, 191));
+        btnCreateAccount.setOpaque(true);
+        btnCreateAccount.setBorderPainted(true);
 		btnCreateAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -234,19 +233,19 @@ public class CreateAccountInside extends JFrame {
 				//Balance error
 				else if(sizeError > 0) 
 				{
-					JOptionPane.showMessageDialog(null, "The balance must be a number", "CleverBudget - Balance Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "The Balance must be a Number", "CleverBudget - Balance Error", JOptionPane.ERROR_MESSAGE);
 					txtBalance.setText(null);
 				}
 				//Phone Number Error
 				else if(phoneNumError > 0) 
 				{
-					JOptionPane.showMessageDialog(null, "The phone number must look like the following: 111-111-1111", "CleverBudget - Phone Number Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "The Phone Number must look like the Following: 111-111-1111", "CleverBudget - Phone Number Error", JOptionPane.ERROR_MESSAGE);
 					txtPhoneNum.setText(null);
 				}
 				//Email Error
 				else if(emailError > 0) 
 				{
-					JOptionPane.showMessageDialog(null, "The email must be valid", "CleverBudget - Email Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "The Email must be Valid", "CleverBudget - Email Error", JOptionPane.ERROR_MESSAGE);
 					txtEmail.setText(null);
 				}
 				
@@ -325,7 +324,12 @@ public class CreateAccountInside extends JFrame {
 				} // End of else, button pressed and all is good
 			}
 		});
-		btnCreateAccount.setBounds(137, 273, 153, 25);
+		
+
+		
+		btnCreateAccount.setBounds(137, 288, 153, 25);
 		contentPane.add(btnCreateAccount);
 	}
+	
+	
 }

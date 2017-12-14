@@ -53,7 +53,6 @@ public class Login_System {
 		contentPane = new JFrame();
 		contentPane.getContentPane().setBackground(new Color(207, 210, 215));
 		contentPane.setTitle("CleverBudget - Log In");
-		contentPane.setIconImage(Toolkit.getDefaultToolkit().getImage("./AppIcon.png"));
 		contentPane.getContentPane().setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		contentPane.setResizable(false);
 		contentPane.setBounds(100, 100, 600, 400);
@@ -97,42 +96,43 @@ public class Login_System {
 		txtPassword.setBackground(Color.WHITE);
 		txtPassword.setBounds(260, 151, 178, 20);
 		contentPane.getContentPane().add(txtPassword);
-		
+		//new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		//Label - Top Blue Border
-		JLabel top_blue = new JLabel("");
-		top_blue.setIcon(new ImageIcon("./blue_border.png"));
+		JLabel top_blue = new JLabel();
+		top_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		top_blue.setBounds(0, 0, 594, 22);
 		contentPane.getContentPane().add(top_blue);
 		
 		//Label - Middle Blue Border
 		JLabel middle_blue = new JLabel();
-		middle_blue.setIcon(new ImageIcon("./blue_border.png"));
+		middle_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		middle_blue.setBounds(0, 196, 594, 22);
 		contentPane.getContentPane().add(middle_blue);
-		
+	      
+        //Label - Developed By:
+        JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
+        lblDevelopedByClever.setBackground(Color.WHITE);
+        lblDevelopedByClever.setForeground(Color.BLACK);
+        lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
+        lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
+        lblDevelopedByClever.setBounds(312, 349, 272, 16);
+        contentPane.getContentPane().add(lblDevelopedByClever);
+        
 		//Label - Bottom Blue Border
 		JLabel bottom_blue = new JLabel();
-		bottom_blue.setIcon(new ImageIcon("./blue_border.png"));
+		bottom_blue.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/blue_border.png")));
 		bottom_blue.setBounds(0, 349, 594, 22);
 		contentPane.getContentPane().add(bottom_blue);
 		
 		//Label - Background Image
 		JLabel banner_image = new JLabel();
-		banner_image.setIcon(new ImageIcon("./res/login_bg.png"));
+		banner_image.setIcon(new ImageIcon(getClass().getClassLoader().getResource("res/login_bg.png")));
 		banner_image.setBounds(-6, 0, 611, 218);
 		contentPane.getContentPane().add(banner_image);
-		
-		//Label - Developed By:
-		JLabel lblDevelopedByClever = new JLabel("Developed by: Clever 323");
-		lblDevelopedByClever.setBackground(Color.WHITE);
-		lblDevelopedByClever.setForeground(Color.BLACK);
-		lblDevelopedByClever.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblDevelopedByClever.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 12));
-		lblDevelopedByClever.setBounds(312, 349, 272, 16);
-		contentPane.getContentPane().add(lblDevelopedByClever);
-		
+
 		//Button - Reset Text Fields
 		JButton btnReset = new JButton("Reset");
+		btnReset.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnReset.setBackground(new Color(200, 200, 200));
 		btnReset.setOpaque(true);
 		btnReset.setBorderPainted(true);
@@ -143,11 +143,12 @@ public class Login_System {
 				txtPassword.setText(null);
 			}
 		});
-		btnReset.setBounds(49, 292, 97, 25);
+		btnReset.setBounds(85, 292, 165, 25);
 		contentPane.getContentPane().add(btnReset);
 		
 		//Button - Exit Program
 		JButton btnExit = new JButton("Exit");
+		btnExit.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnExit.setBackground(new Color(225, 79, 79));
 		btnExit.setOpaque(true);
 		btnExit.setBorderPainted(true);
@@ -162,11 +163,12 @@ public class Login_System {
 				}
 			}
 		});
-		btnExit.setBounds(364, 292, 165, 25);
+		btnExit.setBounds(378, 239, 165, 25);
 		contentPane.getContentPane().add(btnExit);
 		
 		//Button - User Manual - Fill Out
 		JButton btnUserManual = new JButton("User Manual");
+		btnUserManual.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnUserManual.setBackground(new Color(200, 200, 200));
 		btnUserManual.setOpaque(true);
 		btnUserManual.setBorderPainted(true);
@@ -177,11 +179,12 @@ public class Login_System {
 				
 			}
 		});
-		btnUserManual.setBounds(177, 292, 158, 25);
+		btnUserManual.setBounds(378, 292, 165, 25);
 		contentPane.getContentPane().add(btnUserManual); 
 		
 		//Button - Login - Encrypt? - More than just robyn?
 		JButton btnLogin = new JButton("Login");
+		btnLogin.setFont(new Font("Verdana", Font.BOLD, 11));
 		btnLogin.setBackground(new Color(70, 137, 191));
 		btnLogin.setOpaque(true);
 		btnLogin.setBorderPainted(true);
@@ -226,35 +229,8 @@ public class Login_System {
 				}
 			}
 		});
-		btnLogin.setBounds(49, 241, 97, 25);
+		btnLogin.setBounds(85, 239, 165, 25);
 		contentPane.getContentPane().add(btnLogin);
-		
-		//Button - Forgot Password - NOT FUNCTIONAL
-		JButton btnForgotPassword = new JButton("Forgot Password?");
-		btnForgotPassword.setBackground(new Color(200, 200, 200));
-		btnForgotPassword.setOpaque(true);
-		btnForgotPassword.setBorderPainted(true);
-		btnForgotPassword.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			
-				ForgotPass.main(null);
-			}
-		});
-		btnForgotPassword.setBounds(177, 241, 158, 25);
-		contentPane.getContentPane().add(btnForgotPassword);
-		
-		//Button - Create New Account  - NOT FUNCTIONAL
-		JButton btnCreateNewAccount = new JButton("Create New Account");
-		btnCreateNewAccount.setBackground(new Color(70, 137, 191));
-		btnCreateNewAccount.setOpaque(true);
-		btnCreateNewAccount.setBorderPainted(true);
-		btnCreateNewAccount.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-			}
-		});
-		btnCreateNewAccount.setBounds(364, 241, 165, 25);
-		contentPane.getContentPane().add(btnCreateNewAccount);
 		
 	}
 }

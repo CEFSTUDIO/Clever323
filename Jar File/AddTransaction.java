@@ -41,6 +41,7 @@ public class AddTransaction extends JFrame {
 	private JTextField textAmount;
 	private JTextField textToFrom;
 	private JTextField textDate;
+	int lineNum = 0;
 
 	//Launch The Application:
 	public static void main(String[] args) {
@@ -60,13 +61,76 @@ public class AddTransaction extends JFrame {
 
 	//Create the Frame:
 	public AddTransaction() {
-		//Attributes for reading in small data:
 		String smallDataFile = "smallData.txt";
+		String bigDataFile = "bigData.txt";
 		String line;
 		BufferedReader reader;
 		String[] details = null;
+		
+		Transaction newTransaction;
+		Account newAccount;
+		ArrayList<Account> smallDataList = new ArrayList<Account>();
+		ArrayList<Transaction> bigDataList = new ArrayList<Transaction>();
+
+		//Reading in Big Data:
+		try{       
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(bigDataFile)));
+		    while((line = reader.readLine()) != null){
+		    	
+		    	//Splitting the line, and adding the first and last name to transaction (names)
+		    	details = line.split(",");
+		        newTransaction = new Transaction();
+		        newTransaction.setName(details[0]);
+		        newTransaction.setAmount(Double.parseDouble(details[1]));
+		        newTransaction.setDepositOrWithdraw(details[2]);
+		        newTransaction.setToOrFrom(details[3]);
+		        newTransaction.setType(details[4]);
+		        newTransaction.setDate(details[5]);
+		        bigDataList.add(newTransaction);
+
+		    }
+		    reader.close();
+		 }
+				   
+		//Catching Errors
+		catch(FileNotFoundException e1){
+		    JOptionPane.showMessageDialog(null, "File not Found.");
+		}
+		catch(IOException e){
+		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+		}
+		
+		//Reading in Small Data
+		try{       
+		    reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(smallDataFile)));
+		    while((line = reader.readLine()) != null){
+		    	
+		    	//Splitting the line, and adding the first and last name to transaction (names)
+		    	details = line.split(",");
+		        newAccount = new Account();
+		        newAccount.setFirstName(details[0]);
+		        newAccount.setLastName(details[1]);
+		        newAccount.setStartingBalance(Double.parseDouble(details[2]));
+		        newAccount.setDescription(details[3]);
+		        newAccount.setPhoneNumber(details[4]);
+		        newAccount.setEmail(details[5]);
+		        smallDataList.add(newAccount);
+
+		    }
+		    reader.close();
+		 }
+				   
+		//Catching Errors
+		catch(FileNotFoundException e1){
+		    JOptionPane.showMessageDialog(null, "File not Found.");
+		}
+		catch(IOException e){
+		    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
+		}
+		
 		Transaction newT;
 		ArrayList<Transaction> names = new ArrayList<Transaction>();
+		//int lineNum = 0;
 
 		//Reading in the file, used for Name Combo Box
 		try{       
@@ -77,6 +141,7 @@ public class AddTransaction extends JFrame {
 		        newT = new Transaction();
 		        newT.setName(details[0] + " " + details[1]);
 		        names.add(newT);
+		        
 		    }
 		    reader.close();
 		 }
@@ -149,7 +214,7 @@ public class AddTransaction extends JFrame {
 		JLabel lblDate = new JLabel("Date");
 		lblDate.setHorizontalAlignment(SwingConstants.TRAILING);
 		lblDate.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblDate.setBounds(30, 220, 140, 16);
+		lblDate.setBounds(30, 248, 140, 16);
 		contentPane.add(lblDate);
 		
 		//Combo Box - Name Box
@@ -159,12 +224,12 @@ public class AddTransaction extends JFrame {
 			comboBoxNameBox.addItem(names.get(i).getName());
 		}
 		comboBoxNameBox.setBackground(Color.WHITE);
-		comboBoxNameBox.setBounds(180, 70, 164, 22);
+		comboBoxNameBox.setBounds(180, 70, 244, 22);
 		contentPane.add(comboBoxNameBox);
 		
 		//Text Field - Amount
 		textAmount = new JTextField();
-		textAmount.setBounds(180, 100, 164, 22);
+		textAmount.setBounds(180, 100, 244, 22);
 		contentPane.add(textAmount);
 		textAmount.setColumns(10);
 		
@@ -173,12 +238,12 @@ public class AddTransaction extends JFrame {
 		comboBoxTransactionBox.addItem("Expense");
 		comboBoxTransactionBox.addItem("Deposit");
 		comboBoxTransactionBox.setBackground(Color.WHITE);
-		comboBoxTransactionBox.setBounds(180, 130, 164, 22);
+		comboBoxTransactionBox.setBounds(180, 130, 244, 22);
 		contentPane.add(comboBoxTransactionBox);
 		
 		//Text Field - To/From
 		textToFrom = new JTextField();
-		textToFrom.setBounds(180, 160, 164, 22);
+		textToFrom.setBounds(180, 160, 244, 22);
 		contentPane.add(textToFrom);
 		textToFrom.setColumns(10);
 		
@@ -189,7 +254,7 @@ public class AddTransaction extends JFrame {
 		comboBoxPaymentTypeBox.addItem("Check");
 		comboBoxPaymentTypeBox.addItem("Cash");
 		comboBoxPaymentTypeBox.setBackground(Color.WHITE);
-		comboBoxPaymentTypeBox.setBounds(180, 190, 164, 22);
+		comboBoxPaymentTypeBox.setBounds(180, 190, 244, 22);
 		contentPane.add(comboBoxPaymentTypeBox);
 		
 		//Text Field - Date
@@ -198,9 +263,36 @@ public class AddTransaction extends JFrame {
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
 		Date date = new Date();
 		textDate.setText(dateFormat.format(date));
-		textDate.setBounds(180, 220, 164, 22);
+		textDate.setBounds(180, 248, 244, 22);
 		contentPane.add(textDate);
 		textDate.setColumns(10);
+		
+		//Transaction Codes
+        JComboBox<String> comboBoxCode = new JComboBox<String>();
+        comboBoxCode.addItem("50109- Other Income");
+        comboBoxCode.addItem("50287- Credit Card Sales");
+        comboBoxCode.addItem("61123- Contract Faculty");
+        comboBoxCode.addItem("61225- Student");
+        comboBoxCode.addItem("62210- Minor Equipment");
+        comboBoxCode.addItem("62241- Office Supplies");
+        comboBoxCode.addItem("62245- Computer Equipment<$5,000");
+        comboBoxCode.addItem("62249- Minor Software<$100,000");
+        comboBoxCode.addItem("62255- Promotional Aids");
+        comboBoxCode.addItem("62280- Program Expense");
+        comboBoxCode.addItem("62282- Ink");
+        comboBoxCode.addItem("62315- Advertising-Newspaper Non Re");
+        comboBoxCode.addItem("62817- Meetings & Conference Costs");
+        comboBoxCode.addItem("62852- Bank Service Charges");
+        comboBoxCode.addItem("Other");
+        comboBoxCode.setBackground(Color.WHITE);
+        comboBoxCode.setBounds(180, 220, 244, 20);
+        contentPane.add(comboBoxCode);
+        
+        //Text Field - Transaction Code
+        JLabel textCode = new JLabel("Transaction Code");
+        textCode.setFont(new Font("Verdana", Font.BOLD, 16));
+        textCode.setBounds(12, 220, 158, 23);
+        contentPane.add(textCode);
 		
 		//Button - Add Transaction (The Magic)
 		JButton btnNewButton = new JButton("Add Transaction");
@@ -217,14 +309,17 @@ public class AddTransaction extends JFrame {
 				String transaction = (String) comboBoxTransactionBox.getSelectedItem();
 				String toFrom = textToFrom.getText();
 				String paymentType = (String) comboBoxPaymentTypeBox.getSelectedItem();
+				String code = (String) comboBoxCode.getSelectedItem();
 				String date = textDate.getText();
+//				int tranNum = 
+				
 				
 				//delete
-				System.out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + date);
+				//System.out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + code + "," + date);
 				
 				//Error checking for if Amount is a number
-				int size = amount.length();
-				int sizeError = 0;
+				double size = amount.length();
+				double sizeError = 0;
 				
 				for (int i = 0; i < size; i++) 
 				{
@@ -237,12 +332,12 @@ public class AddTransaction extends JFrame {
 				//Error checking for blank fields
 				if (amount.equals("") || toFrom.equals("") || date.equals("")) 
 				{
-					JOptionPane.showMessageDialog(null, "All fields were not filled out, Please try again", "CleverBudget - Fields Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "All Fields were not Filled Out, Please Try Again", "CleverBudget - Fields Error", JOptionPane.ERROR_MESSAGE);
 				}
 				//Balance error
 				else if(sizeError > 0) 
 				{
-					JOptionPane.showMessageDialog(null, "The amount must be a number", "CleverBudget - Amount Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "The Amount must be a Number", "CleverBudget - Amount Error", JOptionPane.ERROR_MESSAGE);
 					textAmount.setText(null);
 				}
 				//If there are no errors, we can add this transaction
@@ -269,7 +364,10 @@ public class AddTransaction extends JFrame {
 							newTran.setDepositOrWithdraw(transaction);
 							newTran.setToOrFrom(toFrom);
 							newTran.setType(paymentType);
+							newTran.setCode(code);
 							newTran.setDate(date);
+							newTran.setTranNum(bigDataList.size());
+							
 							transactionList.add(newTran);
 						}
 					} 
@@ -291,7 +389,8 @@ public class AddTransaction extends JFrame {
 							BufferedWriter bw = new BufferedWriter(fw);
 							PrintWriter out = new PrintWriter(bw))
 					{
-						out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + date);
+						int transNum = transactionList.get(bigDataList.size() - 1).getTranNum();
+						out.println(name + "," + amount + "," + transaction + "," + toFrom + "," + paymentType + "," + code + "," + date + "," + transNum);
 						dispose();
 					}
 						
@@ -304,7 +403,7 @@ public class AddTransaction extends JFrame {
 				}//End of else, start of the reading/writing, no errors	
 			}
 		});
-		btnNewButton.setBounds(180, 262, 164, 25);
+		btnNewButton.setBounds(180, 281, 244, 25);
 		contentPane.add(btnNewButton);
 		
 

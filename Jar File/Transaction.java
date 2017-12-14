@@ -1,8 +1,8 @@
-//Author(s): Cameron Gomke
+//Author(s): Cameron Gomke, Cheyanne Flickinger
 //File Name: Transaction (Class)
 //Purpose: CleverBudget
 //Date Created: 10/30/2017
-//Last Updated: 11/27/2017
+//Last Updated: 12/12/2017
 public class Transaction {
 
 	//Attributes:
@@ -12,6 +12,8 @@ public class Transaction {
 	private String depositOrWithdraw;
 	private String type;
 	private String toOrFrom;
+	private String code;
+	private int tranNum;
 	
 	//Getters and Setters:
 	public double getAmount() {
@@ -50,11 +52,21 @@ public class Transaction {
 	public void setDate(String date) {
 		this.date = date;
 	}
-	@Override
-	public String toString() {
-		return "Transaction [name=" + name + ", amount=" + amount + ", date=" + date + ", depositOrWithdraw="
-				+ depositOrWithdraw + ", type=" + type + ", toOrFrom=" + toOrFrom + "]";
+    public String getCode() {
+        return code;
+    }
+    public void setCode(String code) {
+        this.code = code;
+    }
+	public int getTranNum() {
+		return tranNum;
 	}
+	public void setTranNum(int tranNum) {
+		this.tranNum = tranNum;
+	}
+	
+	
+	
 	
 
 }
