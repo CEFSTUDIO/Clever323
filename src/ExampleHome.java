@@ -675,8 +675,6 @@ public class ExampleHome extends JFrame {
 				    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
 				}
 				
-				//~~~~~~~~~~~~~~~~ Big Table ~~~~~~~~~~~~~~~~
-				//Big Table Overview
 				String bigColumns[] =  {"Name:", "Amount:", "Transaction:", "To/From:", "Type:", "Code:", "Date:"};
 				JTable bigTable = new JTable();
 				bigTable.setEnabled(false);
@@ -705,14 +703,13 @@ public class ExampleHome extends JFrame {
 				catch(FileNotFoundException e1){
 				    JOptionPane.showMessageDialog(null, "File not Found.");
 				}
-				catch(IOException e1){
+				catch(IOException e2){
 				    JOptionPane.showMessageDialog(null, "Buffered Reader issue.");
 				}
 				bigTable.setRowHeight(25);
 				bigTable.setFont(new Font("Tahoma", Font.PLAIN, 13));
 				bigTable.setBorder(null);
 				bigTable.getColumnModel().getColumn(0).setPreferredWidth(150);
-<<<<<<< HEAD
 				bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
 				bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
 				bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
@@ -721,24 +718,12 @@ public class ExampleHome extends JFrame {
 				bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
 				bigTable.setBounds(467, 200, 594, 375);
 				JScrollPane scrollPane = new JScrollPane(bigTable);
-				scrollPane.setLocation(365, 185);
+				scrollPane.setLocation(347, 187);
 				scrollPane.setSize(862, 458);
 				scrollPane.getViewport().setBackground(Color.WHITE);
 				contentPane.add(scrollPane);
-=======
-		        bigTable.getColumnModel().getColumn(1).setPreferredWidth(75);
-		        bigTable.getColumnModel().getColumn(2).setPreferredWidth(100);
-		        bigTable.getColumnModel().getColumn(3).setPreferredWidth(200);
-		        bigTable.getColumnModel().getColumn(4).setPreferredWidth(100);
-		        bigTable.getColumnModel().getColumn(5).setPreferredWidth(150);
-		        bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
-		        bigTable.setBounds(467, 200, 594, 375);
-		        JScrollPane scrollPane = new JScrollPane(bigTable);
-		        scrollPane.setLocation(347, 187);
-		        scrollPane.setSize(862, 458);
-		        scrollPane.getViewport().setBackground(Color.WHITE);
-		        contentPane.add(scrollPane);
->>>>>>> 4315683b6c78df9b992c6168788a9bdc874ae17b
+		       
+
 				
 			    
 				

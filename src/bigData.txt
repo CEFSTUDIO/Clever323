@@ -10,6 +10,3 @@ Patricia Duce,1,Expense,University Of Montana,Credit Card,Other,12/04/17,8
 Patricia Duce,2,Expense,University Of Montana,Credit Card,Other,12/04/17,9
 cam g,100,Expense,cam,Credit Card,61225- Student,12/13/17,10
 Patricia Duce,2,Expense,2,Credit Card,50109- Other Income,12/14/17,11
-Patricia Duce,3,Expense,3,Credit Card,50109- Other Income,12/14/17,12
-Patricia Duce,34,Expense,4,Credit Card,50109- Other Income,12/14/17,13
-Patricia Duce,1,Expense,1,Credit Card,50109- Other Income,12/14/17,14
