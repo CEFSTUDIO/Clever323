@@ -37,9 +37,6 @@ public class ModifyAccount extends JFrame {
     
     
 
-
-
-
 	/**
 	 * Launch the application.
 	 */
