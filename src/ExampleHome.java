@@ -684,10 +684,10 @@ public class ExampleHome extends JFrame {
 		        bigTable.getColumnModel().getColumn(6).setPreferredWidth(75);
 		        bigTable.setBounds(467, 200, 594, 375);
 		        JScrollPane scrollPane = new JScrollPane(bigTable);
-		        scrollPane.setLocation(365, 185);
-		        scrollPane.setSize(719, 458);
+		        scrollPane.setLocation(347, 187);
+		        scrollPane.setSize(862, 458);
 		        scrollPane.getViewport().setBackground(Color.WHITE);
-				contentPane.add(scrollPane);
+		        contentPane.add(scrollPane);
 				
 				//RowFilter<DefaultTableModel, Object> ov  = RowFilter.regexFilter("",0);
                 //sorter.setRowFilter(ov);
